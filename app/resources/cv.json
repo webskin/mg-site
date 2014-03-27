@@ -1,0 +1,526 @@
+{
+  "experiencesProfessionnelles": [
+    {
+      "debut": "",
+      "fin": "",
+      "entreprise": "",
+      "client": "",
+      "statut": ""
+
+    }
+  ],
+  "categoriesTermeTechnique": [
+    {
+      "id": 1,
+      "libelle": {
+        "fr": "Langage de Programmation",
+        "en": "Programming Language"
+      }
+    }, {
+      "id": 2,
+      "libelle": {
+        "fr": "Outils de Développement",
+        "en": "Development Tools"
+      }
+    }, {
+      "id": 3,
+      "categoriesParentes": [],
+      "libelle": {
+        "fr": "Bibliothèque",
+        "en": "Library"
+      }
+    }, {
+      "id": 4,
+      "libelle": {
+        "fr": "Système de Gestion de Version",
+        "en": "Version Control System"
+      }
+    }, {
+      "id": 5,
+      "libelle": {
+        "fr": "Système d'Exploitation",
+        "en": "Operating System"
+      }
+    }, {
+      "id": 6,
+      "libelle": {
+        "fr": "Méthodologie",
+        "en": "Methodology"
+      }
+    }, {
+      "id": 7,
+      "libelle": {
+        "fr": "Intégration Continue",
+        "en": "Continuous Integration"
+      }
+    }, {
+      "id": 8,
+      "libelle": {
+        "fr": "Base de Donnée",
+        "en": "Database"
+      }
+    }, {
+      "id": 9,
+      "libelle": {
+        "fr": "Outil de build",
+        "en": "Build Tool"
+      }
+    }, {
+      "id": 10,
+      "libelle": {
+        "fr": "Framework",
+        "en": "Framework"
+      }
+    }, {
+      "id": 11,
+      "libelle": {
+        "fr": "Serveur d'Application",
+        "en": "Application Server"
+      }
+    }, {
+      "id": 12,
+      "libelle": {
+        "fr": "Serveur HTTP",
+        "en": "HTTP Server"
+      }
+    }, {
+      "id": 13,
+      "libelle": {
+        "fr": "Concept",
+        "en": "Concept"
+      }
+    }, {
+      "id": 14,
+      "libelle": {
+        "fr": "Templating",
+        "en": "Templating"
+      }
+    }, {
+      "id": 15,
+      "libelle": {
+        "fr": "Test Unitaire",
+        "en": "Unit Test"
+      }
+    }, {
+      "id": 16,
+      "libelle": {
+        "fr": "Gestionnaire de Dépendance",
+        "en": "Dependency Manager"
+      }
+    }, {
+      "id": 17,
+      "libelle": {
+        "fr": "Scaffolding",
+        "en": "Scaffolding"
+      }
+    }
+  ],
+  "termesTechniques": [
+    {
+      "id": 1,
+      "categories": [1],
+      "libelle": "Java"
+    }, {
+      "id": 2,
+      "categories": [1],
+      "libelle": "C"
+    }, {
+      "id": 3,
+      "categories": [1],
+      "libelle": "C++"
+    }, {
+      "id": 4,
+      "categories": [1],
+      "libelle": "JavaScript"
+    }, {
+      "id": 5,
+      "categories": [1],
+      "libelle": "CoffeeScript"
+    }, {
+      "id": 6,
+      "categories": [1],
+      "libelle": "ActionScript"
+    }, {
+      "id": 7,
+      "categories": [1],
+      "libelle": "CSS"
+    }, {
+      "id": 8,
+      "categories": [1],
+      "libelle": "Scala"
+    }, {
+      "id": 9,
+      "categories": [1],
+      "libelle": "AspectJ"
+    }, {
+      "id": 10,
+      "categories": [1],
+      "libelle": "HTML5"
+    }, {
+      "id": 11,
+      "categories": [1, 8],
+      "libelle": "SQL"
+    }, {
+      "id": 12,
+      "categories": [1, 8],
+      "libelle": "PL/SQL"
+    }, {
+      "id": 13,
+      "categories": [2],
+      "libelle": "Eclipse"
+    }, {
+      "id": 14,
+      "categories": [2],
+      "libelle": "IntelliJ IDEA"
+    }, {
+      "id": 15,
+      "categories": [2],
+      "libelle": "Visual Studio"
+    }, {
+      "id": 16,
+      "categories": [2],
+      "libelle": "Flash Builder"
+    }, {
+      "id": 17,
+      "categories": [1],
+      "libelle": "PHP"
+    }, {
+      "id": 18,
+      "categories": [3],
+      "libelle": "JNI"
+    }, {
+      "id": 19,
+      "categories": [3],
+      "libelle": "JNA"
+    }, {
+      "id": 20,
+      "categories": [3],
+      "libelle": "JAX-RS"
+    }, {
+      "id": 21,
+      "categories": [3],
+      "libelle": "JAXB"
+    }, {
+      "id": 22,
+      "categories": [3],
+      "libelle": "RMI"
+    }, {
+      "id": 23,
+      "categories": [14],
+      "libelle": "JSP"
+    }, {
+      "id": 24,
+      "categories": [14],
+      "libelle": "Velocity"
+    }, {
+      "id": 25,
+      "categories": [1],
+      "libelle": "XSLT"
+    }, {
+      "id": 26,
+      "categories": [1],
+      "libelle": "XPATH"
+    }, {
+      "id": 27,
+      "categories": [13],
+      "libelle": "Hypermedia"
+    }, {
+      "id": 28,
+      "categories": [13],
+      "libelle": "REST"
+    }, {
+      "id": 29,
+      "categories": [13],
+      "libelle": "HATEOAS"
+    }, {
+      "id": 30,
+      "categories": [3],
+      "libelle": "SWING"
+    }, {
+      "id": 31,
+      "categories": [3],
+      "libelle": "AWT"
+    }, {
+      "id": 32,
+      "categories": [3],
+      "libelle": "SWT"
+    }, {
+      "id": 33,
+      "categories": [3],
+      "libelle": "JFace"
+    }, {
+      "id": 34,
+      "categories": [3],
+      "libelle": "iText"
+    }, {
+      "id": 35,
+      "categories": [3, 10],
+      "libelle": "EMF"
+    }, {
+      "id": 36,
+      "categories": [3, 10],
+      "libelle": "Spring Core"
+    }, {
+      "id": 37,
+      "categories": [3, 10],
+      "libelle": "Spring MVC"
+    }, {
+      "id": 38,
+      "categories": [10],
+      "libelle": "Spring AOP"
+    }, {
+      "id": 39,
+      "categories": [10],
+      "libelle": "Jersey"
+    }, {
+      "id": 40,
+      "categories": [10],
+      "libelle": "Eclipse RCP"
+    }, {
+      "id": 41,
+      "categories": [10],
+      "libelle": "Flex"
+    }, {
+      "id": 42,
+      "categories": [3],
+      "libelle": "Eclipse JDT"
+    }, {
+      "id": 43,
+      "categories": [3],
+      "libelle": "Hibernate"
+    }, {
+      "id": 44,
+      "categories": [3],
+      "libelle": "Struts"
+    }, {
+      "id": 45,
+      "categories": [3],
+      "libelle": "Tiles"
+    }, {
+      "id": 46,
+      "categories": [1],
+      "libelle": "Less"
+    }, {
+      "id": 47,
+      "categories": [1],
+      "libelle": "Sass"
+    }, {
+      "id": 48,
+      "categories": [3],
+      "libelle": "DWGDirect"
+    }, {
+      "id": 49,
+      "categories": [3],
+      "libelle": "OSGI Core"
+    }, {
+      "id": 50,
+      "categories": [3],
+      "libelle": "Equinox"
+    }, {
+      "id": 51,
+      "categories": [3, 15],
+      "libelle": "JUnit"
+    }, {
+      "id": 52,
+      "categories": [3, 15],
+      "libelle": "Mockito"
+    }, {
+      "id": 53,
+      "categories": [3, 17],
+      "libelle": "Spec2"
+    }, {
+      "id": 54,
+      "categories": [3, 17],
+      "libelle": "ScalaTest"
+    }, {
+      "id": 55,
+      "categories": [3, 10],
+      "libelle": "Akka"
+    }, {
+      "id": 56,
+      "categories": [3],
+      "libelle": "Dozer"
+    }, {
+      "id": 57,
+      "categories": [3, 10],
+      "libelle": "Bootstrap"
+    }, {
+      "id": 58,
+      "categories": [3, 10],
+      "libelle": "Compass"
+    }, {
+      "id": 59,
+      "categories": [3],
+      "libelle": "Boost"
+    }, {
+      "id": 60,
+      "categories": [4],
+      "libelle": "CVS"
+    }, {
+      "id": 61,
+      "categories": [4],
+      "libelle": "SVN"
+    }, {
+      "id": 62,
+      "categories": [4],
+      "libelle": "GIT"
+    }, {
+      "id": 63,
+      "categories": [5],
+      "libelle": "Windows XP"
+    }, {
+      "id": 64,
+      "categories": [5],
+      "libelle": "Windows Seven"
+    }, {
+      "id": 65,
+      "categories": [5],
+      "libelle": "Windows 8"
+    }, {
+      "id": 66,
+      "categories": [5],
+      "libelle": "Debian"
+    }, {
+      "id": 67,
+      "categories": [5],
+      "libelle": "Ubuntu"
+    }, {
+      "id": 68,
+      "categories": [5],
+      "libelle": "Linux Mint"
+    }, {
+      "id": 69,
+      "categories": [6],
+      "libelle": "UML"
+    }, {
+      "id": 70,
+      "categories": [7],
+      "libelle": "Jenkins"
+    }, {
+      "id": 71,
+      "categories": [7],
+      "libelle": "Hudson"
+    }, {
+      "id": 72,
+      "categories": [8],
+      "libelle": "Oracle 9"
+    }, {
+      "id": 73,
+      "categories": [8],
+      "libelle": "Oracle 10g"
+    }, {
+      "id": 74,
+      "categories": [8],
+      "libelle": "HSQL"
+    }, {
+      "id": 75,
+      "categories": [8],
+      "libelle": "H2"
+    }, {
+      "id": 76,
+      "categories": [10],
+      "libelle": "AngularJS"
+    }, {
+      "id": 77,
+      "categories": [9],
+      "libelle": "Grunt"
+    }, {
+      "id": 78,
+      "categories": [11],
+      "libelle": "Tomcat"
+    }, {
+      "id": 79,
+      "categories": [11],
+      "libelle": "Play 2 Framework"
+    }, {
+      "id": 80,
+      "categories": [3],
+      "libelle": "Scalaz"
+    }, {
+      "id": 81,
+      "categories": [3],
+      "libelle": "Shapeless"
+    }, {
+      "id": 82,
+      "categories": [9],
+      "libelle": "Maven"
+    }, {
+      "id": 83,
+      "categories": [10],
+      "libelle": "SBT"
+    }, {
+      "id": 84,
+      "categories": [16],
+      "libelle": "NPM"
+    }, {
+      "id": 85,
+      "categories": [16],
+      "libelle": "Bower"
+    }, {
+      "id": 86,
+      "categories": [17],
+      "libelle": "Yeoman"
+    }, {
+      "id": 87,
+      "categories": [10],
+      "libelle": "Node.js"
+    }, {
+      "id": 88,
+      "categories": [3],
+      "libelle": "Require.js"
+    }, {
+      "id": 89,
+      "categories": [3],
+      "libelle": "angular-ui-router"
+    }, {
+      "id": 90,
+      "categories": [3],
+      "libelle": "bootstrap-sass"
+    }, {
+      "id": 91,
+      "categories": [3],
+      "libelle": "underscore"
+    }, {
+      "id": 92,
+      "categories": [3],
+      "libelle": "lodash"
+    }, {
+      "id": 93,
+      "categories": [3],
+      "libelle": "jquery"
+    }, {
+      "id": 94,
+      "categories": [3],
+      "libelle": "URI.js"
+    }, {
+      "id": 95,
+      "categories": [11],
+      "libelle": "Tomcat"
+    }, {
+      "id": 96,
+      "categories": [12],
+      "libelle": "Apache"
+    }, {
+      "id": 97,
+      "categories": [12],
+      "libelle": "Nginx"
+    }, {
+      "id": 98,
+      "categories": [13],
+      "libelle": "Reactive Programming"
+    }, {
+      "id": 99,
+      "categories": [13],
+      "libelle": "Event Sourcing"
+    }, {
+      "id": 100,
+      "categories": [9],
+      "libelle": "Ant"
+    }, {
+      "id": 101,
+      "categories": [9, 16],
+      "libelle": "Maven"
+    }
+  ]
+
+}
