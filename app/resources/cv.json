@@ -12,104 +12,104 @@
   "categoriesTermeTechnique": [
     {
       "id": 1,
-      "libelle": {
+      "libelles": {
         "fr": "Langage de Programmation",
         "en": "Programming Language"
       }
     }, {
       "id": 2,
-      "libelle": {
+      "libelles": {
         "fr": "Outils de Développement",
         "en": "Development Tools"
       }
     }, {
       "id": 3,
       "categoriesParentes": [],
-      "libelle": {
+      "libelles": {
         "fr": "Bibliothèque",
         "en": "Library"
       }
     }, {
       "id": 4,
-      "libelle": {
+      "libelles": {
         "fr": "Système de Gestion de Version",
         "en": "Version Control System"
       }
     }, {
       "id": 5,
-      "libelle": {
+      "libelles": {
         "fr": "Système d'Exploitation",
         "en": "Operating System"
       }
     }, {
       "id": 6,
-      "libelle": {
+      "libelles": {
         "fr": "Méthodologie",
         "en": "Methodology"
       }
     }, {
       "id": 7,
-      "libelle": {
+      "libelles": {
         "fr": "Intégration Continue",
         "en": "Continuous Integration"
       }
     }, {
       "id": 8,
-      "libelle": {
+      "libelles": {
         "fr": "Base de Donnée",
         "en": "Database"
       }
     }, {
       "id": 9,
-      "libelle": {
+      "libelles": {
         "fr": "Outil de build",
         "en": "Build Tool"
       }
     }, {
       "id": 10,
-      "libelle": {
+      "libelles": {
         "fr": "Framework",
         "en": "Framework"
       }
     }, {
       "id": 11,
-      "libelle": {
+      "libelles": {
         "fr": "Serveur d'Application",
         "en": "Application Server"
       }
     }, {
       "id": 12,
-      "libelle": {
+      "libelles": {
         "fr": "Serveur HTTP",
         "en": "HTTP Server"
       }
     }, {
       "id": 13,
-      "libelle": {
+      "libelles": {
         "fr": "Concept",
         "en": "Concept"
       }
     }, {
       "id": 14,
-      "libelle": {
+      "libelles": {
         "fr": "Templating",
         "en": "Templating"
       }
     }, {
       "id": 15,
-      "libelle": {
+      "libelles": {
         "fr": "Test Unitaire",
         "en": "Unit Test"
       }
     }, {
       "id": 16,
-      "libelle": {
+      "libelles": {
         "fr": "Gestionnaire de Dépendance",
         "en": "Dependency Manager"
       }
     }, {
       "id": 17,
-      "libelle": {
+      "libelles": {
         "fr": "Scaffolding",
         "en": "Scaffolding"
       }
@@ -442,7 +442,7 @@
       "libelle": "Shapeless"
     }, {
       "id": 82,
-      "categories": [9],
+      "categories": [9, 16],
       "libelle": "Maven"
     }, {
       "id": 83,
@@ -516,10 +516,6 @@
       "id": 100,
       "categories": [9],
       "libelle": "Ant"
-    }, {
-      "id": 101,
-      "categories": [9, 16],
-      "libelle": "Maven"
     }
   ]
 
