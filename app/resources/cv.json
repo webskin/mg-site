@@ -2,6 +2,7 @@
   "general": {
     "nom": "GAUVIN",
     "prenom": "Mickaël",
+    "naissance": "1984-10-23",
     "codePostal": "35700",
     "adresse": "20 bis rue du Moulin",
     "telephones": {
@@ -43,17 +44,50 @@
         "en": "Accomplishment (WITH DISTINCTION)"
       }
     }, {
-      "debut": "",
-      "fin": "",
-      "cursus": "",
-      "description": "",
-      "diplome": ""
+      "debut": "2004-09-01",
+      "fin": "2007-09-01",
+      "cursus": {
+        "fr": "École d’ingénieur de l’IFSIC (Rennes)",
+        "en": "École d’ingénieur de l’IFSIC (Rennes)"
+      },
+      "description": {
+        "fr": "Option LSI (Langages et Systèmes Informatiques) : réseaux,  systèmes d'exploitation, parallélisme, interfaces homme-machine, bases de données.",
+        "en": "LSI Option (Langages et Systèmes Informatiques) : network,  operating system, parallelism, user interface, database"
+      },
+      "diplome": {
+        "fr": "DIIC",
+        "en": "DIIC"
+      }
     }, {
-      "debut": "",
-      "fin": "",
-      "cursus": "",
-      "description": "",
-      "diplome": ""
+      "debut": "2003-09-01",
+      "fin": "2004-09-01",
+      "cursus": {
+        "fr": "DEUG 2 STPI (Rennes)",
+        "en": "DEUG 2 STPI (Rennes)"
+      },
+      "description": {
+        "fr": "Sciences et Technologie Pour l'Ingénieur",
+        "en": "Sciences et Technologie Pour l'Ingénieur"
+      },
+      "diplome": {
+        "fr": "DEUG (major de promo)",
+        "en": "DEUG (graduated first in my class)"
+      }
+    }, {
+      "debut": "2002-09-01",
+      "fin": "2003-09-01",
+      "cursus": {
+        "fr": "Math Sup PTSI (Rennes)",
+        "en": "Math Sup PTSI (Rennes)"
+      },
+      "description": {
+        "fr": "Physique, Technologie et Sciences de l'Ingénieur",
+        "en": "Physique, Technologie et Sciences de l'Ingénieur"
+      },
+      "diplome": {
+        "fr": "",
+        "en": ""
+      }
     }
   ],
   "experiencesProfessionnelles": [
@@ -64,6 +98,18 @@
       "client": "",
       "statut": ""
 
+    }
+  ],
+  "divers": [
+    {
+      "libelle": "Sport",
+      "valeur": ["Roller", "Squash"]
+    }, {
+      "libelle": "Musique",
+      "valeur": ["Flûte traversière irlandaise", "Guitare"]
+    }, {
+      "libelle": "Lecture",
+      "valeur": ["The Lean Startup"]
     }
   ],
   "categoriesTermeTechnique": [
