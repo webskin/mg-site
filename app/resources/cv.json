@@ -103,24 +103,33 @@
       "statut": "Ingénieur Conseil en systèmes et logiciels informatiques",
       "projets": [
         {
-          "nom": "Compagnonage",
+          "nom": "Compagnonnage",
           "client": "iMDEO (Tours)",
-          "description": "",
+          "description": "Transfert de compétences et support au développement",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Généralisation d'écriture de Tests Unitaires pour toute nouvelle Application basée sur le nouveau socle technique. Utilisation de JUnit et Mockito.",
               "termesTechnique": [
-                {"id": 1,  "exp": 0}
+                {"id": 114,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Support concernant l'utilisation du nouveau socle technique. Écriture d'une documentation complète.",
+              "termesTechnique": [
               ]
             }
           ]
         }, {
           "nom": "Rapport d'Activité",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Application destinée à générer un flux personnalisé contenant différents rapport liés à l'activité du Groupe Hervé",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelle mise en production à chaque ajout d'un nouveau rapport.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechnique": [
                 {"id": 1,  "exp": 0}
               ]
@@ -129,10 +138,20 @@
         }, {
           "nom": "Gestion des Réceptions Mobile",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA. Ceci étant peu pratique pour les salariés la nouvelle application mobile devra leur faire gagner le temps de la double saisie.",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Support Technique de la personne en charge du développement.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Implémentation de l'authentîfication dans l'application AngularJS.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Aide au démarrage du projet avec notament l'outil de Scafolding Yeoman. Intégration de l'application cliente avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechnique": [
                 {"id": 1,  "exp": 0}
               ]
@@ -141,10 +160,20 @@
         }, {
           "nom": "Facturation",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Refonte de l'ancienne application de facturation. La nouvelle application se basera sur le nouveau socle technique.",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Conception d'une API REST. Pour faciliter le dialogue avec les applications satellites. TODO",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Développement d'un module Générique permettant aux applications satellites d'ajout des références sur une facture à n'importe quel moment dans de workflow menant à l'éditiont de la facture.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Participation à la mise en place du projet démarrage du projet",
               "termesTechnique": [
                 {"id": 1,  "exp": 0}
               ]
@@ -153,10 +182,15 @@
         }, {
           "nom": "Plugins Eclipse",
           "client": "iMDEO (Tours)",
-          "description": "",
+          "description": "Création de Plugins Eclipse en vue d'augmenter la productivité de l'équipe de dévoloppement.",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
               "termesTechnique": [
                 {"id": 1,  "exp": 0}
               ]
@@ -165,10 +199,20 @@
         }, {
           "nom": "Gestion des Comptes Extranet",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Application destinée à la gestion des comptes extranet du Groupe Hervé.",
           "realisations": [
             {
-              "libelle": "",
+              "libelle": "Création d'un module de communication pour l'application Extranet.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Développement de l'application en mode TDD avec un autre développeur.",
               "termesTechnique": [
                 {"id": 1,  "exp": 0}
               ]
@@ -542,8 +586,8 @@
     }, {
       "id": 13,
       "libelle": {
-        "fr": "Concept",
-        "en": "Concept"
+        "fr": "Concept/Domaine",
+        "en": "Concept/Domain"
       }
     }, {
       "id": 14,
@@ -1036,6 +1080,25 @@
       "id": 113,
       "categories": [19],
       "libelle": "Client Lourd"
+    }, {
+      "id": 114,
+      "categories": [13],
+      "libelle": {
+        "fr": "Test Unitaire",
+        "en": "Unit Test"
+      }
+    }, {
+      "id": 115,
+      "categories": [13],
+      "libelle": "Généricité"
+    }, {
+      "id": 116,
+      "categories": [13],
+      "libelle": "TDD"
+    }, {
+      "id": 117,
+      "categories": [3],
+      "libelle": "Spring Rest Template"
     }
   ]
 
