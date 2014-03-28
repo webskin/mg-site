@@ -11,7 +11,7 @@ mgApp.factory 'mg.CVModels', [
         @categoriesTermeTechnique = []
 
     class CategorieTermeTechnique
-      constructor: ({@id, @libelles}) ->
+      constructor: ({@id, @libelle}) ->
         @termes = []
 
     class TermeTechnique

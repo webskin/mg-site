@@ -2,6 +2,7 @@
   "general": {
     "nom": "GAUVIN",
     "prenom": "Mickaël",
+    "statut": "Freelance en Entreprise Individuelle",
     "naissance": "1984-10-23",
     "codePostal": "35700",
     "adresse": "20 bis rue du Moulin",
@@ -10,6 +11,10 @@
       "fixe": "02 34 37 79 27"
     },
     "email": "mickael.gauvin@gmail.com",
+    "siteWeb": "http://mickaelgauvin.github.io",
+    "siret": "513 133 801 00037",
+    "tva": "FR 66 513 133 801",
+    "ape": "6202A",
     "autre" : ["Permis B"]
   },
   "formations": [
@@ -92,6 +97,180 @@
   ],
   "experiencesProfessionnelles": [
     {
+      "debut": "2009-04-01",
+      "fin": "",
+      "entreprise": "Freelance (Entreprise Individuelle)",
+      "statut": "Ingénieur Conseil en systèmes et logiciels informatiques",
+      "projets": [
+        {
+          "nom": "Compagnonage",
+          "client": "iMDEO (Tours)",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Rapport d'Activité",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Gestion des Réceptions Mobile",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Facturation",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Plugins Eclipse",
+          "client": "iMDEO (Tours)",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Gestion des Comptes Extranet",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Conception Architecture Technique",
+          "client": "iMDEO (Tours)",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Planning",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Conception Framework Hypermedia",
+          "client": "iMDEO (Tours)",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Objectifs Fonctionnels",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "GDA: Gestion Des Achats",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "OSCAR",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }, {
+          "nom": "Maintenance Applicative",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "",
+          "realisations": [
+            {
+              "libelle": "Suivi de Devis ",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Outil de Chiffrage",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Gestion des Partenaires",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
       "debut": "2007-09-01",
       "fin": "2008-10-31",
       "entreprise": "Capgemini (Rennes)",
@@ -100,6 +279,7 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération. ",
           "realisations": [
             {
               "libelle": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
@@ -183,6 +363,7 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération. ",
           "realisations": [
             {
               "libelle": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (OSGi), la programmation par aspect et les annotations JAVA.",
@@ -220,14 +401,17 @@
         {
           "nom": "Monitoring du jeu video Soldat",
           "client": "",
+          "description": "Le but de ce projet réalisé au cours de la formation d'ingénieur est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer le multithreading, la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie …",
+          "description": "",
           "realisations": [
             {
-              "libelle": "Conception et développement d’un outil de monitoring de serveur de jeu écrit en C++ et utilisant fortement le multithreading.",
+              "libelle": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechnique": [
                 {"id": 3,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 59, "exp": 0},
-                {"id": 67, "exp": 0}
+                {"id": 67, "exp": 0},
+                {"id": 109, "exp": 0}
               ]
             }
           ]
@@ -242,9 +426,10 @@
         {
           "nom": "Projet OEDIPP",
           "client": "DAM: Direction des Affaires Maritimes (Saint Malo)",
+          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités : La gestion informatisée des dossiers d'inscription. L'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques. La délivrance des titres de conduites. La gestion informatisée des centres d'examen.",
           "realisations": [
             {
-              "libelle": "Développement d’une application de gestion des permis plaisance.",
+              "libelle": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechnique": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -252,7 +437,9 @@
                 {"id": 44, "exp": 0},
                 {"id": 50, "exp": 0},
                 {"id": 60,  "exp": 0},
-                {"id": 63,  "exp": 0}
+                {"id": 63,  "exp": 0},
+                {"id": 78,  "exp": 0},
+                {"id": 108,  "exp": 0}
               ]
             }
           ]
@@ -261,6 +448,10 @@
     }
   ],
   "projetsPersonnels": [
+    {
+      "libelle": "Suivi de conférence",
+      "valeur": ["Breizh JUG", "Tours JUG", "Scala IO (Paris)"]
+    }
   ],
   "divers": [
     {
@@ -277,112 +468,118 @@
   "categoriesTermeTechnique": [
     {
       "id": 1,
-      "libelles": {
+      "libelle": {
         "fr": "Langage de Programmation",
         "en": "Programming Language"
       }
     }, {
       "id": 2,
-      "libelles": {
+      "libelle": {
         "fr": "Outils de Développement",
         "en": "Development Tools"
       }
     }, {
       "id": 3,
       "categoriesParentes": [],
-      "libelles": {
+      "libelle": {
         "fr": "Bibliothèque",
         "en": "Library"
       }
     }, {
       "id": 4,
-      "libelles": {
+      "libelle": {
         "fr": "Système de Gestion de Version",
         "en": "Version Control System"
       }
     }, {
       "id": 5,
-      "libelles": {
+      "libelle": {
         "fr": "Système d'Exploitation",
         "en": "Operating System"
       }
     }, {
       "id": 6,
-      "libelles": {
+      "libelle": {
         "fr": "Méthodologie",
         "en": "Methodology"
       }
     }, {
       "id": 7,
-      "libelles": {
+      "libelle": {
         "fr": "Intégration Continue",
         "en": "Continuous Integration"
       }
     }, {
       "id": 8,
-      "libelles": {
+      "libelle": {
         "fr": "Base de Donnée",
         "en": "Database"
       }
     }, {
       "id": 9,
-      "libelles": {
+      "libelle": {
         "fr": "Outil de build",
         "en": "Build Tool"
       }
     }, {
       "id": 10,
-      "libelles": {
+      "libelle": {
         "fr": "Framework",
         "en": "Framework"
       }
     }, {
       "id": 11,
-      "libelles": {
+      "libelle": {
         "fr": "Serveur d'Application",
         "en": "Application Server"
       }
     }, {
       "id": 12,
-      "libelles": {
+      "libelle": {
         "fr": "Serveur HTTP",
         "en": "HTTP Server"
       }
     }, {
       "id": 13,
-      "libelles": {
+      "libelle": {
         "fr": "Concept",
         "en": "Concept"
       }
     }, {
       "id": 14,
-      "libelles": {
+      "libelle": {
         "fr": "Templating",
         "en": "Templating"
       }
     }, {
       "id": 15,
-      "libelles": {
+      "libelle": {
         "fr": "Test Unitaire",
         "en": "Unit Test"
       }
     }, {
       "id": 16,
-      "libelles": {
+      "libelle": {
         "fr": "Gestionnaire de Dépendance",
         "en": "Dependency Manager"
       }
     }, {
       "id": 17,
-      "libelles": {
+      "libelle": {
         "fr": "Scaffolding",
         "en": "Scaffolding"
       }
     }, {
       "id": 18,
-      "libelles": {
+      "libelle": {
         "fr": "Protocole",
         "en": "Protocol"
+      }
+    }, {
+      "id": 19,
+      "libelle": {
+        "fr": "Plateforme",
+        "en": "Platform"
       }
     }
   ],
@@ -811,6 +1008,34 @@
       "id": 106,
       "categories": [1],
       "libelle": "XMI"
+    }, {
+      "id": 107,
+      "categories": [10],
+      "libelle": "SQL Developer"
+    }, {
+      "id": 108,
+      "categories": [10],
+      "libelle": "TOAD"
+    }, {
+      "id": 109,
+      "categories": [10],
+      "libelle": "Lua"
+    }, {
+      "id": 110,
+      "categories": [19],
+      "libelle": "Mobile"
+    }, {
+      "id": 111,
+      "categories": [19],
+      "libelle": "Android"
+    }, {
+      "id": 112,
+      "categories": [19],
+      "libelle": "Navigateur"
+    }, {
+      "id": 113,
+      "categories": [19],
+      "libelle": "Client Lourd"
     }
   ]
 
