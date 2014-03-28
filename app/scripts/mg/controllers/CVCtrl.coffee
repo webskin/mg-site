@@ -5,13 +5,12 @@ mgApp = angular.module 'mgApp'
 mgApp.controller 'mg.CVCtrl', [
   '$scope'
   '$http'
-  'mg.CVMappings'
-  ($scope, $http, mappings) ->
+  'mg.CVService'
+  ($scope, $http, cvService) ->
     $scope.cv = null
 
-    $http.get('/resources/cv.json').then(
+    cvService.get().then(
       (success) =>
-        success.data = mappings.cvDeserializer success.data
         $scope.cv = success.data
         success
     )

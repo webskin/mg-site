@@ -1,9 +1,66 @@
 {
+  "general": {
+    "nom": "GAUVIN",
+    "prenom": "Mickaël",
+    "codePostal": "35700",
+    "adresse": "20 bis rue du Moulin",
+    "telephones": {
+      "mobile": "07 60 05 04 06",
+      "fixe": "02 34 37 79 27"
+    },
+    "email": "mickael.gauvin@gmail.com",
+    "autre" : ["Permis B"]
+  },
+  "formations": [
+    {
+      "debut": "2013-11-01",
+      "fin": "2013-12-31",
+      "cursus": {
+        "fr": "Coursera: Principes de la Programmation Réactive",
+        "en": "Coursera : Principles of Reactive Programming"
+      },
+      "description": {
+        "fr": "Ce cours avancé enseigne les principes de la programmation réactive en utilisant Scala: comment écrire un logiciel composable, régit par des événements, s'adaptant aux montées de charge, sachant faire face aux défaillances. Les concepts étudiés incluent les monades, les futures, les observables et les acteurs.",
+        "en": "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
+      },
+      "diplome": {
+        "fr": "Accompli (AVEC DISTINCTION)",
+        "en": "Accomplishment (WITH DISTINCTION)"
+      }
+    }, {
+      "debut": "2012-09-01",
+      "fin": "2012-10-31",
+      "cursus": {
+        "fr": "Coursera: Principes de la Programmation Fonctionnelle en Scala",
+        "en": "Coursera : Functional Programming Principles in Scala"
+      },
+      "description": {
+        "fr": "Ce cours de programmation avancée couvre les principes de la programmation fonctionnelle en Scala, y compris l'utilisation de fonctions comme valeurs, la récursivité, l'immutabilité, le concept de pattern matching, les fonctions d'ordre supérieur, les collections, et l'évaluation au plus tard.",
+        "en": "This advanced undergraduate programming course covers the principles of functional programming using Scala, including the use of functions as values, recursion, immutability, pattern matching, higher-order functions and collections, and lazy evaluation."
+      },
+      "diplome": {
+        "fr": "Accompli (AVEC DISTINCTION)",
+        "en": "Accomplishment (WITH DISTINCTION)"
+      }
+    }, {
+      "debut": "",
+      "fin": "",
+      "cursus": "",
+      "description": "",
+      "diplome": ""
+    }, {
+      "debut": "",
+      "fin": "",
+      "cursus": "",
+      "description": "",
+      "diplome": ""
+    }
+  ],
   "experiencesProfessionnelles": [
     {
       "debut": "",
       "fin": "",
-      "entreprise": "",
+      "entreprise": "eanseausniet ietnuiset nietrnsetnuisaetnauisetnauisetnr iestaui estauiesr ntiesrnt uiesrtui esrtuiesrnutie nrsauietsrauet",
       "client": "",
       "statut": ""
 
@@ -516,6 +573,10 @@
       "id": 100,
       "categories": [9],
       "libelle": "Ant"
+    }, {
+      "id": 101,
+      "categories": [3],
+      "libelle": "RxScala"
     }
   ]
 

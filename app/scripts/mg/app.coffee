@@ -26,6 +26,10 @@ mgApp.config [
         url: '/cv'
         templateUrl: 'views/cv.html'
         controller: 'mg.CVCtrl'
+      .state 'cv2',
+        url: '/cv2'
+        templateUrl: 'views/cv.html'
+        controller: 'mg.CVCtrl'
 ]
 
 

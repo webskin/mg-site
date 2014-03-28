@@ -14,6 +14,7 @@ mgApp.factory 'mg.CVMappings', [
           terme = new m.TermeTechnique(termeJson)
           terme.__categories = []
           if termeJson.categories
+            # variable temporaire car relation n <-> n
             terme.__categories = termeJson.categories
           terme
         ).valueOf()
@@ -32,6 +33,7 @@ mgApp.factory 'mg.CVMappings', [
           cat
         ).valueOf()
 
+      # nettoyage de la variable temporaire
       _(termesTechniques).forEach (t) -> delete t.__categories
 
       cv = new m.CV()
