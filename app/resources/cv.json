@@ -92,13 +92,175 @@
   ],
   "experiencesProfessionnelles": [
     {
-      "debut": "",
-      "fin": "",
-      "entreprise": "eanseausniet ietnuiset nietrnsetnuisaetnauisetnauisetnr iestaui estauiesr ntiesrnt uiesrtui esrtuiesrnutie nrsauietsrauet",
-      "client": "",
-      "statut": ""
-
+      "debut": "2007-09-01",
+      "fin": "2008-10-31",
+      "entreprise": "Capgemini (Rennes)",
+      "statut": "Ingénieur d’étude",
+      "projets": [
+        {
+          "nom": "ITCS : Infrastructure Technique Commune de Simulation",
+          "client": "DGA: Direction Générale de l'Armement",
+          "realisations": [
+            {
+              "libelle": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 71,  "exp": 0},
+                {"id": 82,  "exp": 0},
+                {"id": 102,  "exp": 0},
+                {"id": 103,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 32, "exp": 0},
+                {"id": 33, "exp": 0},
+                {"id": 35, "exp": 0},
+                {"id": 40, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 71,  "exp": 0},
+                {"id": 82,  "exp": 0},
+                {"id": 102,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 35, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 71,  "exp": 0},
+                {"id": 82,  "exp": 0},
+                {"id": 102,  "exp": 0},
+                {"id": 104,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 2,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 18, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 71,  "exp": 0},
+                {"id": 82,  "exp": 0},
+                {"id": 102,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Conception et développement d’une infrastructure de distribution de données de simulation.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 22, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 69,  "exp": 0},
+                {"id": 71,  "exp": 0},
+                {"id": 82,  "exp": 0},
+                {"id": 102,  "exp": 0}
+              ]
+            }
+          ]
+        }
+      ]
     }
+  ],
+  "stagesEtProjetsFinEtude": [
+    {
+      "debut": "2007-03-01",
+      "fin": "2007-08-31",
+      "entreprise": "Capgemini (Rennes)",
+      "statut": "Stagiaire",
+      "projets": [
+        {
+          "nom": "ITCS : Infrastructure Technique Commune de Simulation",
+          "client": "DGA: Direction Générale de l'Armement",
+          "realisations": [
+            {
+              "libelle": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (OSGi), la programmation par aspect et les annotations JAVA.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 9,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 40, "exp": 0},
+                {"id": 49, "exp": 0},
+                {"id": 50, "exp": 0},
+                {"id": 61,  "exp": 0},
+                {"id": 63,  "exp": 0},
+                {"id": 69,  "exp": 0}
+              ]
+            }, {
+              "libelle": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 32, "exp": 0},
+                {"id": 33, "exp": 0},
+                {"id": 40, "exp": 0},
+                {"id": 63,  "exp": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "debut": "2006-10-01",
+      "fin": "2007-02-28",
+      "entreprise": "",
+      "statut": "Étudiant (DIIC Rennes)",
+      "projets": [
+        {
+          "nom": "Monitoring du jeu video Soldat",
+          "client": "",
+          "realisations": [
+            {
+              "libelle": "Conception et développement d’un outil de monitoring de serveur de jeu écrit en C++ et utilisant fortement le multithreading.",
+              "termesTechnique": [
+                {"id": 3,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 59, "exp": 0},
+                {"id": 67, "exp": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }, {
+      "debut": "2006-06-01",
+      "fin": "2006-09-30",
+      "entreprise": "Capgemini (Rennes)",
+      "statut": "Étudiant (DIIC)",
+      "projets": [
+        {
+          "nom": "Projet OEDIPP",
+          "client": "DAM: Direction des Affaires Maritimes (Saint Malo)",
+          "realisations": [
+            {
+              "libelle": "Développement d’une application de gestion des permis plaisance.",
+              "termesTechnique": [
+                {"id": 1,  "exp": 0},
+                {"id": 13, "exp": 0},
+                {"id": 43, "exp": 0},
+                {"id": 44, "exp": 0},
+                {"id": 50, "exp": 0},
+                {"id": 60,  "exp": 0},
+                {"id": 63,  "exp": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "projetsPersonnels": [
   ],
   "divers": [
     {
@@ -215,6 +377,12 @@
       "libelles": {
         "fr": "Scaffolding",
         "en": "Scaffolding"
+      }
+    }, {
+      "id": 18,
+      "libelles": {
+        "fr": "Protocole",
+        "en": "Protocol"
       }
     }
   ],
@@ -414,7 +582,7 @@
     }, {
       "id": 49,
       "categories": [3],
-      "libelle": "OSGI Core"
+      "libelle": "OSGI"
     }, {
       "id": 50,
       "categories": [3],
@@ -623,6 +791,26 @@
       "id": 101,
       "categories": [3],
       "libelle": "RxScala"
+    }, {
+      "id": 102,
+      "categories": [5],
+      "libelle": "Cent OS"
+    }, {
+      "id": 103,
+      "categories": [18],
+      "libelle": "TCP/IP"
+    }, {
+      "id": 104,
+      "categories": [18],
+      "libelle": "HLA"
+    }, {
+      "id": 105,
+      "categories": [3],
+      "libelle": "JFreeChart"
+    }, {
+      "id": 106,
+      "categories": [1],
+      "libelle": "XMI"
     }
   ]
 
