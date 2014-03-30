@@ -106,32 +106,48 @@
           "nom": "Compagnonnage",
           "client": "iMDEO (Tours)",
           "description": "Transfert de compétences et support au développement",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
-              "libelle": "Généralisation d'écriture de Tests Unitaires pour toute nouvelle Application basée sur le nouveau socle technique. Utilisation de JUnit et Mockito.",
-              "termesTechnique": [
+              "libelle": "Familiariser l'équipe à l'écriture de Tests Unitaireset au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
+              "termesTechniques": [
+                {"id": 51,  "exp": 0},
+                {"id": 52,  "exp": 0},
                 {"id": 114,  "exp": 0}
               ]
             }, {
-              "libelle": "Support concernant l'utilisation du nouveau socle technique. Écriture d'une documentation complète.",
-              "termesTechnique": [
+              "libelle": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
+              "termesTechniques": [
               ]
             }
           ]
         }, {
           "nom": "Rapport d'Activité",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Application destinée à générer un flux personnalisé contenant différents rapport liés à l'activité du Groupe Hervé",
+          "description": "Application destinée à générer un flux XML personnalisé contenant différents rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
+          "termesTechniques": [
+            {"id": 1,  "exp": 0},
+            {"id": 36,  "exp": 0},
+            {"id": 37,  "exp": 0},
+            {"id": 43,  "exp": 0},
+            {"id": 69,  "exp": 0}
+          ],
           "realisations": [
             {
-              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelle mise en production à chaque ajout d'un nouveau rapport.",
-              "termesTechnique": [
-                {"id": 1,  "exp": 0}
+              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport.",
+              "termesTechniques": [
+                {"id": 1,  "exp": 0},
+                {"id": 69,  "exp": 0},
+                {"id": 115,  "exp": 0},
+                {"id": 118,  "exp": 0}
               ]
             }, {
               "libelle": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
-              "termesTechnique": [
-                {"id": 1,  "exp": 0}
+              "termesTechniques": [
+                {"id": 1,  "exp": 0},
+                {"id": 21,  "exp": 0},
+                {"id": 119,  "exp": 0}
               ]
             }
           ]
@@ -139,20 +155,22 @@
           "nom": "Gestion des Réceptions Mobile",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA. Ceci étant peu pratique pour les salariés la nouvelle application mobile devra leur faire gagner le temps de la double saisie.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Support Technique de la personne en charge du développement.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Implémentation de l'authentîfication dans l'application AngularJS.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Aide au démarrage du projet avec notament l'outil de Scafolding Yeoman. Intégration de l'application cliente avec Maven et configuration du filtre CORS côté serveur.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -161,20 +179,22 @@
           "nom": "Facturation",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Refonte de l'ancienne application de facturation. La nouvelle application se basera sur le nouveau socle technique.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Conception d'une API REST. Pour faciliter le dialogue avec les applications satellites. TODO",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Développement d'un module Générique permettant aux applications satellites d'ajout des références sur une facture à n'importe quel moment dans de workflow menant à l'éditiont de la facture.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Participation à la mise en place du projet démarrage du projet",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -183,15 +203,17 @@
           "nom": "Plugins Eclipse",
           "client": "iMDEO (Tours)",
           "description": "Création de Plugins Eclipse en vue d'augmenter la productivité de l'équipe de dévoloppement.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -200,20 +222,22 @@
           "nom": "Gestion des Comptes Extranet",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Application destinée à la gestion des comptes extranet du Groupe Hervé.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Création d'un module de communication pour l'application Extranet.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Développement de l'application en mode TDD avec un autre développeur.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -221,11 +245,13 @@
         }, {
           "nom": "Conception Architecture Technique",
           "client": "iMDEO (Tours)",
-          "description": "",
+          "description": "TODO",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
-              "libelle": "",
-              "termesTechnique": [
+              "libelle": "TODO",
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -233,11 +259,13 @@
         }, {
           "nom": "Planning",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "TODO",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
-              "libelle": "",
-              "termesTechnique": [
+              "libelle": "TODO",
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -246,10 +274,12 @@
           "nom": "Conception Framework Hypermedia",
           "client": "iMDEO (Tours)",
           "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -258,10 +288,12 @@
           "nom": "Objectifs Fonctionnels",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -270,10 +302,12 @@
           "nom": "GDA: Gestion Des Achats",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -282,10 +316,12 @@
           "nom": "OSCAR",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -294,20 +330,22 @@
           "nom": "Maintenance Applicative",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Suivi de Devis ",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Outil de Chiffrage",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Gestion des Partenaires",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }
@@ -323,11 +361,13 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération. ",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 61,  "exp": 0},
@@ -339,7 +379,7 @@
               ]
             }, {
               "libelle": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 32, "exp": 0},
@@ -354,7 +394,7 @@
               ]
             }, {
               "libelle": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 35, "exp": 0},
@@ -367,7 +407,7 @@
               ]
             }, {
               "libelle": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 2,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -380,7 +420,7 @@
               ]
             }, {
               "libelle": "Conception et développement d’une infrastructure de distribution de données de simulation.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 22, "exp": 0},
@@ -407,11 +447,13 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération. ",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
-              "libelle": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (OSGi), la programmation par aspect et les annotations JAVA.",
-              "termesTechnique": [
+              "libelle": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 9,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -424,7 +466,7 @@
               ]
             }, {
               "libelle": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 32, "exp": 0},
@@ -446,11 +488,12 @@
           "nom": "Monitoring du jeu video Soldat",
           "client": "",
           "description": "Le but de ce projet réalisé au cours de la formation d'ingénieur est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer le multithreading, la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie …",
-          "description": "",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 3,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 59, "exp": 0},
@@ -471,10 +514,12 @@
           "nom": "Projet OEDIPP",
           "client": "DAM: Direction des Affaires Maritimes (Saint Malo)",
           "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités : La gestion informatisée des dossiers d'inscription. L'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques. La délivrance des titres de conduites. La gestion informatisée des centres d'examen.",
+          "termesTechniques": [
+          ],
           "realisations": [
             {
               "libelle": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
-              "termesTechnique": [
+              "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
                 {"id": 43, "exp": 0},
@@ -624,6 +669,12 @@
       "libelle": {
         "fr": "Plateforme",
         "en": "Platform"
+      }
+    }, {
+      "id": 20,
+      "libelle": {
+        "fr": "Format de donnée",
+        "en": "Data Format"
       }
     }
   ],
@@ -1099,6 +1150,18 @@
       "id": 117,
       "categories": [3],
       "libelle": "Spring Rest Template"
+    }, {
+      "id": 118,
+      "categories": [3],
+      "libelle": "StreamServe"
+    }, {
+      "id": 119,
+      "categories": [3],
+      "libelle": "XML"
+    }, {
+      "id": 120,
+      "categories": [3],
+      "libelle": "JSON"
     }
   ]
 
