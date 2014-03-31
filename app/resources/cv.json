@@ -111,14 +111,14 @@
           ],
           "realisations": [
             {
-              "libelle": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
+              "description": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
                 {"id": 51,  "exp": 0},
                 {"id": 52,  "exp": 0},
                 {"id": 114,  "exp": 0}
               ]
             }, {
-              "libelle": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
+              "description": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
               "termesTechniques": [
               ]
             }
@@ -136,7 +136,7 @@
           ],
           "realisations": [
             {
-              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
+              "description": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
               "termesTechniques": [
                 {"id": 69,  "exp": 0},
                 {"id": 115,  "exp": 0},
@@ -146,7 +146,7 @@
                 {"id": 122,  "exp": 0}
               ]
             }, {
-              "libelle": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
+              "description": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechniques": [
                 {"id": 21,  "exp": 0},
                 {"id": 57,  "exp": 0},
@@ -164,17 +164,17 @@
           ],
           "realisations": [
             {
-              "libelle": "Support Technique de la personne en charge du développement.",
+              "description": "Support Technique de la personne en charge du développement.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Implémentation de l'authentification dans l'application AngularJS.",
+              "description": "Implémentation de l'authentification dans l'application AngularJS.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
+              "description": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 4,  "exp": 0},
@@ -195,12 +195,12 @@
           ],
           "realisations": [
             {
-              "libelle": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue de la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de facade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
+              "description": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue de la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de facade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans de workflow menant à l'édition d'une facture.",
+              "description": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans de workflow menant à l'édition d'une facture.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -214,12 +214,12 @@
           ],
           "realisations": [
             {
-              "libelle": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
+              "description": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
+              "description": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -234,11 +234,11 @@
           ],
           "realisations": [
             {
-              "libelle": "Création d'un module de communication pour l'application Extranet. L'application Extranet pourra alors intéroger l'application des Comptes Extranet pour connaître le profil de chacun des individus connectés.",
+              "description": "Création d'un module de communication pour l'application Extranet. L'application Extranet pourra alors intéroger l'application des Comptes Extranet pour connaître le profil de chacun des individus connectés.",
               "termesTechniques": [
               ]
             }, {
-              "libelle": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
+              "description": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
               "termesTechniques": [
                 {"id": 124,  "exp": 0}
               ]
@@ -259,17 +259,17 @@
           ],
           "realisations": [
             {
-              "libelle": "Création d'un module AspectJ permettant l'interopérabilité des services écrits avec Hibernate 3.0 avec ceux écris avec Hibernate 4.1. En effet certaines classes n'existent plus dans Hibernate 4.1, des constantes ont été déplacées et des comportements modifiés. Le module AspectJ permet au lancement des applications d'instrumenter les classes dîtes «Legacy» pour qu'elles puissent s'adapter à leur nouvelle environnement.",
+              "description": "Création d'un module AspectJ permettant l'interopérabilité des services écrits avec Hibernate 3.0 avec ceux écris avec Hibernate 4.1. En effet certaines classes n'existent plus dans Hibernate 4.1, des constantes ont été déplacées et des comportements modifiés. Le module AspectJ permet au lancement des applications d'instrumenter les classes dîtes «Legacy» pour qu'elles puissent s'adapter à leur nouvel environnement.",
               "termesTechniques": [
 
               ]
             }, {
-              "libelle": "Création d'un module AspectJ permettant l'augmentation de la vitesse de lancement des Tests Unitaires. Dépendant de plus de 800 Mappings Hibernate «Legacy», les Tests Unitaires demandant l'exécution d'une base de données en mémoire mettent plus de 30 secondes à charger la session Hibernate. Le module prend en charge une liste de mappings «Legacy» qui sont directement impliqués dans l'exécution des tests puis le module instrumente les classes Hibernate quelle puissent ignorer toutes les références aux entités qui ne sont pas présentes dans la liste des mappings fournie en entrée. Le module est aussi capable de ne plus prendre en compte les contraintes de non-nullité pour facilité l'insertion de données lors de la phase de test.",
+              "description": "Création d'un module AspectJ permettant l'augmentation de la vitesse de lancement des Tests Unitaires. Dépendant de plus de 800 Mappings Hibernate «Legacy», les Tests Unitaires demandant l'exécution d'une base de données en mémoire mettent plus de 30 secondes à charger la session Hibernate. Le module prend en charge une liste de mappings «Legacy» qui sont directement impliqués dans l'exécution des tests puis le module instrumente les classes Hibernate pour quelle puissent ignorer toutes les références aux entités qui ne sont pas présentes dans la liste des mappings fournie en entrée. Le module est aussi capable de ne plus prendre en compte les contraintes de non-nullité pour facilité l'insertion de données lors de la phase de test.",
               "termesTechniques": [
 
               ]
             }, {
-              "libelle": "Proposition d'un nouvean socle technique basé sur le framework Spring 3.2.4. Utilisant en grande partie la configuration non pas en mode XML mais en mode Java Annoté. Cette approche permet une meilleur réutilisabilité et extensibilité des configurations par défaut. Le socle utilise aussi la bibliothèque Config de TypeSafe permettant une configuration aisée des modules composant le socle et des modules constituant les applications métier. Le socle propose aussi une façon simple de gérer les traductions de libellé basée sur un fichier de configuration de type clé-valeur en mode développement. Ce fichier permettra entre autre de générer le script SQL d'insertion en base des traductions pour les modes Recette et Production.",
+              "description": "Proposition d'un nouvean socle technique basé sur le framework Spring 3.2.4. Utilisant en grande partie la configuration non pas en mode XML mais en mode Java Annoté. Cette approche permet une meilleur réutilisabilité et extensibilité des configurations par défaut. Le socle utilise aussi la bibliothèque Config de TypeSafe permettant une configuration aisée des modules composant le socle et des modules constituant les applications métier. Le socle propose aussi une façon simple de gérer les traductions de libellé basée sur un fichier de configuration de type clé-valeur en mode développement. Ce fichier permettra entre autre de générer le script SQL d'insertion en base des traductions pour les modes Recette et Production.",
               "termesTechniques": [
 
               ]
@@ -278,14 +278,30 @@
         }, {
           "nom": "Planning",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "TODO",
+          "description": "L'objectif du projet est de fournir des outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Ces outils devront pouvoir s'exécuter au sein même d'un navigateur WEB et faisant fortement appel à des primitives graphiques, le choix du Framework Flex s'est vite imposé.",
           "termesTechniques": [
+            {"id": 1,  "exp": 0},
+            {"id": 6,  "exp": 0},
+            {"id": 16,  "exp": 0},
+            {"id": 34,  "exp": 0},
+            {"id": 41,  "exp": 0},
+            {"id": 119,  "exp": 0}
           ],
           "realisations": [
             {
-              "libelle": "TODO",
+              "description": "Planning des Chantiers",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+
+              ]
+            }, {
+              "description": "Planning des Ressources en Personels.",
+              "termesTechniques": [
+
+              ]
+            }, {
+              "description": "Planning de Gantt.",
+              "termesTechniques": [
+
               ]
             }
           ]
@@ -297,7 +313,7 @@
           ],
           "realisations": [
             {
-              "libelle": "",
+              "description": "",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -311,7 +327,7 @@
           ],
           "realisations": [
             {
-              "libelle": "",
+              "description": "",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -325,7 +341,7 @@
           ],
           "realisations": [
             {
-              "libelle": "",
+              "description": "",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -339,7 +355,7 @@
           ],
           "realisations": [
             {
-              "libelle": "",
+              "description": "",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -353,17 +369,17 @@
           ],
           "realisations": [
             {
-              "libelle": "Suivi de Devis ",
+              "description": "Suivi de Devis ",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Outil de Chiffrage",
+              "description": "Outil de Chiffrage",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Gestion des Partenaires",
+              "description": "Gestion des Partenaires",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -385,7 +401,7 @@
           ],
           "realisations": [
             {
-              "libelle": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
+              "description": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -397,7 +413,7 @@
                 {"id": 103,  "exp": 0}
               ]
             }, {
-              "libelle": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
+              "description": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -412,7 +428,7 @@
                 {"id": 102,  "exp": 0}
               ]
             }, {
-              "libelle": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
+              "description": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -425,7 +441,7 @@
                 {"id": 104,  "exp": 0}
               ]
             }, {
-              "libelle": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
+              "description": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 2,  "exp": 0},
@@ -438,7 +454,7 @@
                 {"id": 102,  "exp": 0}
               ]
             }, {
-              "libelle": "Conception et développement d’une infrastructure de distribution de données de simulation.",
+              "description": "Conception et développement d’une infrastructure de distribution de données de simulation.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -471,7 +487,7 @@
           ],
           "realisations": [
             {
-              "libelle": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
+              "description": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 9,  "exp": 0},
@@ -484,7 +500,7 @@
                 {"id": 69,  "exp": 0}
               ]
             }, {
-              "libelle": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
+              "description": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -511,7 +527,7 @@
           ],
           "realisations": [
             {
-              "libelle": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
+              "description": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechniques": [
                 {"id": 3,  "exp": 0},
                 {"id": 13, "exp": 0},
@@ -537,7 +553,7 @@
           ],
           "realisations": [
             {
-              "libelle": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
+              "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0},
                 {"id": 13, "exp": 0},
