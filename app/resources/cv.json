@@ -289,17 +289,22 @@
           ],
           "realisations": [
             {
-              "description": "Planning des Chantiers",
+              "description": "Réalisation du Planning des Chantiers. L'outil «Planning des Chantiers» va permettre de générer le planning de Gantt non pas au niveau tâche mais au niveau projet grâce aux dates de début et de fin des Chantiers fournies par le projet Gestion d'Ouvrage. L'utilisateur, via une zone de filtre pourra paramétrer le contenu du diagramme et au besoin demander une impression PDF.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Planning des Ressources en Personels.",
+              "description": "Conception d'un Planning des Ressources en Personnels. L'affectation de personnel sur les tâches du planning de Gantt permet de pouvoir restituer graphiquement et par projet le planning de chaque personne impliquée. Une personne pouvant travailler sur de multiples projets, l'outil doit être en mesure de pouvoir faire des aggrégations graphiques par projet et d'en montrer le détail si l'utilisateur le souhaite. Une zone de filtres permettra de choisir par exemple un sous-secteur ou une personne spécifique. Enfin l'utilisateur aura la possibilité d'éditer au format PDF le planning affiché à l'écran.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Planning de Gantt.",
+              "description": "Réalisation d'un Planning de Gantt. En relation avec les données provenant du projet Gestion d'Ouvrage, l'application est capable pour un projet, d'afficher un diagramme de Gantt représentant le positionnement des différentes tâches le constituant, dans le temps. L'utilisateur pourra effectuer des délacements de tâches, créer des groupes de tâches, modifier les informations relatives aux tâches avec notamment la possibilité d'affecter du personnel sur celles-ci. Des relations de précédence entre tâche pourront être spécifiées. L'utilisateur aura aussi accès pour un sous-secteur donné, à un référentiel de modèles de Groupe/Tâche communément utilisés. Autre caractéristique importante: l'utisateur pourra paramétrer différents taux de main d'œuvre pour avoir une estimation des coûts inhérents à chacune des tâches. Il pourra aussi saisir l'avancement de chacune des tâches et avoir un avancement global du projet. Enfin il pourra éditer tout ou partie du diagramme au moyen de filtres au format PDF ou Microsoft Project.",
+              "termesTechniques": [
+
+              ]
+            }, {
+              "description": "Hypermedia Over AMF Over Http. Il s'agit d'un module faisant office de reverse proxy côté serveur, développé pour s'abstenir d'utiliser les trop faibles capacités des navigateurs WEB concernant l'utilisation de certains verbes HTTP. Le module reçoit de la part du client des Objets ActionScript sérialisés grâce au protocole AMF. Ces objets permettent d'émuler le protocole HTTP du côté du client. Le reverse proxy se charge de transcrire ces objets en appels HTTP réels vers un serveur de WebServices REST. Cette technique apporte un plus non négligeable: la compression apportée par le protocole AMF dans le sens Client -> Serveur.",
               "termesTechniques": [
 
               ]
@@ -308,12 +313,17 @@
         }, {
           "nom": "Conception Framework Hypermedia",
           "client": "iMDEO (Tours)",
-          "description": "",
+          "description": "Dans l'optique de futurs projets à réaliser avec la technologie Flex, ce Framework ayant pour base Spring et Jersey sera capable de gérer de façon générique des ressources et les actions communément associées (Création, Lecture, Mise à Jour, Suppression, Recherche Générique)",
           "termesTechniques": [
           ],
           "realisations": [
             {
-              "description": "",
+              "description": "Conception d'un système de Recherche Générique à base d'Annotations Java. L'idée est de pouvoir facilement générer des résultats de recherche pour n'importe quelle resource, avec un format de représentation commun, ceci pour en faciliter l'affichage côté client.",
+              "termesTechniques": [
+                {"id": 1,  "exp": 0}
+              ]
+            }, {
+              "description": "Réflexion sur l'implémentation d'API REST embarquant potentiellement des liens dans les ressources retournées par le serveur. L'idée est de fournir des Classes de base Abstrayant le concept de Ressource et les relations (liens + semantique de relation) vers les autres ressources qui peuvent en découler. Une resoure est alors considérée comme un Hypermedia tout comme une page HTML l'est.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -716,6 +726,12 @@
       "libelle": {
         "fr": "Spécification",
         "en": "Specification"
+      }
+    }, {
+      "id": 22,
+      "libelle": {
+        "fr": "Ressource Documentaire",
+        "en": "Resource"
       }
     }
   ],
@@ -1227,6 +1243,18 @@
       "id": 126,
       "categories": ["3"],
       "libelle": "Config"
+    }, {
+      "id": 127,
+      "categories": ["3"],
+      "libelle": "Blaze DS"
+    }, {
+      "id": 128,
+      "categories": ["3"],
+      "libelle": "Parsley"
+    }, {
+      "id": 129,
+      "categories": ["3"],
+      "libelle": "Spicelib"
     }
   ]
 
