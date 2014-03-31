@@ -30,7 +30,7 @@
         "en": "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
       },
       "diplome": {
-        "fr": "Accompli (AVEC DISTINCTION)",
+        "fr": "Accompli (AVEC MENTION)",
         "en": "Accomplishment (WITH DISTINCTION)"
       }
     }, {
@@ -45,7 +45,7 @@
         "en": "This advanced undergraduate programming course covers the principles of functional programming using Scala, including the use of functions as values, recursion, immutability, pattern matching, higher-order functions and collections, and lazy evaluation."
       },
       "diplome": {
-        "fr": "Accompli (AVEC DISTINCTION)",
+        "fr": "Accompli (AVEC MENTION)",
         "en": "Accomplishment (WITH DISTINCTION)"
       }
     }, {
@@ -100,17 +100,18 @@
       "debut": "2009-04-01",
       "fin": "",
       "entreprise": "Freelance (Entreprise Individuelle)",
-      "statut": "Ingénieur Conseil en systèmes et logiciels informatiques",
+      "statut": "Ingénieur Conseil en Systèmes et Logiciels Informatiques",
       "projets": [
         {
           "nom": "Compagnonnage",
           "client": "iMDEO (Tours)",
-          "description": "Transfert de compétences et support au développement",
+          "description": "Transfert de compétences et support au développement.",
           "termesTechniques": [
+            {"id": 1,  "exp": 0}
           ],
           "realisations": [
             {
-              "libelle": "Familiariser l'équipe à l'écriture de Tests Unitaireset au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
+              "libelle": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
                 {"id": 51,  "exp": 0},
                 {"id": 52,  "exp": 0},
@@ -125,7 +126,7 @@
         }, {
           "nom": "Rapport d'Activité",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Application destinée à générer un flux XML personnalisé contenant différents rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
+          "description": "Application destinée à générer un flux XML personnalisé contenant différents choix de rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
           "termesTechniques": [
             {"id": 1,  "exp": 0},
             {"id": 36,  "exp": 0},
@@ -135,18 +136,20 @@
           ],
           "realisations": [
             {
-              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport.",
+              "libelle": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
                 {"id": 69,  "exp": 0},
                 {"id": 115,  "exp": 0},
-                {"id": 118,  "exp": 0}
+                {"id": 116,  "exp": 0},
+                {"id": 118,  "exp": 0},
+                {"id": 121,  "exp": 0},
+                {"id": 122,  "exp": 0}
               ]
             }, {
               "libelle": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
                 {"id": 21,  "exp": 0},
+                {"id": 57,  "exp": 0},
                 {"id": 119,  "exp": 0}
               ]
             }
@@ -154,8 +157,10 @@
         }, {
           "nom": "Gestion des Réceptions Mobile",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA. Ceci étant peu pratique pour les salariés la nouvelle application mobile devra leur faire gagner le temps de la double saisie.",
+          "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA. Ceci étant peu pratique pour les salariés, la nouvelle application mobile devra leur faire gagner le temps de la double saisie.",
           "termesTechniques": [
+            {"id": 78,  "exp": 0},
+            {"id": 82,  "exp": 0}
           ],
           "realisations": [
             {
@@ -164,14 +169,21 @@
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Implémentation de l'authentîfication dans l'application AngularJS.",
+              "libelle": "Implémentation de l'authentification dans l'application AngularJS.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Aide au démarrage du projet avec notament l'outil de Scafolding Yeoman. Intégration de l'application cliente avec Maven et configuration du filtre CORS côté serveur.",
+              "libelle": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                {"id": 1,  "exp": 0},
+                {"id": 4,  "exp": 0},
+                {"id": 37,  "exp": 0},
+                {"id": 76,  "exp": 0},
+                {"id": 77,  "exp": 0},
+                {"id": 86,  "exp": 0},
+                {"id": 87,  "exp": 0},
+                {"id": 120,  "exp": 0}
               ]
             }
           ]
@@ -183,17 +195,12 @@
           ],
           "realisations": [
             {
-              "libelle": "Conception d'une API REST. Pour faciliter le dialogue avec les applications satellites. TODO",
+              "libelle": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue de la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de facade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "libelle": "Développement d'un module Générique permettant aux applications satellites d'ajout des références sur une facture à n'importe quel moment dans de workflow menant à l'éditiont de la facture.",
-              "termesTechniques": [
-                {"id": 1,  "exp": 0}
-              ]
-            }, {
-              "libelle": "Participation à la mise en place du projet démarrage du projet",
+              "libelle": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans de workflow menant à l'édition d'une facture.",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -202,7 +209,7 @@
         }, {
           "nom": "Plugins Eclipse",
           "client": "iMDEO (Tours)",
-          "description": "Création de Plugins Eclipse en vue d'augmenter la productivité de l'équipe de dévoloppement.",
+          "description": "Création de Plugins Eclipse pour augmenter la productivité de l'équipe de développement.",
           "termesTechniques": [
           ],
           "realisations": [
@@ -221,38 +228,50 @@
         }, {
           "nom": "Gestion des Comptes Extranet",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Application destinée à la gestion des comptes extranet du Groupe Hervé.",
+          "description": "Application destinée à la gestion des Comptes Extranet du Groupe Hervé.",
           "termesTechniques": [
+            {"id": 1,  "exp": 0}
           ],
           "realisations": [
             {
-              "libelle": "Création d'un module de communication pour l'application Extranet.",
+              "libelle": "Création d'un module de communication pour l'application Extranet. L'application Extranet pourra alors intéroger l'application des Comptes Extranet pour connaître le profil de chacun des individus connectés.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
               ]
             }, {
               "libelle": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                {"id": 124,  "exp": 0}
               ]
             }, {
               "libelle": "Développement de l'application en mode TDD avec un autre développeur.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                {"id": 116,  "exp": 0}
               ]
             }
           ]
         }, {
           "nom": "Conception Architecture Technique",
           "client": "iMDEO (Tours)",
-          "description": "TODO",
+          "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans de Système d'Information (Plus de 800 Mappings HBM existant).",
           "termesTechniques": [
+            {"id": 1,  "exp": 0},
+            {"id": 9,  "exp": 0}
           ],
           "realisations": [
             {
-              "libelle": "TODO",
+              "libelle": "Création d'un module AspectJ permettant l'interopérabilité des services écrits avec Hibernate 3.0 avec ceux écris avec Hibernate 4.1. En effet certaines classes n'existent plus dans Hibernate 4.1, des constantes ont été déplacées et des comportements modifiés. Le module AspectJ permet au lancement des applications d'instrumenter les classes dîtes «Legacy» pour qu'elles puissent s'adapter à leur nouvelle environnement.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+
+              ]
+            }, {
+              "libelle": "Création d'un module AspectJ permettant l'augmentation de la vitesse de lancement des Tests Unitaires. Dépendant de plus de 800 Mappings Hibernate «Legacy», les Tests Unitaires demandant l'exécution d'une base de données en mémoire mettent plus de 30 secondes à charger la session Hibernate. Le module prend en charge une liste de mappings «Legacy» qui sont directement impliqués dans l'exécution des tests puis le module instrumente les classes Hibernate quelle puissent ignorer toutes les références aux entités qui ne sont pas présentes dans la liste des mappings fournie en entrée. Le module est aussi capable de ne plus prendre en compte les contraintes de non-nullité pour facilité l'insertion de données lors de la phase de test.",
+              "termesTechniques": [
+
+              ]
+            }, {
+              "libelle": "Proposition d'un nouvean socle technique basé sur le framework Spring 3.2.4. Utilisant en grande partie la configuration non pas en mode XML mais en mode Java Annoté. Cette approche permet une meilleur réutilisabilité et extensibilité des configurations par défaut. Le socle utilise aussi la bibliothèque Config de TypeSafe permettant une configuration aisée des modules composant le socle et des modules constituant les applications métier. Le socle propose aussi une façon simple de gérer les traductions de libellé basée sur un fichier de configuration de type clé-valeur en mode développement. Ce fichier permettra entre autre de générer le script SQL d'insertion en base des traductions pour les modes Recette et Production.",
+              "termesTechniques": [
+
               ]
             }
           ]
@@ -676,6 +695,12 @@
         "fr": "Format de donnée",
         "en": "Data Format"
       }
+    }, {
+      "id": 21,
+      "libelle": {
+        "fr": "Spécification",
+        "en": "Specification"
+      }
     }
   ],
   "termesTechniques": [
@@ -757,7 +782,7 @@
       "libelle": "JNA"
     }, {
       "id": 20,
-      "categories": [3],
+      "categories": [3, 21],
       "libelle": "JAX-RS"
     }, {
       "id": 21,
@@ -873,7 +898,7 @@
       "libelle": "DWGDirect"
     }, {
       "id": 49,
-      "categories": [3],
+      "categories": [3, 21],
       "libelle": "OSGI"
     }, {
       "id": 50,
@@ -1162,6 +1187,30 @@
       "id": 120,
       "categories": [3],
       "libelle": "JSON"
+    }, {
+      "id": 121,
+      "categories": [3],
+      "libelle": "Guava"
+    }, {
+      "id": 122,
+      "categories": [21],
+      "libelle": "JSR 223"
+    }, {
+      "id": 123,
+      "categories": [3],
+      "libelle": "Spring Security"
+    }, {
+      "id": 124,
+      "categories": ["13"],
+      "libelle": "Asynchronisme"
+    }, {
+      "id": 125,
+      "categories": ["13"],
+      "libelle": "Interopérabilité"
+    }, {
+      "id": 126,
+      "categories": ["3"],
+      "libelle": "Config"
     }
   ]
 
