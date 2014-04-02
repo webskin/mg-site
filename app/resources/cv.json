@@ -107,7 +107,7 @@
           "client": "iMDEO (Tours)",
           "description": "Prototypage d'un outil de génération de code pour la création d'applications de gestion de référentiels.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
@@ -121,15 +121,15 @@
           "client": "iMDEO (Tours)",
           "description": "Transfert de compétences et support au développement.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
               "description": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
-                {"id": 51,  "exp": 0},
-                {"id": 52,  "exp": 0},
-                {"id": 114,  "exp": 0}
+                  1,
+                  2,
+                  4
               ]
             }, {
               "description": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
@@ -142,29 +142,29 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Application destinée à générer un flux XML personnalisé, contenant différents choix de rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0},
-            {"id": 36,  "exp": 0},
-            {"id": 37,  "exp": 0},
-            {"id": 43,  "exp": 0},
-            {"id": 69,  "exp": 0}
+              1,
+              36,
+              7,
+              43,
+              9
           ],
           "realisations": [
             {
               "description": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
               "termesTechniques": [
-                {"id": 69,  "exp": 0},
-                {"id": 115,  "exp": 0},
-                {"id": 116,  "exp": 0},
-                {"id": 118,  "exp": 0},
-                {"id": 121,  "exp": 0},
-                {"id": 122,  "exp": 0}
+                  69,
+                  115,
+                  116,
+                  118,
+                  121,
+                  122
               ]
             }, {
               "description": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechniques": [
-                {"id": 21,  "exp": 0},
-                {"id": 57,  "exp": 0},
-                {"id": 119,  "exp": 0}
+                  21,
+                  57,
+                  119
               ]
             }
           ]
@@ -173,31 +173,31 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA (Eclipse RCP). Ceci étant peu pratique pour les salariés, la nouvelle application mobile doit leur faire gagner le temps de la double saisie.",
           "termesTechniques": [
-            {"id": 78,  "exp": 0},
-            {"id": 82,  "exp": 0}
+              78,
+              82
           ],
           "realisations": [
             {
               "description": "Support Technique de la personne en charge du développement.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Implémentation de l'authentification dans l'application AngularJS.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 4,  "exp": 0},
-                {"id": 37,  "exp": 0},
-                {"id": 76,  "exp": 0},
-                {"id": 77,  "exp": 0},
-                {"id": 86,  "exp": 0},
-                {"id": 87,  "exp": 0},
-                {"id": 120,  "exp": 0}
+                  1,
+                  4,
+                  37,
+                  76,
+                  77,
+                  86,
+                  87,
+                  120
               ]
             }
           ]
@@ -211,12 +211,12 @@
             {
               "description": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue entre la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de façade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans le workflow menant à l'édition d'une facture.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }
           ]
@@ -230,12 +230,12 @@
             {
               "description": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }
           ]
@@ -244,7 +244,7 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Application destinée à la gestion des Comptes Extranet du Groupe Hervé.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
@@ -254,12 +254,12 @@
             }, {
               "description": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
               "termesTechniques": [
-                {"id": 124,  "exp": 0}
+                  124
               ]
             }, {
               "libelle": "Développement de l'application en mode TDD avec un autre développeur.",
               "termesTechniques": [
-                {"id": 116,  "exp": 0}
+                  116
               ]
             }
           ]
@@ -268,7 +268,7 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Il s'agit d'un serveur exposant pour certains client du Groupe Hervé des services REST.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
@@ -288,8 +288,8 @@
           "client": "iMDEO (Tours)",
           "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le Système d'Information (Plus de 800 Mappings HBM existants).",
           "termesTechniques": [
-            {"id": 1,  "exp": 0},
-            {"id": 9,  "exp": 0}
+              1,
+              9
           ],
           "realisations": [
             {
@@ -314,12 +314,12 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'objectif du projet est de fournir des outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Ces outils devront pouvoir s'exécuter au sein même d'un navigateur WEB. Ils font fortement appel à des primitives graphiques, le choix du Framework Flex s'est donc vite imposé.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0},
-            {"id": 6,  "exp": 0},
-            {"id": 16,  "exp": 0},
-            {"id": 34,  "exp": 0},
-            {"id": 41,  "exp": 0},
-            {"id": 119,  "exp": 0}
+              1,
+              6,
+              16,
+              34,
+              41,
+              119
           ],
           "realisations": [
             {
@@ -354,12 +354,12 @@
             {
               "description": "Conception d'un système de Recherche Générique à base d'Annotations Java. L'idée est de pouvoir facilement générer des résultats de recherche pour n'importe quelle resource, avec un format de représentation commun, ceci pour en faciliter l'affichage côté client.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Réflexion sur l'implémentation d'API REST embarquant potentiellement des liens dans les ressources retournées par le serveur. L'idée est de fournir des Classes de base Abstrayant le concept de Ressource et les relations (liens + semantique de relation) vers les autres ressources qui peuvent en découler. Une resoure est alors considérée comme un Hypermedia.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }
           ]
@@ -368,9 +368,9 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'application «Objectifs Fonctionnels» permet de définir chaque année les objectifs fonctionnels que veulent atteindre les différentes structures du groupe.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0},
-            {"id": 91,  "exp": 0},
-            {"id": 130,  "exp": 0}
+              1,
+              91,
+              130
           ],
           "realisations": [
             {
@@ -385,7 +385,7 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des Articles. Tout ceci dans un environnement Eclipse RCP  pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
@@ -450,7 +450,7 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment en particulier. Utilisé par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF par exemple. Les utilisateurs peuvent aussi configurer des automates, concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD», d'exporter au format Excel différents bilans de puissance, de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.",
           "termesTechniques": [
-            {"id": 1,  "exp": 0}
+              1
           ],
           "realisations": [
             {
@@ -505,17 +505,17 @@
             {
               "description": "Maintenance de l'application « Suivi de Devis ».",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Maintenance de l'application «Outil de Chiffrage ».",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }, {
               "description": "Maintenance de l'application « Gestion des Partenaires ».",
               "termesTechniques": [
-                {"id": 1,  "exp": 0}
+                  1
               ]
             }
           ]
@@ -537,68 +537,68 @@
             {
               "description": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 71,  "exp": 0},
-                {"id": 82,  "exp": 0},
-                {"id": 102,  "exp": 0},
-                {"id": 103,  "exp": 0}
+                  1,
+                  13,
+                  61,
+                  63,
+                  71,
+                  82,
+                  102,
+                  103
               ]
             }, {
               "description": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 32, "exp": 0},
-                {"id": 33, "exp": 0},
-                {"id": 35, "exp": 0},
-                {"id": 40, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 71,  "exp": 0},
-                {"id": 82,  "exp": 0},
-                {"id": 102,  "exp": 0}
+                  1,
+                  13,
+                  32,
+                  33,
+                  35,
+                  40,
+                  61,
+                  63,
+                  71,
+                  82,
+                  102
               ]
             }, {
               "description": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 35, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 71,  "exp": 0},
-                {"id": 82,  "exp": 0},
-                {"id": 102,  "exp": 0},
-                {"id": 104,  "exp": 0}
+                  1,
+                  13,
+                  35,
+                  61,
+                  63,
+                  71,
+                  82,
+                  102,
+                  104
               ]
             }, {
               "description": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 2,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 18, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 71,  "exp": 0},
-                {"id": 82,  "exp": 0},
-                {"id": 102,  "exp": 0}
+                  1,
+                  2,
+                  13,
+                  18,
+                  61,
+                  63,
+                  71,
+                  82,
+                  102
               ]
             }, {
               "description": "Conception et développement d’une infrastructure de distribution de données de simulation.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 22, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 69,  "exp": 0},
-                {"id": 71,  "exp": 0},
-                {"id": 82,  "exp": 0},
-                {"id": 102,  "exp": 0}
+                  1,
+                  13,
+                  22,
+                  61,
+                  63,
+                  69,
+                  71,
+                  82,
+                  102
               ]
             }
           ]
@@ -623,25 +623,25 @@
             {
               "description": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 9,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 40, "exp": 0},
-                {"id": 49, "exp": 0},
-                {"id": 50, "exp": 0},
-                {"id": 61,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 69,  "exp": 0}
+                  1,
+                  9,
+                  13,
+                  40,
+                  49,
+                  50,
+                  61,
+                  63,
+                  69
               ]
             }, {
               "description": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 32, "exp": 0},
-                {"id": 33, "exp": 0},
-                {"id": 40, "exp": 0},
-                {"id": 63,  "exp": 0}
+                  1,
+                  13,
+                  32,
+                  33,
+                  40,
+                  63
               ]
             }
           ]
@@ -663,11 +663,11 @@
             {
               "description": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechniques": [
-                {"id": 3,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 59, "exp": 0},
-                {"id": 67, "exp": 0},
-                {"id": 109, "exp": 0}
+                  3,
+                  13,
+                  59,
+                  67,
+                  109
               ]
             }
           ]
@@ -689,15 +689,15 @@
             {
               "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechniques": [
-                {"id": 1,  "exp": 0},
-                {"id": 13, "exp": 0},
-                {"id": 43, "exp": 0},
-                {"id": 44, "exp": 0},
-                {"id": 50, "exp": 0},
-                {"id": 60,  "exp": 0},
-                {"id": 63,  "exp": 0},
-                {"id": 78,  "exp": 0},
-                {"id": 108,  "exp": 0}
+                  1,
+                  13,
+                  43,
+                  44,
+                  50,
+                  60,
+                  63,
+                  78,
+                  108
               ]
             }
           ]
