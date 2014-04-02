@@ -10,6 +10,7 @@ mgApp = angular.module('mgApp', [
 mgApp.constant('_', window._);
 mgApp.constant('URI', window.URI);
 mgApp.constant('URITemplate', window.URITemplate);
+mgApp.constant('moment', window.moment);
 
 
 mgApp.config [

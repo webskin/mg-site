@@ -7,8 +7,37 @@ mgApp.factory 'mg.CVModels', [
   (_) ->
 
     class CV
-      constructor: () ->
-        @categoriesTermeTechnique = []
+      constructor: (
+        @informationsGenerales
+        @formations
+        @experiencesProfessionnelles
+        @stagesEtProjetsFinEtude
+      ) ->
+        
+    class ExperienceProfessionnelle
+      constructor: ({
+        @debut
+        @fin
+        @entreprise
+        @statut
+      }) ->
+        @projets = []
+
+    class Projet
+      constructor: ({
+        @nom
+        @client
+        @description
+      }) ->
+        @termesTechniques = []
+        @realisations = []
+
+    class Realisation
+      constructor: ({
+        @description
+      }) ->
+        @termesTechniques = []
+        
 
     class CategorieTermeTechnique
       constructor: ({@id, @libelle}) ->
@@ -22,6 +51,9 @@ mgApp.factory 'mg.CVModels', [
 
     {
       CV
+      ExperienceProfessionnelle
+      Projet
+      Realisation
       TermeTechnique
       CategorieTermeTechnique
     }

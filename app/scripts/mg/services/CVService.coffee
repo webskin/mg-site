@@ -16,18 +16,18 @@ mgApp.factory 'mg.CVService', [
       get: () ->
 
         if @cachedCVResponse
-
-          deferred = $q.defer()
-          deferred.resolve @cachedCVResponse
-          deferred.promise
-
+          $q.when(@cachedCVResponse)
         else
+          successDeffered = $q.defer()
 
-          $http.get('/resources/cv.json').then(
-            (success) =>
-              success.data = mappings.cvDeserializer success.data
+          $http.get('/resources/cv.json').then (success) =>
+            mappings.cvDeserializer(success.data).then (cv) =>
+              success.data = cv
               @cachedCVResponse = success
-          )
+              successDeffered.resolve success
+
+
+          successDeffered.promise
 
 
     # on retourne le singleton
