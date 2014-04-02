@@ -26,12 +26,12 @@
         "en": "Coursera : Principles of Reactive Programming"
       },
       "description": {
-        "fr": "Ce cours avancé enseigne les principes de la programmation réactive en utilisant Scala: comment écrire un logiciel composable, régit par des événements, s'adaptant aux montées de charge, sachant faire face aux défaillances. Les concepts étudiés incluent les monades, les futures, les observables et les acteurs.",
-        "en": "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
+        "fr":  "Ce cours avancé enseigne les principes de la programmation réactive en utilisant Scala: comment écrire un logiciel composable, régit par des événements, s'adaptant aux montées de charge, sachant faire face aux défaillances. Les concepts étudiés incluent les monades, les futures, les observables et les acteurs.",
+        "en":  "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
       },
       "diplome": {
-        "fr": "Accompli (AVEC MENTION)",
-        "en": "Accomplishment (WITH DISTINCTION)"
+        "fr":  "Accompli (AVEC MENTION)",
+        "en":  "Accomplishment (WITH DISTINCTION)"
       }
     }, {
       "debut": "2012-09-01",
@@ -45,8 +45,8 @@
         "en": "This advanced undergraduate programming course covers the principles of functional programming using Scala, including the use of functions as values, recursion, immutability, pattern matching, higher-order functions and collections, and lazy evaluation."
       },
       "diplome": {
-        "fr": "Accompli (AVEC MENTION)",
-        "en": "Accomplishment (WITH DISTINCTION)"
+        "fr":  "Accompli (AVEC MENTION)",
+        "en":  "Accomplishment (WITH DISTINCTION)"
       }
     }, {
       "debut": "2004-09-01",
@@ -381,15 +381,15 @@
             }
           ]
         }, {
-          "nom": "GDA: Gestion Des Achats",
+          "nom": "GDA:  Gestion Des Achats",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des Articles. Tout ceci dans un environnement Eclipse RCP pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
+          "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des Articles. Tout ceci dans un environnement Eclipse RCP  pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
           "termesTechniques": [
             {"id": 1,  "exp": 0}
           ],
           "realisations": [
             {
-              "description": "Mise en Cache des Projets. Certains projets contiennent plus de 30 000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour le mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les selections par lot (batch-size).",
+              "description": "Mise en Cache des Projets. Certains projets contiennent plus de 30  000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour le mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les selections par lot (batch-size).",
               "termesTechniques": [
 
               ]
@@ -446,7 +446,7 @@
             }
           ]
         }, {
-          "nom": "OSCAR: Outil Simplifié de Conception d'Automatisme et de Régulation",
+          "nom": "OSCAR:  Outil Simplifié de Conception d'Automatisme et de Régulation",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment en particulier. Utilisé par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF par exemple. Les utilisateurs peuvent aussi configurer des automates, concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD», d'exporter au format Excel différents bilans de puissance, de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.",
           "termesTechniques": [
@@ -484,7 +484,7 @@
 
               ]
             }, {
-              "description": "Implémentation du module de Gestion des Alimentations. En fonction des caractéristiques des alimentations (Tri Phasé, Mono Phasé …), différents type de puissances doivent être calculées (kW, kVAR, kVA). Pour une intallation donnée, plusieurs alimentations peuvent être définies. Les éléments de l'installation sont connectables aux alimentations et l'application signal à l'utilisateur toute incohérence comme par exemple: connecter un élément sur une alimentation incompatible.",
+              "description": "Implémentation du module de Gestion des Alimentations. En fonction des caractéristiques des alimentations (Tri Phasé, Mono Phasé …), différents type de puissances doivent être calculées (kW, kVAR, kVA). Pour une intallation donnée, plusieurs alimentations peuvent être définies. Les éléments de l'installation sont connectables aux alimentations et l'application signal à l'utilisateur toute incohérence comme par exemple:  connecter un élément sur une alimentation incompatible.",
               "termesTechniques": [
 
               ]
@@ -681,8 +681,8 @@
       "projets": [
         {
           "nom": "Projet OEDIPP",
-          "client": "DAM: Direction des Affaires Maritimes (Saint Malo)",
-          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités : La gestion informatisée des dossiers d'inscription. L'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques. La délivrance des titres de conduites. La gestion informatisée des centres d'examen.",
+          "client": "DAM:  Direction des Affaires Maritimes (Saint Malo)",
+          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités  : La gestion informatisée des dossiers d'inscription. L'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques. La délivrance des titres de conduites. La gestion informatisée des centres d'examen.",
           "termesTechniques": [
           ],
           "realisations": [
@@ -708,19 +708,31 @@
   "projetsPersonnels": [
     {
       "libelle": "Suivi de conférence",
-      "valeur": ["Breizh JUG", "Tours JUG", "Scala IO (Paris)"]
+      "valeur":  ["Breizh JUG", "Tours JUG", "Scala IO (Paris)"]
+    }, {
+      "libelle": "Développement",
+      "valeur":  ["CV en ligne avec Angular"]
+    }, {
+      "libelle": "Développement d'un outil JS  c'était avant que grunt existe",
+      "valeur":  ["CV en ligne avec Angular"]
+    }, {
+      "libelle": "Développement timeline",
+      "valeur":  ["CV en ligne avec Angular"]
     }
   ],
   "divers": [
     {
       "libelle": "Sport",
-      "valeur": ["Roller", "Squash"]
+      "valeur":  ["Roller", "Squash"]
     }, {
       "libelle": "Musique",
-      "valeur": ["Flûte traversière irlandaise", "Guitare"]
+      "valeur":  ["Flûte traversière irlandaise", "Guitare"]
     }, {
       "libelle": "Lecture",
-      "valeur": ["The Lean Startup"]
+      "valeur":  ["The Lean Startup"]
+    }, {
+      "libelle": "Pratique",
+      "valeur":  ["Clavier Type Matrix BÉPO"]
     }
   ],
   "categoriesTermeTechnique": [
