@@ -264,6 +264,26 @@
             }
           ]
         }, {
+          "nom": "WSGroupe",
+          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "description": "Il s'agit d'un serveur exposant pour certains client du Groupe Hervé des services REST.",
+          "termesTechniques": [
+            {"id": 1,  "exp": 0}
+          ],
+          "realisations": [
+            {
+              "description": "Développement du module Satisfaction.",
+              "termesTechniques": [
+
+              ]
+            }, {
+              "description": "Développement du module Demande d'Intervention.",
+              "termesTechniques": [
+
+              ]
+            }
+          ]
+        }, {
           "nom": "Conception Architecture Technique",
           "client": "iMDEO (Tours)",
           "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le Système d'Information (Plus de 800 Mappings HBM existants).",
@@ -409,7 +429,7 @@
 
               ]
             }, {
-              "description": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception. L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour, par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulle expliquant les contraintes fontionnelles qui empêche de déposer un élément sur le nœud d'un arbre.",
+              "description": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception. L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulle expliquant les contraintes fontionnelles qui empêche de déposer un élément sur le nœud d'un arbre.",
               "termesTechniques": [
 
               ]
@@ -428,53 +448,48 @@
         }, {
           "nom": "OSCAR: Outil Simplifié de Conception d'Automatisme et de Régulation",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment en particulier. Utilisé par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF par exemple. Les utilisateurs peuvent aussi configurer des automates, concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD», d'exporter au format Excel différents bilans de puissance, de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.",
           "termesTechniques": [
             {"id": 1,  "exp": 0}
           ],
           "realisations": [
             {
-              "description": "",
+              "description": "Édition PDF de la spécification. La prévisualisation XHTML peut être éditée au format PDF via une transformation XSLT vers FOP.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Prévisualisation de la Spécification au format XHTML. Chaque Bâtiment/Niveau/Installation/Système dispose d'une description issue d'un référentiel de document au format DOCX de Microsoft. Le module est capable d'extraire la structure de chaque document, de la convertir en HTML et de fusionner l'ensemble de ses documents en une page de prévisualisation. Des marqueurs sont disposés en marge de la page pour indiquer les endroits où de la documentation de système manque. L'utilisateur peut cliquer sur des liens d'accès rapide permettant d'éditer dans un module WISIWIG dédié les sous-parties de la spécification.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Module d'export des Bilans de Puissance au format Excel. L'utilisateur a la possibilité d'exporter en fonction du nœud où il se trouve, les bilans de puissance issus des informations électriques des systèmes et des alimentations fournies.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Conception d'un module d'édition graphique pour les Systèmes et leurs Élements. Les systèmes provenant du référentiel peuvent être associés à des fichiers AutoCAD. Le module est capable d'analiser ces fichiers pour les inclures dans le diagramme global de l'installation. L'utilisateur dispose d'une palette de Systèmes provenant du référentiel, pouvant être glissés puis déposés sur le graphique. Chacun des systèmes peut être explosé pour pouvoir éditer chacun des sous éléments. Les éditions possibles vont de l'ajout de primitive comme des lignes, rectangle, ellipse, le choix des couleurs, des opérations de transformation (rotation, mirroir horizontal/vertical, la position et la taille), une fois les éléments modifiés, l'utilisateur les refusionner en une seule image de Système. L'utilisateur a également la possibilité d'ajouter des notes sur le schéma de l'installation.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Module de conception des Systèmes et de leurs Éléments. Un référentiel permet de créer simplement des instances de Systèmes, l'utilistateur peut aussi créer des systèmes de toutes pièces. Certains éléments de ces systèmes peuvent comporter des informations relatives à leur puissance électrique. Ces informations seront utiles pour établir les différents bilans de puissance. Les élément décrivent aussi des entrées/sorties analogiques/numériques permettant de dimensionner le besoin en automates.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Configuration des automates pour une installation donnée.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "",
+              "description": "Implémentation du module de Gestion des Alimentations. En fonction des caractéristiques des alimentations (Tri Phasé, Mono Phasé …), différents type de puissances doivent être calculées (kW, kVAR, kVA). Pour une intallation donnée, plusieurs alimentations peuvent être définies. Les éléments de l'installation sont connectables aux alimentations et l'application signal à l'utilisateur toute incohérence comme par exemple: connecter un élément sur une alimentation incompatible.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Refonte application oscar SWT vers Eclipse RCP",
-              "termesTechniques": [
-
-              ]
-            }, {
-              "description": "Construction socle RCP compatible HTIC et Java Web Start",
+              "description": "Construction socle RCP compatible avec le framework interne HTIC et Java Web Start",
               "termesTechniques": [
 
               ]
@@ -488,17 +503,17 @@
           ],
           "realisations": [
             {
-              "description": "Suivi de Devis ",
+              "description": "Maintenance de l'application « Suivi de Devis ».",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "description": "Outil de Chiffrage",
+              "description": "Maintenance de l'application «Outil de Chiffrage ».",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
             }, {
-              "description": "Gestion des Partenaires",
+              "description": "Maintenance de l'application « Gestion des Partenaires ».",
               "termesTechniques": [
                 {"id": 1,  "exp": 0}
               ]
@@ -1396,6 +1411,10 @@
       "id": 137,
       "categories": ["3"],
       "libelle": "FreeMarker"
+    }, {
+      "id": 138,
+      "categories": ["3"],
+      "libelle": "FOP"
     }
   ]
 
