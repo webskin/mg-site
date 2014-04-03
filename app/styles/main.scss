@@ -1,6 +1,63 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Merriweather", "Times New Roman", Times, serif !default;
 
-@import 'sass-bootstrap/lib/bootstrap';
+
+$font-size-base: 16px;
+$icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/";
+
+@import "bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+
+h1.title {
+  color: #333333;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2.subtitle {
+  color: #444444;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+h3.subsubtitle {
+  color: #6e6e6e;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p.periode {
+  margin-top: 3em;
+  color: #999999;
+  letter-spacing: 0.3em;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p.description {
+  font-family: $font-family-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+p.mention {
+  font-family: $font-family-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+
+p.realisation {
+  font-family: $font-family-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #505050;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 5px #7e7e7e solid;
+}
+
 
 .browsehappy {
     margin: 0.2em 0;

@@ -4,8 +4,9 @@
     "prenom": "Mickaël",
     "statut": "Freelance en Entreprise Individuelle",
     "naissance": "1984-10-23",
-    "codePostal": "35700",
     "adresse": "20 bis rue du Moulin",
+    "codePostal": "35700",
+    "ville": "Joué Lès Tours",
     "telephones": {
       "mobile": "07 60 05 04 06",
       "fixe": "02 34 37 79 27"
@@ -15,7 +16,7 @@
     "siret": "513 133 801 00037",
     "tva": "FR 66 513 133 801",
     "ape": "6202A",
-    "autre" : ["Permis B"]
+    "autres" : ["Permis B"]
   },
   "formations": [
     {
@@ -30,8 +31,8 @@
         "en":  "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
       },
       "diplome": {
-        "fr":  "Accompli (AVEC MENTION)",
-        "en":  "Accomplishment (WITH DISTINCTION)"
+        "fr":  "Accompli (avec mention)",
+        "en":  "Accomplishment (with distinction)"
       }
     }, {
       "debut": "2012-09-01",
@@ -45,8 +46,8 @@
         "en": "This advanced undergraduate programming course covers the principles of functional programming using Scala, including the use of functions as values, recursion, immutability, pattern matching, higher-order functions and collections, and lazy evaluation."
       },
       "diplome": {
-        "fr":  "Accompli (AVEC MENTION)",
-        "en":  "Accomplishment (WITH DISTINCTION)"
+        "fr":  "Accompli (avec mention)",
+        "en":  "Accomplishment (with distinction)"
       }
     }, {
       "debut": "2004-09-01",
@@ -98,7 +99,7 @@
   "experiencesProfessionnelles": [
     {
       "debut": "2009-04-01",
-      "fin": "",
+      "fin": "2014-01-31",
       "entreprise": "Freelance (Entreprise Individuelle)",
       "statut": "Ingénieur Conseil en Systèmes et Logiciels Informatiques",
       "projets": [

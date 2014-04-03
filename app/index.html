@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Merriweather:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- build:css styles/vendor.css -->
@@ -22,6 +22,17 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!--[if lte IE 8]>
+    <script>
+      document.createElement('cv-component');
+      document.createElement('experience-professionnelle-component');
+      document.createElement('formation-component');
+      document.createElement('informations-generales-component');
+      document.createElement('realisation-component');
+      document.createElement('projet-component');
+    </script>
+    <![endif]-->
   </head>
   <body ng-app="mgApp">
     <!--[if lt IE 7]>
@@ -73,6 +84,18 @@
     <script src="scripts/mg/services/TermeTechniqueService.js"></script>
     <script src="scripts/mg/services/CVService.js"></script>
     <script src="scripts/mg/models/CVModels.js"></script>
+
+    <script src="scripts/mg/directives/cvComponent.js"></script>
+    <script src="scripts/mg/directives/experienceProfessionnelleComponent.js"></script>
+    <script src="scripts/mg/directives/projetComponent.js"></script>
+    <script src="scripts/mg/directives/formationComponent.js"></script>
+    <script src="scripts/mg/directives/informationsGeneralesComponent.js"></script>
+    <script src="scripts/mg/directives/realisationComponent.js"></script>
+    <script src="scripts/mg/filters/tradFilter.js"></script>
+    <script src="scripts/mg/filters/mformatFilter.js"></script>
+    <script src="scripts/mg/filters/trustedHTMLFilter.js"></script>
+    <script src="scripts/mg/filters/trustedTradFilter.js"></script>
+    <script src="bower_components/momentjs/lang/fr.js"></script>
         <!-- endbuild -->
 </body>
 </html>
