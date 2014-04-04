@@ -48,6 +48,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
+          '<%= yeoman.app %>/{,*/}*.json',
           '.tmp/styles/{,*/}*.css',
           '.tmp/scripts/{,**/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -65,6 +66,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
+          hostname: '0.0.0.0',
           open: true,
           base: [
             '.tmp',

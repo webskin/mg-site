@@ -7,6 +7,10 @@ $icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap
 
 @import "bootstrap-sass/vendor/assets/stylesheets/bootstrap";
 
+#cv {
+  line-height: 1.5;
+}
+
 h1.title {
   color: #333333;
   font-weight: 700;
@@ -32,13 +36,29 @@ p.periode {
   letter-spacing: 0.3em;
   font-size: 18px;
   font-weight: 600;
+  border-bottom: 3px solid #999999;
+}
+
+p.entreprise, p.statut {
+  color: #999999;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+p.client {
+  font-family: $font-family-serif;
+  font-size: 18px;
+  color: #999999;
 }
 
 p.description {
   font-family: $font-family-serif;
   font-size: 18px;
-  line-height: 1.5;
   color: #505050;
+  text-justify: auto;
+  text-align: justify;
 }
 
 p.mention {
@@ -51,11 +71,21 @@ p.mention {
 p.realisation {
   font-family: $font-family-serif;
   font-size: 16px;
-  line-height: 1.5;
   color: #505050;
   margin-left: 20px;
   padding-left: 10px;
   border-left: 5px #7e7e7e solid;
+  text-justify: auto;
+  text-align: justify;
+}
+
+p.ref-categories {
+  font-family: $font-family-serif;
+  font-size: 12px;
+  color: #828282;
+  margin-left: 21px;
+  padding-left: 10px;
+  border-left: 3px #9d9d9d solid;
 }
 
 
@@ -126,9 +156,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+//    .container {
+//        max-width: 730px;
+//    }
 
     /* Remove the padding we set earlier */
     .header,

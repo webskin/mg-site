@@ -12,10 +12,13 @@ mgApp.directive 'experienceProfessionnelleComponent', [
 
     template:"""
 <div>
-
-  <p class="periode">{{experienceProfessionnelle.debut | mformat:'MMMM YYYY'}} - {{experienceProfessionnelle.fin | mformat:'MMMM YYYY'}}</p>
-  <span ng-bind-html="experienceProfessionnelle.entreprise | trustedTrad"></span><br/>
-  <span ng-bind-html="experienceProfessionnelle.statut | trustedTrad"></span><br/>
+  <div class="row">
+    <div class="col-lg-7">
+        <p class="periode"><span class='fa fa-calendar'/> {{experienceProfessionnelle.debut | mformat:'MMMM YYYY'}} - {{experienceProfessionnelle.fin | mformat:'MMMM YYYY'}}</p>
+        <p class="entreprise" ng-show="experienceProfessionnelle.entreprise" ng-bind-html="experienceProfessionnelle.entreprise | trustedTrad"></p>
+        <p class="statut" ng-show="experienceProfessionnelle.statut" ng-bind-html="experienceProfessionnelle.statut | trustedTrad"></p>
+    </div>
+  </div>
   <div ng-repeat="p in experienceProfessionnelle.projets">
     <projet-component projet="p"></projet-component>
     <br />

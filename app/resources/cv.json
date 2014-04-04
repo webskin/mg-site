@@ -31,8 +31,8 @@
         "en":  "This advanced course teaches principles of reactive programming using Scala: how to write composable software that is event-driven, scalable under load, resilient and responsive in the presence of failures. Concepts covered include monads, futures, observables and actors."
       },
       "diplome": {
-        "fr":  "Accompli (avec mention)",
-        "en":  "Accomplishment (with distinction)"
+        "fr":  "<span class='fa fa-certificate'/> Accompli (avec mention)",
+        "en":  "<span class='fa fa-certificate'/> Accomplishment (with distinction)"
       }
     }, {
       "debut": "2012-09-01",
@@ -46,8 +46,8 @@
         "en": "This advanced undergraduate programming course covers the principles of functional programming using Scala, including the use of functions as values, recursion, immutability, pattern matching, higher-order functions and collections, and lazy evaluation."
       },
       "diplome": {
-        "fr":  "Accompli (avec mention)",
-        "en":  "Accomplishment (with distinction)"
+        "fr":  "<span class='fa fa-certificate'/> Accompli (avec mention)",
+        "en":  "<span class='fa fa-certificate'/> Accomplishment (with distinction)"
       }
     }, {
       "debut": "2004-09-01",
@@ -61,8 +61,8 @@
         "en": "LSI Option (Langages et Systèmes Informatiques) : network,  operating system, parallelism, user interface, database"
       },
       "diplome": {
-        "fr": "DIIC",
-        "en": "DIIC"
+        "fr": "<span class='fa fa-certificate'/> DIIC",
+        "en": "<span class='fa fa-certificate'/> DIIC"
       }
     }, {
       "debut": "2003-09-01",
@@ -76,8 +76,8 @@
         "en": "Sciences et Technologie Pour l'Ingénieur"
       },
       "diplome": {
-        "fr": "DEUG (major de promo)",
-        "en": "DEUG (graduated first in my class)"
+        "fr": "<span class='fa fa-certificate'/> DEUG (major de promo)",
+        "en": "<span class='fa fa-certificate'/> DEUG (graduated first in my class)"
       }
     }, {
       "debut": "2002-09-01",
@@ -100,8 +100,8 @@
     {
       "debut": "2009-04-01",
       "fin": "2014-01-31",
-      "entreprise": "Freelance (Entreprise Individuelle)",
-      "statut": "Ingénieur Conseil en Systèmes et Logiciels Informatiques",
+      "entreprise": "Freelance Ingénieur Conseil en Systèmes et Logiciels Informatiques",
+      "statut": "",
       "projets": [
         {
           "nom": "Administration de Référentiels",
@@ -128,7 +128,6 @@
             {
               "description": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
-                  1,
                   2,
                   4
               ]
@@ -258,7 +257,7 @@
                   124
               ]
             }, {
-              "libelle": "Développement de l'application en mode TDD avec un autre développeur.",
+              "description": "Développement de l'application en mode TDD avec un autre développeur.",
               "termesTechniques": [
                   116
               ]

@@ -11,23 +11,36 @@ mgApp.directive 'cvComponent', [
     link: (scope, element, attrs) ->
 
     template:"""
-<div>
+<div id="cv">
   <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
   <br/>
-  <h1 class="title">Formations</h1>
+  <div class="row">
+    <div class="col-lg-7">
+      <h1 class="title">Expériences Professionnelles</h1>
+    </div>
+  </div>
+  <div ng-repeat="e in cv.experiencesProfessionnelles">
+    <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-lg-7">
+      <h1 class="title">Stages et Projets de Fin d'Étude</h1>
+    </div>
+  </div>
+  <div ng-repeat="e in cv.stagesEtProjetsFinEtude">
+    <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-lg-7">
+      <h1 class="title">Formations</h1>
+    </div>
+  </div>
   <div ng-repeat="f in cv.formations">
     <formation-component formation="f"></formation-component>
   </div>
   <br />
-  <h1 class="title">Expériences Professionnelles</h1>
-  <div ng-repeat="e in cv.experiencesProfessionnelles">
-    <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
-  </div>
-<br />
-  <h1 class="title">Stages et Projets de Fin d'Étude</h1>
-  <div ng-repeat="e in cv.stagesEtProjetsFinEtude">
-    <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
-  </div>
 </div>
 """
 ]

@@ -11,8 +11,18 @@ mgApp.directive 'realisationComponent', [
     link: (scope, element, attrs) ->
 
     template:"""
-<div>
-  <p class="realisation" ng-bind-html="realisation.description | trustedTrad"></p>
+<div class="row">
+  <div class="col-lg-7">
+    <p class="realisation" ng-bind-html="realisation.description | trustedTrad"></p>
+  </div>
+  <div class="col-lg-5">
+    <p class="ref-categories">
+      <ref-categorie-termes-techniques-component
+          ng-repeat="refCat in realisation.getRefCategoriesTermesTechniques()"
+          ref-categorie-termes-techniques="refCat">
+      </ref-categorie-termes-techniques-component>
+    </p>
+  </div>
 </div>
 """
 ]

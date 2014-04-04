@@ -46,9 +46,10 @@ mgApp.factory 'mg.CVMappings', [
       termeTechniqueService.setCategoriesTermeTechnique categoriesTermeTechnique
 
 
-    buildRealisations = (termes, json) ->
+    buildRealisations = (termes, projet, json) ->
       _.map json, (r) ->
         real = new m.Realisation(r)
+        real.projet = projet
         real.termesTechniques = _.map r.termesTechniques, (tId) ->
           termeTechniqueService.findTermesTechniquesById(termes, tId)
         real
@@ -60,7 +61,7 @@ mgApp.factory 'mg.CVMappings', [
         proj.termesTechniques = _.map p.termesTechniques, (tId) ->
           termeTechniqueService.findTermesTechniquesById(termes, tId)
 
-        proj.realisations = buildRealisations termes, p.realisations
+        proj.realisations = buildRealisations termes, proj, p.realisations
         proj
 
     buildExperiencesProfessionnelles = (termes, json) ->
