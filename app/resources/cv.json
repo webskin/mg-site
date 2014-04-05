@@ -58,7 +58,7 @@
       },
       "description": {
         "fr": "Option LSI (Langages et Systèmes Informatiques) : réseaux,  systèmes d'exploitation, parallélisme, interfaces homme-machine, bases de données.",
-        "en": "LSI Option (Langages et Systèmes Informatiques) : network,  operating system, parallelism, user interface, database"
+        "en": "LSI Option (Langages et Systèmes Informatiques) : network,  operating system, parallelism, user interface, database."
       },
       "diplome": {
         "fr": "<span class='fa fa-certificate'/> DIIC",
@@ -72,8 +72,8 @@
         "en": "DEUG 2 STPI (Rennes)"
       },
       "description": {
-        "fr": "Sciences et Technologie Pour l'Ingénieur",
-        "en": "Sciences et Technologie Pour l'Ingénieur"
+        "fr": "Sciences et Technologie Pour l'Ingénieur.",
+        "en": "Sciences et Technologie Pour l'Ingénieur."
       },
       "diplome": {
         "fr": "<span class='fa fa-certificate'/> DEUG (major de promo)",
@@ -87,8 +87,8 @@
         "en": "Math Sup PTSI (Rennes)"
       },
       "description": {
-        "fr": "Physique, Technologie et Sciences de l'Ingénieur",
-        "en": "Physique, Technologie et Sciences de l'Ingénieur"
+        "fr": "Physique, Technologie et Sciences de l'Ingénieur.",
+        "en": "Physique, Technologie et Sciences de l'Ingénieur."
       },
       "diplome": {
         "fr": "",
@@ -498,24 +498,38 @@
         }, {
           "nom": "Maintenance Applicative",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Le système d'information du Groupe Hervé dispose d'une large panoplie d'applications. Les évolutions législatives, les remontées de bug où en encore les demandes d'ajout de nouvelles fonctionnalités m'ont amenées à intervenir sur certaines de ces applications.",
+          "description": "Le système d'information du Groupe Hervé dispose d'une large panoplie d'applications. Les évolutions législatives, les remontées de bugs où en encore les demandes d'ajout de nouvelles fonctionnalités m'ont amenées à intervenir sur certaines de ces applications.",
           "termesTechniques": [
+            1,
+            13,
+            61,
+            63,
+            73,
+            78,
+            100,
+            107
           ],
           "realisations": [
             {
               "description": "Maintenance de l'application « Suivi de Devis ».",
               "termesTechniques": [
-                1
+                112
               ]
             }, {
               "description": "Maintenance de l'application «Outil de Chiffrage ».",
               "termesTechniques": [
-                1
+                21,
+                32,
+                33,
+                113,
+                118,
+                119,
+                136
               ]
             }, {
               "description": "Maintenance de l'application « Gestion des Partenaires ».",
               "termesTechniques": [
-                1
+                112
               ]
             }
           ]
@@ -530,15 +544,15 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul><li>la conception,</li><li>l'architecture,</li><li>la configuration de l’exécution,</li><li>l'exécution de la fédération,</li><li>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
           "termesTechniques": [
+            1,
+            13
           ],
           "realisations": [
             {
               "description": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
               "termesTechniques": [
-                1,
-                13,
                 61,
                 63,
                 71,
@@ -549,8 +563,6 @@
             }, {
               "description": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
               "termesTechniques": [
-                1,
-                13,
                 32,
                 33,
                 35,
@@ -564,8 +576,6 @@
             }, {
               "description": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
               "termesTechniques": [
-                1,
-                13,
                 35,
                 61,
                 63,
@@ -577,9 +587,7 @@
             }, {
               "description": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
               "termesTechniques": [
-                1,
                 2,
-                13,
                 18,
                 61,
                 63,
@@ -590,8 +598,6 @@
             }, {
               "description": "Conception et développement d’une infrastructure de distribution de données de simulation.",
               "termesTechniques": [
-                1,
-                13,
                 22,
                 61,
                 63,
@@ -616,7 +622,7 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V : Conception, Architecture, Configuration de l’exécution, Exécution de la fédération et Analyse des données résultantes de l’exécution. L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul><li>la conception,</li><li>l'architecture,</li><li>la configuration de l’exécution,</li><li>l'exécution de la fédération,</li><li>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
           "termesTechniques": [
           ],
           "realisations": [
@@ -656,7 +662,7 @@
         {
           "nom": "Monitoring du jeu video Soldat",
           "client": "",
-          "description": "Le but de ce projet réalisé au cours de la formation d'ingénieur est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer le multithreading, la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie …",
+          "description": "Le but de ce projet, réalisé au cours de la formation d'ingénieur, est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer:<ul><li>le multithreading,</li><li> la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie,</li><li> il doit enfin fournir une IHM grâce à la bibliothèque Ncurses.</li></ul>",
           "termesTechniques": [
           ],
           "realisations": [
@@ -664,10 +670,9 @@
               "description": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechniques": [
                 3,
-                13,
+                139,
                 59,
-                67,
-                109
+                67
               ]
             }
           ]
@@ -682,18 +687,17 @@
         {
           "nom": "Projet OEDIPP",
           "client": "DAM:  Direction des Affaires Maritimes (Saint Malo)",
-          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités  : La gestion informatisée des dossiers d'inscription. L'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques. La délivrance des titres de conduites. La gestion informatisée des centres d'examen.",
+          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités: <ul><li>la gestion informatisée des dossiers d'inscription,</li><li>l'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques,</li><li>la délivrance des titres de conduites,</li><li>la gestion informatisée des centres d'examen.</li></ul>",
           "termesTechniques": [
           ],
           "realisations": [
             {
-              "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
+              "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation / Métier / Accès aux données).<br />Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechniques": [
                 1,
                 13,
                 43,
                 44,
-                50,
                 60,
                 63,
                 78,
@@ -1010,7 +1014,7 @@
       "libelle": "iText"
     }, {
       "id": 35,
-      "categories": [3, 10],
+      "categories": [10],
       "libelle": "EMF"
     }, {
       "id": 36,
@@ -1066,7 +1070,7 @@
       "libelle": "DWGDirect"
     }, {
       "id": 49,
-      "categories": [3, 21],
+      "categories": [21],
       "libelle": "OSGI"
     }, {
       "id": 50,
@@ -1298,11 +1302,11 @@
       "libelle": "XMI"
     }, {
       "id": 107,
-      "categories": [10],
+      "categories": [2],
       "libelle": "SQL Developer"
     }, {
       "id": 108,
-      "categories": [10],
+      "categories": [2],
       "libelle": "TOAD"
     }, {
       "id": 109,
@@ -1427,6 +1431,10 @@
       "id": 138,
       "categories": ["3"],
       "libelle": "FOP"
+    }, {
+      "id": 139,
+      "categories": [2],
+      "libelle": "Eclipse CDT"
     }
   ]
 
