@@ -15,7 +15,7 @@ mgApp.directive 'cvComponent', [
   <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
   <br/>
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-md-7">
       <h1 class="title">Expériences Professionnelles</h1>
     </div>
   </div>

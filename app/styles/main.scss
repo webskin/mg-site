@@ -4,6 +4,7 @@ $font-family-serif:       "Merriweather", "Times New Roman", Times, serif !defau
 
 $font-size-base: 16px;
 $icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/";
+$grid-gutter-width: 20px;
 
 @import "bootstrap-sass/vendor/assets/stylesheets/bootstrap";
 
@@ -11,23 +12,32 @@ $icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap
   line-height: 1.5;
 }
 
+.container {
+  padding: 20px;
+  background-image: url(/images/crossword.png);
+  box-shadow: 1px 1px 12px #555;
+}
+
 h1.title {
   color: #333333;
   font-weight: 700;
   font-size: 45px;
   text-align: center;
+  text-shadow: 0px 1px 3px #666;
 }
 
 h2.subtitle {
   color: #444444;
   font-weight: 600;
   font-size: 28px;
+  text-shadow: 0px 1px 2px #666;
 }
 
 h3.subsubtitle {
   color: #6e6e6e;
   font-weight: 600;
   font-size: 19px;
+  margin-top: 11px;
 }
 
 p.periode {
@@ -88,6 +98,40 @@ p.ref-categories {
   border-left: 3px #9d9d9d solid;
 }
 
+p.ref-categories-realisation {
+  font-family: $font-family-serif;
+  font-size: 11px;
+  color: #828282;
+  margin-left: 21px;
+  padding-left: 10px;
+  border-left: 3px #9d9d9d solid;
+  margin-bottom: 1.8em;
+}
+
+button.btn.afficher-details {
+  font-size: 11px;
+  padding: 0px 4px;
+  color: #828282;
+}
+
+button.btn.afficher-details:hover {
+  font-size: 11px;
+  padding: 0px 4px;
+  color: #505050;
+}
+
+button.btn.masquer-details {
+  font-size: 11px;
+  padding: 0px 4px;
+  color: #828282;
+  margin-right: 3px;
+}
+
+button.btn.masquer-details:hover {
+  font-size: 11px;
+  padding: 0px 4px;
+  color: #505050;
+}
 
 .browsehappy {
     margin: 0.2em 0;

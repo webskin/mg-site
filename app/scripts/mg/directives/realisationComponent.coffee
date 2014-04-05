@@ -16,7 +16,7 @@ mgApp.directive 'realisationComponent', [
     <p class="realisation" ng-bind-html="realisation.description | trustedTrad"></p>
   </div>
   <div class="col-lg-5 col-md-5">
-    <p class="ref-categories" >
+    <p class="ref-categories-realisation" >
       <ref-categorie-termes-techniques-component
           ng-repeat="refCat in realisation.getRefCategoriesTermesTechniques()"
           ref-categorie-termes-techniques="refCat">

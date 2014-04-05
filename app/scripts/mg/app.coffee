@@ -4,7 +4,6 @@ mgApp = angular.module('mgApp', [
   'ngAnimate'
   'ngSanitize',
   'ui.router'
-  'mgcrea.ngStrap'
 ])
 
 mgApp.constant('_', window._);
