@@ -21,7 +21,7 @@ mgApp.directive 'experienceProfessionnelleComponent', [
   </div>
   <div ng-repeat="p in experienceProfessionnelle.projets">
     <projet-component projet="p"></projet-component>
-    <br />
+
   </div>
 </div>
 """

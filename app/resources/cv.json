@@ -128,8 +128,8 @@
             {
               "description": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
-                  2,
-                  4
+                2,
+                4
               ]
             }, {
               "description": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
@@ -142,29 +142,29 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Application destinée à générer un flux XML personnalisé, contenant différents choix de rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
           "termesTechniques": [
-              1,
-              36,
-              7,
-              43,
-              9
+            1,
+            7,
+            9,
+            36,
+            43
           ],
           "realisations": [
             {
               "description": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
               "termesTechniques": [
-                  69,
-                  115,
-                  116,
-                  118,
-                  121,
-                  122
+                69,
+                115,
+                116,
+                118,
+                121,
+                122
               ]
             }, {
               "description": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechniques": [
-                  21,
-                  57,
-                  119
+                21,
+                57,
+                119
               ]
             }
           ]
@@ -180,24 +180,24 @@
             {
               "description": "Support Technique de la personne en charge du développement.",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Implémentation de l'authentification dans l'application AngularJS.",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechniques": [
-                  1,
-                  4,
-                  37,
-                  76,
-                  77,
-                  86,
-                  87,
-                  120
+                1,
+                4,
+                37,
+                76,
+                77,
+                86,
+                87,
+                120
               ]
             }
           ]
@@ -211,12 +211,12 @@
             {
               "description": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue entre la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de façade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans le workflow menant à l'édition d'une facture.",
               "termesTechniques": [
-                  1
+                1
               ]
             }
           ]
@@ -230,12 +230,12 @@
             {
               "description": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
               "termesTechniques": [
-                  1
+                1
               ]
             }
           ]
@@ -254,12 +254,12 @@
             }, {
               "description": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
               "termesTechniques": [
-                  124
+                124
               ]
             }, {
               "description": "Développement de l'application en mode TDD avec un autre développeur.",
               "termesTechniques": [
-                  116
+                116
               ]
             }
           ]
@@ -354,12 +354,12 @@
             {
               "description": "Conception d'un système de Recherche Générique à base d'Annotations Java. L'idée est de pouvoir facilement générer des résultats de recherche pour n'importe quelle resource, avec un format de représentation commun, ceci pour en faciliter l'affichage côté client.",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Réflexion sur l'implémentation d'API REST embarquant potentiellement des liens dans les ressources retournées par le serveur. L'idée est de fournir des Classes de base Abstrayant le concept de Ressource et les relations (liens + semantique de relation) vers les autres ressources qui peuvent en découler. Une resoure est alors considérée comme un Hypermedia.",
               "termesTechniques": [
-                  1
+                1
               ]
             }
           ]
@@ -498,24 +498,24 @@
         }, {
           "nom": "Maintenance Applicative",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "",
+          "description": "Le système d'information du Groupe Hervé dispose d'une large panoplie d'applications. Les évolutions législatives, les remontées de bug où en encore les demandes d'ajout de nouvelles fonctionnalités m'ont amenées à intervenir sur certaines de ces applications.",
           "termesTechniques": [
           ],
           "realisations": [
             {
               "description": "Maintenance de l'application « Suivi de Devis ».",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Maintenance de l'application «Outil de Chiffrage ».",
               "termesTechniques": [
-                  1
+                1
               ]
             }, {
               "description": "Maintenance de l'application « Gestion des Partenaires ».",
               "termesTechniques": [
-                  1
+                1
               ]
             }
           ]
@@ -537,68 +537,68 @@
             {
               "description": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
               "termesTechniques": [
-                  1,
-                  13,
-                  61,
-                  63,
-                  71,
-                  82,
-                  102,
-                  103
+                1,
+                13,
+                61,
+                63,
+                71,
+                82,
+                102,
+                103
               ]
             }, {
               "description": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
               "termesTechniques": [
-                  1,
-                  13,
-                  32,
-                  33,
-                  35,
-                  40,
-                  61,
-                  63,
-                  71,
-                  82,
-                  102
+                1,
+                13,
+                32,
+                33,
+                35,
+                40,
+                61,
+                63,
+                71,
+                82,
+                102
               ]
             }, {
               "description": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
               "termesTechniques": [
-                  1,
-                  13,
-                  35,
-                  61,
-                  63,
-                  71,
-                  82,
-                  102,
-                  104
+                1,
+                13,
+                35,
+                61,
+                63,
+                71,
+                82,
+                102,
+                104
               ]
             }, {
               "description": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
               "termesTechniques": [
-                  1,
-                  2,
-                  13,
-                  18,
-                  61,
-                  63,
-                  71,
-                  82,
-                  102
+                1,
+                2,
+                13,
+                18,
+                61,
+                63,
+                71,
+                82,
+                102
               ]
             }, {
               "description": "Conception et développement d’une infrastructure de distribution de données de simulation.",
               "termesTechniques": [
-                  1,
-                  13,
-                  22,
-                  61,
-                  63,
-                  69,
-                  71,
-                  82,
-                  102
+                1,
+                13,
+                22,
+                61,
+                63,
+                69,
+                71,
+                82,
+                102
               ]
             }
           ]
@@ -623,25 +623,25 @@
             {
               "description": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
               "termesTechniques": [
-                  1,
-                  9,
-                  13,
-                  40,
-                  49,
-                  50,
-                  61,
-                  63,
-                  69
+                1,
+                9,
+                13,
+                40,
+                49,
+                50,
+                61,
+                63,
+                69
               ]
             }, {
               "description": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
               "termesTechniques": [
-                  1,
-                  13,
-                  32,
-                  33,
-                  40,
-                  63
+                1,
+                13,
+                32,
+                33,
+                40,
+                63
               ]
             }
           ]
@@ -663,11 +663,11 @@
             {
               "description": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechniques": [
-                  3,
-                  13,
-                  59,
-                  67,
-                  109
+                3,
+                13,
+                59,
+                67,
+                109
               ]
             }
           ]
@@ -689,15 +689,15 @@
             {
               "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation/Métier/Accès aux données). Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechniques": [
-                  1,
-                  13,
-                  43,
-                  44,
-                  50,
-                  60,
-                  63,
-                  78,
-                  108
+                1,
+                13,
+                43,
+                44,
+                50,
+                60,
+                63,
+                78,
+                108
               ]
             }
           ]
@@ -739,8 +739,8 @@
     {
       "id": 1,
       "libelle": {
-        "fr": "Langage de Programmation",
-        "en": "Programming Language"
+        "fr": "Langages de Programmation",
+        "en": "Programming Languages"
       }
     }, {
       "id": 2,
@@ -752,8 +752,8 @@
       "id": 3,
       "categoriesParentes": [],
       "libelle": {
-        "fr": "Bibliothèque",
-        "en": "Library"
+        "fr": "Bibliothèques",
+        "en": "Libraries"
       }
     }, {
       "id": 4,
@@ -794,8 +794,8 @@
     }, {
       "id": 10,
       "libelle": {
-        "fr": "Framework",
-        "en": "Framework"
+        "fr": "Frameworks",
+        "en": "Frameworks"
       }
     }, {
       "id": 11,
@@ -812,8 +812,8 @@
     }, {
       "id": 13,
       "libelle": {
-        "fr": "Concept/Domaine",
-        "en": "Concept/Domain"
+        "fr": "Concepts / Domaines",
+        "en": "Concepts / Domains"
       }
     }, {
       "id": 14,
@@ -854,20 +854,20 @@
     }, {
       "id": 20,
       "libelle": {
-        "fr": "Format de donnée",
-        "en": "Data Format"
+        "fr": "Formats de donnée",
+        "en": "Data Formats"
       }
     }, {
       "id": 21,
       "libelle": {
-        "fr": "Spécification",
-        "en": "Specification"
+        "fr": "Spécifications",
+        "en": "Specifications"
       }
     }, {
       "id": 22,
       "libelle": {
-        "fr": "Ressource Documentaire",
-        "en": "Resource"
+        "fr": "Ressources Documentaires",
+        "en": "Resources"
       }
     }
   ],

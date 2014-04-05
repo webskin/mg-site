@@ -24,7 +24,7 @@ mgApp.directive 'cvComponent', [
   </div>
   <br />
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-md-7">
       <h1 class="title">Stages et Projets de Fin d'Étude</h1>
     </div>
   </div>
@@ -33,7 +33,7 @@ mgApp.directive 'cvComponent', [
   </div>
   <br />
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-lg-7 col-md-7">
       <h1 class="title">Formations</h1>
     </div>
   </div>

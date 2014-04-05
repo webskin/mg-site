@@ -14,27 +14,27 @@ $icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap
 h1.title {
   color: #333333;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
 }
 
 h2.subtitle {
   color: #444444;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h3.subsubtitle {
   color: #6e6e6e;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 p.periode {
-  margin-top: 3em;
+  margin-top: 2em;
   color: #999999;
   letter-spacing: 0.3em;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   border-bottom: 3px solid #999999;
 }
@@ -42,20 +42,20 @@ p.periode {
 p.entreprise, p.statut {
   color: #999999;
   letter-spacing: 0.1em;
-  font-size: 18px;
+  font-size: 17px;
   font-style: italic;
   font-weight: 400;
 }
 
 p.client {
   font-family: $font-family-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #999999;
 }
 
 p.description {
   font-family: $font-family-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #505050;
   text-justify: auto;
   text-align: justify;
@@ -63,14 +63,14 @@ p.description {
 
 p.mention {
   font-family: $font-family-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #7e7e7e;
 }
 
 p.realisation {
   font-family: $font-family-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #505050;
   margin-left: 20px;
   padding-left: 10px;
@@ -81,7 +81,7 @@ p.realisation {
 
 p.ref-categories {
   font-family: $font-family-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: #828282;
   margin-left: 21px;
   padding-left: 10px;
