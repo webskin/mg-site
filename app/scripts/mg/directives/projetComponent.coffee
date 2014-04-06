@@ -20,7 +20,7 @@ mgApp.directive 'projetComponent', [
         <span ng-bind-html="projet.description | trustedTrad"></span>
       </p>
       <div ng-hide="showRealisations" class="row animate-slide">
-        <div class="col-lg-7 col-md-7">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
           <p  class="ref-categories">
             <ref-categorie-termes-techniques-component
                 ng-repeat="refCat in projet.getAllRefCategoriesTermesTechniques()"
@@ -28,18 +28,33 @@ mgApp.directive 'projetComponent', [
             </ref-categorie-termes-techniques-component>
           </p>
         </div>
-        <div class="col-lg-5 col-md-5">
-          <button type="button" class="btn btn-default afficher-details" ng-click="showRealisations = true"><span class="fa fa-chevron-down" title="Afficher le détail des réalisations"> Afficher le détail des réalisations</span></button>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <button type="button" class="btn btn-default afficher-details-btn" ng-click="showRealisations = true" title="Afficher le détail des réalisations"><span class="fa fa-chevron-down" ></span><span class="afficher-details"> Détail des réalisations</span></button>
         </div>
       </div>
     </div>
   </div>
   <div ng-hide="!showRealisations" class="animate-slide">
-    <h3 class="subsubtitle realisations"><button ng-show="showRealisations" type="button" class="btn btn-default masquer-details" ng-click="showRealisations = false"><span class="fa fa-chevron-up" title="Masquer le détail des réalisations"></span></button>Réalisations:</h3>
+    <h3 class="subsubtitle"><button ng-show="showRealisations" type="button" class="btn btn-default masquer-details" ng-click="showRealisations = false"><span class="fa fa-chevron-up" title="Masquer le détail des réalisations"></span></button><span class="realisations">Réalisations:</span></h3>
+
+    <div class="row">
+      <div ng-show="projet.getTroncCommunRefCategoriesTermesTechniques().length > 0" class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7">
+        <p class="ref-categories">
+          <span><strong>Tronc commun</strong></span>
+          <ref-categorie-termes-techniques-component
+              ng-repeat="refCat in projet.getTroncCommunRefCategoriesTermesTechniques()"
+              ref-categorie-termes-techniques="refCat">
+          </ref-categorie-termes-techniques-component>
+        </p>
+      </div>
+    </div>
+
     <div ng-repeat="r in projet.realisations">
       <realisation-component realisation="r"></realisation-component>
     </div>
   </div>
+
+
 
 </div>
 """

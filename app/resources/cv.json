@@ -385,61 +385,70 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des Articles. Tout ceci dans un environnement Eclipse RCP  pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
           "termesTechniques": [
-              1
+            1,
+            13,
+            40,
+            43,
+            61,
+            63,
+            69,
+            73,
+            95,
+            100
           ],
           "realisations": [
             {
-              "description": "Mise en Cache des Projets. Certains projets contiennent plus de 30  000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour le mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les selections par lot (batch-size).",
+              "description": "Mise en Cache des Projets.<br/>Certains projets contiennent plus de 30  000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour le mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les selections par lot (batch-size).",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Gestion par Exercice. Certains projets sont particuliers et disposent d'un budget alloué pour l'année. Le budget initial se dégrève à chaque ajout de nouveaux besoins. Les vues sont préfiltrées sur l'exercice courant et l'utilisateur a la possibilité de consulter les execices antérieurs.",
+              "description": "Gestion par Exercice.<br/>Certains projets sont particuliers et disposent d'un budget alloué pour l'année. Le budget initial se dégrève à chaque ajout de nouveaux besoins. Les vues sont préfiltrées sur l'exercice courant et l'utilisateur a la possibilité de consulter les execices antérieurs.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Globalisation des achats. L'utilisateur peut exporter un ensemble de besoins en phase de préparation au format Microsoft Excel. Cela permet de regrouper les besoins commun d'un ensemble de projets pour obtenir plus facilement des rabais de la part des fournisseurs.",
+              "description": "Globalisation des achats.<br/>L'utilisateur peut exporter un ensemble de besoins en phase de préparation au format Microsoft Excel. Cela permet de regrouper les besoins commun d'un ensemble de projets pour obtenir plus facilement des rabais de la part des fournisseurs.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Historique des Synthèsee. De façon transparente et après chaque sauvegarde de projet, l'application commite sur un dépôt dédié la synthèse hierarchique des montants des besoins. L'utilisateur peut ensuite ouvrir un outil de comparaison, signalant tous les changements qu'il y eu entre deux versions différentes de synthèse.",
+              "description": "Historique des Synthèsee.<br/>De façon transparente et après chaque sauvegarde de projet, l'application commite sur un dépôt dédié la synthèse hierarchique des montants des besoins. L'utilisateur peut ensuite ouvrir un outil de comparaison, signalant tous les changements qu'il y eu entre deux versions différentes de synthèse.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Réception des Commandes. Tout comme la validation des commandes, la phase de réception doit aussi se faire au travers d'Oracle Application avec les mêmes problématiques transactionnelles.",
+              "description": "Réception des Commandes.<br/>Tout comme la validation des commandes, la phase de réception doit aussi se faire au travers d'Oracle Application avec les mêmes problématiques transactionnelles.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Validation des commandes. L'étape finale d'une commande, sa «validation», est toujours liée au système Oracle Application. L'application gestion des achats est interopérable avec ce systéme et à chaque validation de commande dans GDA une commande est validée du côté d'Oracle Application. Ici la difficulté est que la transaction n'est pas globale et qu'un système a été mis en place pour effectuer tout le nettoyage en cas d'erreur d'Oracle Application.",
+              "description": "Validation des commandes.<br/>L'étape finale d'une commande, sa «validation», est toujours liée au système Oracle Application. L'application gestion des achats est interopérable avec ce systéme et à chaque validation de commande dans GDA une commande est validée du côté d'Oracle Application. Ici la difficulté est que la transaction n'est pas globale et qu'un système a été mis en place pour effectuer tout le nettoyage en cas d'erreur d'Oracle Application.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Élaboration de Tableaux de synthèse. Un projet d'achat brasse un grand nombre d'entités. Un onglet spécifique a été développé pour présenter différent rapports comme par exemple la répartition de montants par catégorie de besoin.",
+              "description": "Élaboration de Tableaux de synthèse.<br/>Un projet d'achat brasse un grand nombre d'entités. Un onglet spécifique a été développé pour présenter différent rapports comme par exemple la répartition de montants par catégorie de besoin.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Réalisation d'Actions de masse. Ces actions sont implémentées en utilisant le patron de conception «Visiteur» qui facilite grandement le parcours d'arbre et au passage la modification de ses nœuds. Par exemple, il est possible de changer la date de besoin de tous les besoins descendants d'un Lot particulié.",
+              "description": "Réalisation d'Actions de masse.<br/>Ces actions sont implémentées en utilisant le patron de conception «Visiteur» qui facilite grandement le parcours d'arbre et au passage la modification de ses nœuds. Par exemple, il est possible de changer la date de besoin de tous les besoins descendants d'un Lot particulié.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception. L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulle expliquant les contraintes fontionnelles qui empêche de déposer un élément sur le nœud d'un arbre.",
+              "description": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception.<br/>L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulle expliquant les contraintes fontionnelles qui empêche de déposer un élément sur le nœud d'un arbre.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Développement de la fonctionnalité d'import de Devis, issu de l'outil de chiffrage. L'import consiste en une transformation de modèle. Les lignes de devis sont converties en lignes de besoin pour de potentielles commandes.",
+              "description": "Développement de la fonctionnalité d'import de Devis, issu de l'outil de chiffrage.<br/>L'import consiste en une transformation de modèle. Les lignes de devis sont converties en lignes de besoin pour de potentielles commandes.",
               "termesTechniques": [
 
               ]
             }, {
-              "description": "Conception d'un module gérant une pile d'actions annulables. La difficulté d'un tel module est qu'après chaque sauvegarde sur le serveur c'est une toute nouvelle référence du projet d'achat qui remonte sur le client. Il faut que le module soit capable de se synchroniser avec la référence la plus récente. Il se dote donc de primitives utilisées avant chaque annulation. Elles permettent de vérifier si l'action à refaire ou à défaire concerne des entités désynchronisées. Si tel est le cas il faut retrouver au moyen du patron de conception «visiteur» le contexte qui est en phase avec ladite action.",
+              "description": "Conception d'un module gérant une pile d'actions annulables.<br/>La difficulté d'un tel module est qu'après chaque sauvegarde sur le serveur c'est une toute nouvelle référence du projet d'achat qui remonte sur le client. Il faut que le module soit capable de se synchroniser avec la référence la plus récente. Il se dote donc de primitives utilisées avant chaque annulation. Elles permettent de vérifier si l'action à refaire ou à défaire concerne des entités désynchronisées. Si tel est le cas il faut retrouver au moyen du patron de conception «visiteur» le contexte qui est en phase avec ladite action.",
               "termesTechniques": [
 
               ]
@@ -448,50 +457,93 @@
         }, {
           "nom": "OSCAR:  Outil Simplifié de Conception d'Automatisme et de Régulation",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment en particulier. Utilisé par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF par exemple. Les utilisateurs peuvent aussi configurer des automates, concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD», d'exporter au format Excel différents bilans de puissance, de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.",
+          "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment particulier. Utilisée par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF. Les utilisateurs peuvent aussi: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>configurer des automates,</li><li><i class=\"fa-li fa fa-angle-right\"></i>concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD»,</li><li><i class=\"fa-li fa fa-angle-right\"></i>d'exporter au format Excel différents bilans de puissance,</li><li><i class=\"fa-li fa fa-angle-right\"></i>de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.</li></ul>",
           "termesTechniques": [
-              1
+              1,
+              13,
+              40,
+              43,
+              61,
+              63,
+              69,
+              73,
+              95,
+              100
           ],
           "realisations": [
             {
-              "description": "Édition PDF de la spécification. La prévisualisation XHTML peut être éditée au format PDF via une transformation XSLT vers FOP.",
+              "titre": "Édition PDF de la spécification",
+              "description": "La prévisualisation XHTML peut être éditée au format PDF via une transformation XSLT vers FOP.",
               "termesTechniques": [
-
+                25,
+                26,
+                119,
+                138,
+                140,
+                141,
+                145
               ]
             }, {
-              "description": "Prévisualisation de la Spécification au format XHTML. Chaque Bâtiment/Niveau/Installation/Système dispose d'une description issue d'un référentiel de document au format DOCX de Microsoft. Le module est capable d'extraire la structure de chaque document, de la convertir en HTML et de fusionner l'ensemble de ses documents en une page de prévisualisation. Des marqueurs sont disposés en marge de la page pour indiquer les endroits où de la documentation de système manque. L'utilisateur peut cliquer sur des liens d'accès rapide permettant d'éditer dans un module WISIWIG dédié les sous-parties de la spécification.",
+              "titre": "Prévisualisation de la spécification au format XHTML",
+              "description": "Chaque Bâtiment / Niveau / Installation / Système dispose d'une description issue d'un référentiel de document au format DOCX de Microsoft. Le module est capable d'extraire la structure de chaque document, de la convertir en HTML et de fusionner l'ensemble de ces documents en une page de prévisualisation. Des marqueurs sont disposés en marge de la page pour indiquer les endroits où des manques subsistent dans la documentation. L'utilisateur peut cliquer sur des liens d'accès rapide permettant d'éditer dans un module WISIWIG dédié, les sous-parties de la spécification.",
               "termesTechniques": [
-
+                4,
+                25,
+                26,
+                93,
+                119,
+                140,
+                142,
+                143,
+                145
               ]
             }, {
-              "description": "Module d'export des Bilans de Puissance au format Excel. L'utilisateur a la possibilité d'exporter en fonction du nœud où il se trouve, les bilans de puissance issus des informations électriques des systèmes et des alimentations fournies.",
+              "titre": "Module d'export des bilans de puissance au format Excel",
+              "description": "L'utilisateur a la possibilité d'exporter en fonction du nœud où il se trouve, les bilans de puissance issus des informations électriques des systèmes et des alimentations fournies.",
               "termesTechniques": [
-
+                144
               ]
             }, {
-              "description": "Conception d'un module d'édition graphique pour les Systèmes et leurs Élements. Les systèmes provenant du référentiel peuvent être associés à des fichiers AutoCAD. Le module est capable d'analiser ces fichiers pour les inclures dans le diagramme global de l'installation. L'utilisateur dispose d'une palette de Systèmes provenant du référentiel, pouvant être glissés puis déposés sur le graphique. Chacun des systèmes peut être explosé pour pouvoir éditer chacun des sous éléments. Les éditions possibles vont de l'ajout de primitive comme des lignes, rectangle, ellipse, le choix des couleurs, des opérations de transformation (rotation, mirroir horizontal/vertical, la position et la taille), une fois les éléments modifiés, l'utilisateur les refusionner en une seule image de Système. L'utilisateur a également la possibilité d'ajouter des notes sur le schéma de l'installation.",
+              "titre": "Conception d'un module d'édition graphique pour les systèmes et leurs élements",
+              "description": "Les systèmes provenant du référentiel peuvent être associés à des fichiers AutoCAD. Le module est capable d'analyser ces fichiers pour les inclure dans le diagramme global de l'installation. L'utilisateur dispose d'une palette de systèmes provenant du référentiel, pouvant être glissés puis déposés sur le graphique. Chacun des systèmes peut être explosé pour pouvoir éditer les sous éléments. Les éditions possibles vont de l'ajout de primitives comme des lignes, rectangles, ellipses, le choix des couleurs, des opérations de transformation (rotation, mirroir horizontal / vertical, la position et la taille), une fois les éléments modifiés, l'utilisateur les refusionne en une seule image de système. L'utilisateur a également la possibilité d'ajouter des notes sur le schéma de l'installation.",
               "termesTechniques": [
-
+                2,
+                3,
+                19,
+                48,
+                132,
+                133,
+                145
               ]
             }, {
-              "description": "Module de conception des Systèmes et de leurs Éléments. Un référentiel permet de créer simplement des instances de Systèmes, l'utilistateur peut aussi créer des systèmes de toutes pièces. Certains éléments de ces systèmes peuvent comporter des informations relatives à leur puissance électrique. Ces informations seront utiles pour établir les différents bilans de puissance. Les élément décrivent aussi des entrées/sorties analogiques/numériques permettant de dimensionner le besoin en automates.",
+              "titre": "Module de conception des systèmes et de leurs éléments",
+              "description": "Un référentiel permet de créer simplement des instances de système, l'utilistateur peut aussi créer des systèmes de toute pièce. Certains éléments de ces systèmes peuvent comporter des informations relatives à leur puissance électrique. Ces informations seront utiles pour établir les différents bilans de puissance. Les élément décrivent aussi des entrées / sorties, analogiques ou numériques permettant de dimensionner le besoin en automates.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
+              "titre": "Configuration des automates",
               "description": "Configuration des automates pour une installation donnée.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Implémentation du module de Gestion des Alimentations. En fonction des caractéristiques des alimentations (Tri Phasé, Mono Phasé …), différents type de puissances doivent être calculées (kW, kVAR, kVA). Pour une intallation donnée, plusieurs alimentations peuvent être définies. Les éléments de l'installation sont connectables aux alimentations et l'application signal à l'utilisateur toute incohérence comme par exemple:  connecter un élément sur une alimentation incompatible.",
+              "titre": "Implémentation du module de gestion des alimentations.",
+              "description": "En fonction des caractéristiques des alimentations (Tri Phasé, Mono Phasé …), différents type de puissances doivent être calculées (kW, kVAR, kVA). Pour une intallation donnée, plusieurs alimentations peuvent être définies. Les éléments de l'installation sont connectables aux alimentations et l'application signal à l'utilisateur toute incohérence comme par exemple: connecter un élément sur une alimentation incompatible.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Construction socle RCP compatible avec le framework interne HTIC et Java Web Start",
+              "titre": "Socle Eclipse RCP",
+              "description": "Construction du socle RCP compatible avec le framework interne HTIC et Java Web Start.",
               "termesTechniques": [
-
+                49,
+                50,
+                135,
+                136
               ]
             }
           ]
@@ -507,16 +559,13 @@
             73,
             78,
             100,
-            107
+            107,
+            135
           ],
           "realisations": [
             {
-              "description": "Maintenance de l'application « Suivi de Devis ».",
-              "termesTechniques": [
-                112
-              ]
-            }, {
-              "description": "Maintenance de l'application «Outil de Chiffrage ».",
+              "titre": "Maintenance de l'application « Outil de Chiffrage »",
+              "description": "Cette application basée sur SWT / JFace permet la création, le versionning et l'édition PDF de devis.",
               "termesTechniques": [
                 21,
                 32,
@@ -527,7 +576,8 @@
                 136
               ]
             }, {
-              "description": "Maintenance de l'application « Gestion des Partenaires ».",
+              "titre": "Maintenance de l'application « Gestion des Partenaires »",
+              "description": "Application basée sur le framework interne d'iMDEO HTIC. Elle gère l'ensemble des partenaires du Groupe Hervé.",
               "termesTechniques": [
                 112
               ]
@@ -544,67 +594,53 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul><li>la conception,</li><li>l'architecture,</li><li>la configuration de l’exécution,</li><li>l'exécution de la fédération,</li><li>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la conception,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'architecture,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la configuration de l’exécution,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'exécution de la fédération,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
           "termesTechniques": [
             1,
-            13
+            13,
+            61,
+            63,
+            71,
+            82,
+            102
           ],
           "realisations": [
             {
+              "titre": "Coupleur générique",
               "description": "Développement d’un modèle coupleur générique pour la structure d’accueil SAGESSE.",
               "termesTechniques": [
-                61,
-                63,
-                71,
-                82,
-                102,
                 103
               ]
             }, {
+              "titre": "Développement d'IHM",
               "description": "Développement sous Eclipse RCP d’IHM permettant de configurer les différentes applications ITCS.",
               "termesTechniques": [
                 32,
                 33,
                 35,
-                40,
-                61,
-                63,
-                71,
-                82,
-                102
+                40
               ]
             }, {
+              "titre": "Conception d'une passerelle",
               "description": "Mise en place d’une passerelle transformant des données EMF provenant de scénarios d’initialisation et opérationnels en données ITCS. Transfert des données ITCS au visuel 2D/3D grâce à l’infrastructure de distribution.",
               "termesTechniques": [
                 35,
-                61,
-                63,
-                71,
-                82,
-                102,
                 104
               ]
             }, {
+              "titre": "Conception d'un kit d'interfaçage",
               "description": "Développement d’un kit d’interfaçage pour un outil de visualisation d’entités de simulation. Mise en place d’une passerelle pour communiquer avec l’outil.",
               "termesTechniques": [
                 2,
-                18,
-                61,
-                63,
-                71,
-                82,
-                102
+                18
               ]
             }, {
+              "titre": "Infrastructure de distribution de données",
               "description": "Conception et développement d’une infrastructure de distribution de données de simulation.",
               "termesTechniques": [
                 22,
                 61,
-                63,
-                69,
-                71,
-                82,
-                102
+                69
               ]
             }
           ]
@@ -622,32 +658,31 @@
         {
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
-          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul><li>la conception,</li><li>l'architecture,</li><li>la configuration de l’exécution,</li><li>l'exécution de la fédération,</li><li>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
+          "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la conception,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'architecture,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la configuration de l’exécution,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'exécution de la fédération,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
           "termesTechniques": [
+            1,
+            13,
+            63
           ],
           "realisations": [
             {
+              "titre": "Conception d’un socle technique",
               "description": "Conception d’un socle technique permettant l’interconnexion de composants de services basé sur Equinox (implémentation de la norme OSGi), la programmation par Aspect et les annotations JAVA.",
               "termesTechniques": [
-                1,
                 9,
-                13,
                 40,
                 49,
                 50,
                 61,
-                63,
                 69
               ]
             }, {
-              "description": "Comparaison des frameworks GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
+              "titre": "Comparaison de bibliothèques",
+              "description": "Comparaison des bibliothèques GumTree et JFreeChart pour le rendu de courbes actualisées en temps réel par des données en provenance de simulateurs.",
               "termesTechniques": [
-                1,
-                13,
                 32,
                 33,
-                40,
-                63
+                40
               ]
             }
           ]
@@ -662,11 +697,12 @@
         {
           "nom": "Monitoring du jeu video Soldat",
           "client": "",
-          "description": "Le but de ce projet, réalisé au cours de la formation d'ingénieur, est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer:<ul><li>le multithreading,</li><li> la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie,</li><li> il doit enfin fournir une IHM grâce à la bibliothèque Ncurses.</li></ul>",
+          "description": "Le but de ce projet, réalisé au cours de la formation d'ingénieur, est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>le multithreading,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie,</li><li><i class=\"fa-li fa fa-angle-right\"></i> il doit enfin fournir une IHM grâce à la bibliothèque Ncurses.</li></ul>",
           "termesTechniques": [
           ],
           "realisations": [
             {
+              "titre": "Développement d’un serveur d’administration multithreadé",
               "description": "Développement d’un serveur d’administration multithreadé, les clients étant les serveurs de jeu.",
               "termesTechniques": [
                 3,
@@ -687,11 +723,12 @@
         {
           "nom": "Projet OEDIPP",
           "client": "DAM:  Direction des Affaires Maritimes (Saint Malo)",
-          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités: <ul><li>la gestion informatisée des dossiers d'inscription,</li><li>l'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques,</li><li>la délivrance des titres de conduites,</li><li>la gestion informatisée des centres d'examen.</li></ul>",
+          "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la gestion informatisée des dossiers d'inscription,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la délivrance des titres de conduites,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la gestion informatisée des centres d'examen.</li></ul>",
           "termesTechniques": [
           ],
           "realisations": [
             {
+              "titre": "Développement sur architecture 3 tiers",
               "description": "Création des vues pour la gestion des centres et des sessions d’examens (Présentation / Métier / Accès aux données).<br />Création d’un messager chargé d’envoyer des mails de notification aux organisateurs de session.",
               "termesTechniques": [
                 1,
@@ -1063,15 +1100,18 @@
     }, {
       "id": 47,
       "categories": [1],
-      "libelle": "Sass"
+      "libelle": "Sass",
+      "url": "http://sass-lang.com"
     }, {
       "id": 48,
       "categories": [3],
-      "libelle": "DWGDirect"
+      "libelle": "DWGDirect",
+      "url": "http://www.opendwg.org/"
     }, {
       "id": 49,
       "categories": [21],
-      "libelle": "OSGI"
+      "libelle": "OSGi",
+      "url": "http://www.osgi.org/Main/HomePage"
     }, {
       "id": 50,
       "categories": [3],
@@ -1373,68 +1413,93 @@
       "libelle": "Spring Security"
     }, {
       "id": 124,
-      "categories": ["13"],
+      "categories": [13],
       "libelle": "Asynchronisme"
     }, {
       "id": 125,
-      "categories": ["13"],
+      "categories": [13],
       "libelle": "Interopérabilité"
     }, {
       "id": 126,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Config"
     }, {
       "id": 127,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Blaze DS"
     }, {
       "id": 128,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Parsley"
     }, {
       "id": 129,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Spicelib"
     }, {
       "id": 130,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Bootstrap"
     }, {
       "id": 131,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "SVNKit"
     }, {
       "id": 132,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "GEF"
     }, {
       "id": 133,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "GMF"
     }, {
       "id": 134,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "EMF Compare"
     }, {
       "id": 135,
-      "categories": ["3"],
+      "categories": [10],
       "libelle": "HTIC"
     }, {
       "id": 136,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "Java Web Start"
     }, {
       "id": 137,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "FreeMarker"
     }, {
       "id": 138,
-      "categories": ["3"],
+      "categories": [3],
       "libelle": "FOP"
     }, {
       "id": 139,
       "categories": [2],
       "libelle": "Eclipse CDT"
+    }, {
+      "id": 140,
+      "categories": [1],
+      "libelle": "XHTML"
+    }, {
+      "id": 141,
+      "categories": [3],
+      "libelle": "SAXON",
+      "url": "http://saxon.sourceforge.net"
+    }, {
+      "id": 142,
+      "categories": [20],
+      "libelle": "DOCX"
+    }, {
+      "id": 143,
+      "categories": [21],
+      "libelle": "OpenDocument"
+    }, {
+      "id": 144,
+      "categories": [3],
+      "libelle": "POI-HSSF"
+    }, {
+      "id": 145,
+      "categories": [13],
+      "libelle": "Multithreading"
     }
   ]
 

@@ -30,6 +30,7 @@ mgApp.animation '.animate-slide', [
     beforeAddClass: (element, className, done) ->
       console.log ".animate-ref-cat-projet beforeAddClass #{className}"
       if 'ng-hide' is className
+        element.fadeOut({queue: false, duration: 400});
         element.slideUp 400, () -> done()
       return
 
@@ -55,6 +56,7 @@ mgApp.animation '.animate-slide', [
       console.log ".animate-ref-cat-projet removeClass #{className}"
 
       if 'ng-hide' is className
+        element.fadeIn({queue: false, duration: 400});
         element.slideDown  400, () -> done()
       return
 

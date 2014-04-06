@@ -78,13 +78,26 @@ p.mention {
   color: #7e7e7e;
 }
 
-p.realisation {
-  font-family: $font-family-serif;
-  font-size: 15px;
-  color: #505050;
+div.realisation {
   margin-left: 20px;
   padding-left: 10px;
   border-left: 5px #7e7e7e solid;
+}
+
+h4.realisation-titre {
+  font-family: $font-family-sans-serif;
+  text-align: center;
+  font-size: 18px;
+  color: #505050;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+p.realisation-description {
+  font-family: $font-family-serif;
+  font-size: 15px;
+  color: #505050;
   text-justify: auto;
   text-align: justify;
 }
@@ -96,6 +109,7 @@ p.ref-categories {
   margin-left: 21px;
   padding-left: 10px;
   border-left: 3px #9d9d9d solid;
+  line-height: 1.8em;
 }
 
 p.ref-categories-realisation {
@@ -106,9 +120,11 @@ p.ref-categories-realisation {
   padding-left: 10px;
   border-left: 3px #9d9d9d solid;
   margin-bottom: 1.8em;
+  line-height: 1.8em;
 }
 
-button.btn.afficher-details {
+button.btn.afficher-details-btn {
+  font-family: $font-family-serif;
   font-size: 11px;
   padding: 0px 4px;
   color: #9a9a9a;
@@ -119,6 +135,16 @@ button.btn.afficher-details:hover {
   font-size: 11px;
   padding: 0px 4px;
   color: #505050;
+}
+
+span.afficher-details {
+  font-family: $font-family-serif;
+  font-size: 11px;
+  color: #9a9a9a;
+}
+
+span.realisations {
+  letter-spacing: 0.1em;
 }
 
 button.btn.masquer-details {
@@ -133,6 +159,8 @@ button.btn.masquer-details:hover {
   padding: 0px 4px;
   color: #505050;
 }
+
+
 
 .browsehappy {
     margin: 0.2em 0;

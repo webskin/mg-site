@@ -50,6 +50,7 @@ mgApp.factory 'mg.CVModels', [
         @termesTechniques = []
         @realisations = []
         @cachedRootPlusAllDescendentTermesTechniques = null
+        @cachedGetTroncCommunRefCategoriesTermesTechniques = null
         @cachedGetAllRefCategoriesTermesTechniques = null
 
       getRootPlusAllDescendentTermesTechniques: =>
@@ -67,10 +68,14 @@ mgApp.factory 'mg.CVModels', [
         return @cachedGetAllRefCategoriesTermesTechniques if @cachedGetAllRefCategoriesTermesTechniques
         @cachedGetAllRefCategoriesTermesTechniques = getRefCategoriesTermesTechniques @getRootPlusAllDescendentTermesTechniques
 
+      getTroncCommunRefCategoriesTermesTechniques: ->
+        return @cachedGetTroncCommunRefCategoriesTermesTechniques if @cachedGetTroncCommunRefCategoriesTermesTechniques
+        @cachedGetTroncCommunRefCategoriesTermesTechniques = getRefCategoriesTermesTechniques () => @termesTechniques
 
 
     class Realisation
       constructor: ({
+        @titre
         @description
       }) ->
         @projet = null
@@ -79,8 +84,7 @@ mgApp.factory 'mg.CVModels', [
 
       getRefCategoriesTermesTechniques: ->
         return @getAllRefCategoriesTermesTechniques if @getAllRefCategoriesTermesTechniques
-        @getAllRefCategoriesTermesTechniques = getRefCategoriesTermesTechniques () =>
-          _.union @termesTechniques, @projet.termesTechniques
+        @getAllRefCategoriesTermesTechniques = getRefCategoriesTermesTechniques () => @termesTechniques
         
 
     class CategorieTermeTechnique
