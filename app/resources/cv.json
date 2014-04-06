@@ -268,7 +268,9 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "Il s'agit d'un serveur exposant pour certains client du Groupe Hervé des services REST.",
           "termesTechniques": [
-              1
+            1,
+            36,
+            39
           ],
           "realisations": [
             {
@@ -286,26 +288,57 @@
         }, {
           "nom": "Conception Architecture Technique",
           "client": "iMDEO (Tours)",
-          "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le Système d'Information (Plus de 800 Mappings HBM existants).",
+          "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le Système d'Information (plus de 800 mappings HBM existants).",
           "termesTechniques": [
-              1,
-              9
+            1,
+            9,
+            13,
+            61,
+            64,
+            73,
+            82
           ],
           "realisations": [
             {
-              "description": "Création d'un module AspectJ permettant l'interopérabilité des services écrits avec Hibernate 3.0 avec ceux écrits avec Hibernate 4.1. En effet certaines classes n'existent plus dans Hibernate 4.1, des constantes ont été déplacées et des comportements modifiés. Le module AspectJ permet au lancement des applications d'instrumenter les classes dîtes «Legacy» pour qu'elles puissent s'adapter à leur nouvel environnement.",
+              "titre": "Module d'adaptation d'Hibernate 3.0 vers Hibernate 4.1",
+              "description": "Création d'un module AspectJ permettant l'interopérabilité des services écrits avec Hibernate 3.0 avec ceux écrits avec Hibernate 4.1. En effet certaines classes n'existent plus dans Hibernate 4.1, des constantes ont été déplacées et des comportements modifiés. Le module AspectJ permet au lancement des applications d'instrumenter les classes dites «Legacy» pour qu'elles puissent s'adapter à leur nouvel environnement.",
               "termesTechniques": [
-
+                9,
+                36,
+                37,
+                38,
+                43,
+                51,
+                126
               ]
             }, {
-              "description": "Création d'un module AspectJ permettant l'augmentation de la vitesse de lancement des Tests Unitaires. Dépendant de plus de 800 Mappings Hibernate «Legacy», les Tests Unitaires demandant l'exécution d'une base de données en mémoire mettent plus de 30 secondes à charger la session Hibernate. Le module prend en charge une liste de mappings «Legacy» qui sont directement impliqués dans l'exécution des tests puis le module instrumente les classes Hibernate pour quelles puissent ignorer toutes les références aux entités qui ne sont pas présentes dans la liste des mappings fournie en entrée. Le module est aussi capable de ne plus prendre en compte les contraintes de non-nullité pour facilité l'insertion de données lors de la phase de test.",
+              "titre": "Augmentation de la vitesse d'exécution des Tests Unitaires",
+              "description": "Création d'un module AspectJ permettant l'augmentation de la vitesse de lancement des Tests Unitaires. Dépendant de plus de 800 mappings Hibernate «Legacy», les Tests Unitaires demandant l'exécution d'une base de données en mémoire mettent plus de 30 secondes à charger la session Hibernate. Le module prend en charge une liste de mappings «Legacy» qui sont directement impliqués dans l'exécution des tests puis le module instrumente les classes Hibernate pour quelles puissent ignorer toutes les références aux entités qui ne sont pas présentes dans la liste des mappings fournie en entrée. Le module est aussi capable de ne plus prendre en compte les contraintes de non-nullité pour faciliter l'insertion de données lors des phases de test.",
               "termesTechniques": [
-
+                9,
+                36,
+                37,
+                38,
+                43,
+                51,
+                126
               ]
             }, {
-              "description": "Proposition d'un nouvean socle technique basé sur le framework Spring 3.2.4. Utilisant en grande partie la configuration non pas en mode XML mais en mode Java Annoté. Cette approche permet une meilleur réutilisabilité et extensibilité des configurations par défaut. Le socle utilise aussi la bibliothèque Config de TypeSafe permettant une configuration aisée des modules composant le socle et des modules constituant les applications métiers. Le socle propose aussi une façon simple de gérer les traductions de libellés basée sur un fichier de configuration de type clé-valeur en mode développement. Ce fichier permettra entre autre de générer le script SQL d'insertion en base des traductions pour les modes Recette et Production.",
+              "titre": "Architecture de l'infrastructure Java",
+              "description": "Proposition d'un nouvean socle technique basé sur le framework Spring 3.2.4. Utilisant en grande partie la configuration non pas en mode «XML» mais en mode «Java Annoté». Cette approche permet une meilleur réutilisabilité et extensibilité des configurations par défaut. Le socle utilise aussi la bibliothèque Config de TypeSafe permettant une configuration aisée des modules composant le socle et des modules constituant les applications métiers. Le socle propose aussi une façon simple de gérer les traductions de libellés basée sur un fichier de configuration de type clé-valeur en mode développement. Ce fichier permettra entre autre de générer le script SQL d'insertion en base des traductions pour les modes Recette et Production.",
               "termesTechniques": [
-
+                11,
+                36,
+                37,
+                38,
+                43,
+                126
+              ]
+            }, {
+              "titre": "Architecture de Construction de Projet",
+              "description": "L'ancien socle technique construisait les projets avec Ant. Le nouveau utilise Maven. Une hiérarchie de fichier pom.xml a été définie pour répondre de plus simplement et le plus souvent possible aux problématiques de construction de projet. On trouvera notamment: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>les POMs racines fournissant une configuration de build par technologie (Java, Flex, Scala …). Dans ces configurations il est défini:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>les versions des dépendances de compilation susceptibles d'être utilisées,</li><li><i class=\"fa-li fa fa-angle-right\"></i>les versions des plugins Maven utilisés dans le cycle de vie de construction de projet,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la définition de constantes réutilisables dans les sous POMs.</li></ul></li><li><i class=\"fa-li fa fa-angle-right\"></i>les POMs de second niveau chargés de configurer les options de compilation par défaut,</li><li><i class=\"fa-li fa fa-angle-right\"></i>les POMs architecturaux avec par exemple les POMs parents: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>des projets comportant des services,</li><li><i class=\"fa-li fa fa-angle-right\"></i>des projets comportant des contrôleur Web,</li><li><i class=\"fa-li fa fa-angle-right\"></i>des Web Applications.</li></ul><li><i class=\"fa-li fa fa-angle-right\"></i>les POMs des projets d'adaptation, rendant intéropérable les dépendances dites «historiques» avec la nouvelle infrastructure technique.</li></ul>",
+              "termesTechniques": [
+                82
               ]
             }
           ]
@@ -314,52 +347,148 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'objectif du projet est de fournir des outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Ces outils devront pouvoir s'exécuter au sein même d'un navigateur WEB. Ils font fortement appel à des primitives graphiques, le choix du Framework Flex s'est donc vite imposé.",
           "termesTechniques": [
-              1,
-              6,
-              16,
-              34,
-              41,
-              119
+            16,
+            61,
+            64,
+            73,
+            78,
+            82,
+            107,
+            149
           ],
           "realisations": [
             {
-              "description": "Réalisation du Planning des Chantiers. L'outil «Planning des Chantiers» va permettre de générer le planning de Gantt non pas au niveau tâche mais au niveau projet grâce aux dates de début et de fin des Chantiers fournies par le projet Gestion d'Ouvrage. L'utilisateur, via une zone de filtre, pourra paramétrer le contenu du diagramme et au besoin demander une impression PDF.",
+              "titre": "Planning des Chantiers",
+              "description": "L'outil «Planning des Chantiers» va permettre de générer le planning de Gantt non pas au niveau tâche mais au niveau projet grâce aux dates de début et de fin des chantiers fournies par le projet «Gestion d'Ouvrage». L'utilisateur, via une zone de filtres, pourra paramétrer le contenu du diagramme et au besoin demander une impression PDF.",
               "termesTechniques": [
-
+                1,
+                4,
+                6,
+                20,
+                21,
+                27,
+                28,
+                34,
+                36,
+                39,
+                41,
+                43,
+                56,
+                124,
+                128,
+                129,
+                127
               ]
             }, {
-              "description": "Conception d'un Planning des Ressources en Personnels. L'affectation de personnel sur les tâches du planning de Gantt permet de pouvoir restituer graphiquement et par projet le planning de chaque personne impliquée. Une personne pouvant travailler sur de multiples projets, l'outil doit être en mesure de pouvoir faire des aggrégations graphiques par projet et d'en montrer le détail si l'utilisateur le souhaite. Une zone de filtres permettra de choisir par exemple un sous-secteur ou une personne spécifique. Enfin l'utilisateur aura la possibilité d'éditer au format PDF le planning affiché à l'écran.",
+              "titre": "Planning des Ressources en Personnels",
+              "description": "L'affectation de personnel sur les tâches du planning de Gantt permet de pouvoir restituer graphiquement et par projet le planning de chaque personne impliquée. Une personne pouvant travailler sur de multiples projets, l'outil doit être en mesure de pouvoir faire des aggrégations graphiques par projet et d'en montrer le détail si l'utilisateur le souhaite. Une zone de filtres permettra de choisir par exemple un sous-secteur ou une personne spécifique. Enfin l'utilisateur aura la possibilité d'éditer au format PDF le planning affiché à l'écran.",
               "termesTechniques": [
-
+                1,
+                4,
+                6,
+                20,
+                21,
+                27,
+                28,
+                34,
+                36,
+                39,
+                41,
+                43,
+                56,
+                124,
+                128,
+                129,
+                127
               ]
             }, {
-              "description": "Réalisation d'un Planning de Gantt. En relation avec les données provenant du projet Gestion d'Ouvrage, l'application est capable pour un projet, d'afficher un diagramme de Gantt représentant le positionnement des différentes tâches le constituant, dans le temps. L'utilisateur pourra effectuer des délacements de tâches, créer des groupes de tâches, modifier les informations relatives aux tâches avec notamment la possibilité d'affecter du personnel sur celles-ci. Des relations de précédence entre tâches pourront être spécifiées. L'utilisateur aura aussi accès pour un sous-secteur donné, à un référentiel de modèles de Groupe/Tâche communément utilisés. Autre caractéristique importante: l'utisateur pourra paramétrer différents taux de main d'œuvre pour avoir une estimation des coûts inhérents à chacune des tâches. Il pourra aussi saisir l'avancement de chacune des tâches et avoir un avancement global du projet. Enfin il pourra éditer tout ou partie du diagramme au moyen de filtres au format PDF ou Microsoft Project.",
+              "titre": "Réalisation d'un Planning de Gantt",
+              "description": "En relation avec les données provenant du projet Gestion d'Ouvrage, l'application est capable pour un projet, d'afficher un diagramme de Gantt représentant le positionnement des différentes tâches le constituant, dans le temps. L'utilisateur pourra:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>effectuer des déplacements de tâches,</li><li><i class=\"fa-li fa fa-angle-right\"></i>créer des groupes de tâches,</li><li><i class=\"fa-li fa fa-angle-right\"></i>modifier les informations relatives aux tâches avec notamment la possibilité d'affecter du personnel sur celles-ci,</li><li><i class=\"fa-li fa fa-angle-right\"></i>des relations de précédence entre tâches pourront être spécifiées.</li></ul> L'utilisateur aura aussi accès pour un sous-secteur donné, à un référentiel de modèles de groupes constitués de tâches communément utilisés.<br/>Autre caractéristique importante: l'utisateur pourra paramétrer différents taux de main d'œuvre pour avoir une estimation des coûts inhérents à chacune des tâches.<br/>Il pourra aussi saisir l'avancement de chacune des tâches et avoir un avancement global du projet.<br/>Enfin il pourra éditer tout ou partie du diagramme au moyen de filtres au format PDF ou Microsoft Project.",
               "termesTechniques": [
-
+                1,
+                4,
+                6,
+                20,
+                21,
+                27,
+                28,
+                34,
+                36,
+                39,
+                41,
+                43,
+                56,
+                124,
+                128,
+                129,
+                127,
+                152
               ]
             }, {
-              "description": "Hypermedia Over AMF Over HTTP. Il s'agit d'un module faisant office de reverse proxy côté serveur, développé pour s'abstenir d'utiliser les trop faibles capacités des navigateurs WEB concernant l'utilisation de certains verbes HTTP. Le module reçoit de la part du client des Objets ActionScript sérialisés grâce au protocole AMF. Ces objets permettent d'émuler le protocole HTTP du côté du client. Le reverse proxy se charge de transcrire ces objets en appels HTTP réels vers un serveur de WebServices REST. Cette technique apporte un élément non négligeable: la compression apportée par le protocole AMF dans le sens Client -> Serveur.",
+              "titre": "Timeline",
+              "description": "Les modules à concevoir ont tous un point commun: «le temps». Le module «Timeline» consiste en une ligne des temps sur laquelle plusieurs opérations peuvent s'appliquer telles que:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>le zoom et le dé-zoom temporel,</li><li><i class=\"fa-li fa fa-angle-right\"></i>le déplassement temporel en glissant la «Timeline» avec la souris,</li><li><i class=\"fa-li fa fa-angle-right\"></i>le choix d'une sous-période,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la diffusion des bornes de début et de fin ainsi que la position des graduations aux modules externes.</li></ul>Une des difficultés majeure fut l'implémentation du formatage des dates en fonction de l'espace disponible entre les graduations temporelles.",
               "termesTechniques": [
-
+                6,
+                16,
+                41,
+                151
+              ]
+            }, {
+              "titre": "Hypermedia Over AMF Over HTTP",
+              "description": "Il s'agit d'un module faisant office de reverse proxy côté serveur, développé pour s'abstenir d'utiliser les trop faibles capacités des navigateurs WEB concernant l'utilisation de certains verbes HTTP. Le module reçoit de la part du client des Objets ActionScript sérialisés grâce au protocole AMF. Ces objets permettent d'émuler le protocole HTTP du côté du client. Le reverse proxy se charge de transcrire ces objets en appels HTTP réels vers un serveur de WebServices REST. Cette technique apporte un élément non négligeable: la compression apportée par le protocole AMF dans le sens Client -> Serveur.",
+              "termesTechniques": [
+                1,
+                6,
+                36,
+                39,
+                41,
+                127,
+                148,
+                150
               ]
             }
           ]
         }, {
           "nom": "Conception Framework Hypermedia",
           "client": "iMDEO (Tours)",
-          "description": "Dans l'optique de futurs projets à réaliser avec la technologie Flex, ce Framework ayant pour base Spring et Jersey sera capable de gérer de façon générique des ressources et les actions communément associées (Création, Lecture, Mise à Jour, Suppression, Recherche Générique)",
+          "description": "Dans l'optique de futurs projets à réaliser avec la technologie Flex, ce Framework ayant pour base Spring et Jersey sera capable de gérer de façon générique des ressources et les actions communément associées telles que: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la création,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la lecture, </li><li><i class=\"fa-li fa fa-angle-right\"></i>la mise à jour,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la suppression,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la recherche générique.</li></ul>",
           "termesTechniques": [
+            1,
+            13,
+            20,
+            21,
+            36,
+            39,
+            43,
+            61,
+            64,
+            73,
+            78,
+            82,
+            91,
+            112,
+            119,
+            130,
+            146
           ],
           "realisations": [
             {
+              "titre": "Recherche Générique",
               "description": "Conception d'un système de Recherche Générique à base d'Annotations Java. L'idée est de pouvoir facilement générer des résultats de recherche pour n'importe quelle resource, avec un format de représentation commun, ceci pour en faciliter l'affichage côté client.",
               "termesTechniques": [
-                1
+                147,
+                115
               ]
             }, {
-              "description": "Réflexion sur l'implémentation d'API REST embarquant potentiellement des liens dans les ressources retournées par le serveur. L'idée est de fournir des Classes de base Abstrayant le concept de Ressource et les relations (liens + semantique de relation) vers les autres ressources qui peuvent en découler. Une resoure est alors considérée comme un Hypermedia.",
+              "titre": "API Hypermedia",
+              "description": "Réflexion sur l'implémentation d'API REST embarquant potentiellement des liens dans les ressources retournées par le serveur. L'idée est de fournir des classes de base abstrayant le concept de ressource et les relations (liens + semantique de relation) vers les autres ressources qui peuvent en découler. Une resource est alors considérée comme un Hypermedia.",
               "termesTechniques": [
-                1
+                27,
+                28,
+                29,
+                127,
+                148,
+                150
               ]
             }
           ]
@@ -368,22 +497,32 @@
           "client": "iMDEO (Tours) pour le Groupe Hervé",
           "description": "L'application «Objectifs Fonctionnels» permet de définir chaque année les objectifs fonctionnels que veulent atteindre les différentes structures du groupe.",
           "termesTechniques": [
-              1,
-              91,
-              130
+
           ],
           "realisations": [
             {
-              "description": "Conception et Développement de l'application. Le fonctionnement de l'application est récursif. C'est à dire que la société mère (Le Groupe Hervé) définit les objectifs commun à toutes ses sociétés filiales, celles-ci peuvent affiner et/ou modifier ces objectifs originaux qui serviront de base de définition des objectifs des Agences et ainsi de suite pour les Secteurs et les Sous-Secteurs.",
+              "titre": "Conception et développement de l'application",
+              "description": "Le fonctionnement de l'application est récursif. C'est à dire que la société mère (le Groupe Hervé) définit les objectifs communs à toutes ses sociétés filiales, celles-ci peuvent affiner et/ou modifier ces objectifs originaux qui serviront de base de définition des objectifs des Agences et ainsi de suite pour les Secteurs et les Sous-Secteurs.",
               "termesTechniques": [
-
+                1,
+                4,
+                7,
+                11,
+                13,
+                61,
+                64,
+                73,
+                78,
+                91,
+                112,
+                130
               ]
             }
           ]
         }, {
           "nom": "GDA:  Gestion Des Achats",
           "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des Articles. Tout ceci dans un environnement Eclipse RCP  pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
+          "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des articles. Tout ceci dans un environnement Eclipse RCP pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
           "termesTechniques": [
             1,
             13,
@@ -393,64 +532,94 @@
             63,
             69,
             73,
-            95,
-            100
+            78,
+            100,
+            107
           ],
           "realisations": [
             {
-              "description": "Mise en Cache des Projets.<br/>Certains projets contiennent plus de 30  000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour le mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les selections par lot (batch-size).",
+              "titre": "Mise en Cache des Projets",
+              "description": "Certains projets contiennent plus de 30  000 nœuds à charger. L'utilisation d'une base de donnée relationnelle et d'Hibernate atteint ses limites puisqu'il faut parfois 5 minutes pour charger un projet. C'est pourquoi, l'utilisateur peut opter pour la mise en cache des projets dans des BLOB SQL. Les BLOB contiennent la sérialisation Java des projets à mettre en cache. Cette technique permet d'améliorer les performances de chargement d'un facteur 30. L'invalidation du cache a lieu à chaque évolution du modèle et/ou si les données ont été mises à jour depuis une application externe. Il faut rappeler que les optimisations Hibernate ont été poussées dans leurs derniers retranchements notamment avec les sélections par lot (batch-size).",
               "termesTechniques": [
-
+                11,
+                32,
+                33,
+                146
               ]
             }, {
-              "description": "Gestion par Exercice.<br/>Certains projets sont particuliers et disposent d'un budget alloué pour l'année. Le budget initial se dégrève à chaque ajout de nouveaux besoins. Les vues sont préfiltrées sur l'exercice courant et l'utilisateur a la possibilité de consulter les execices antérieurs.",
+              "titre": "Gestion par Exercice",
+              "description": "Certains projets sont particuliers et disposent d'un budget alloué pour l'année. Le budget initial se dégrève à chaque ajout de nouveaux besoins. Les vues sont préfiltrées sur l'exercice courant et l'utilisateur a la possibilité de consulter les exercices antérieurs.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Globalisation des achats.<br/>L'utilisateur peut exporter un ensemble de besoins en phase de préparation au format Microsoft Excel. Cela permet de regrouper les besoins commun d'un ensemble de projets pour obtenir plus facilement des rabais de la part des fournisseurs.",
+              "titre": "Globalisation des achats",
+              "description": "L'utilisateur peut exporter un ensemble de besoins en phase de préparation au format Microsoft Excel. Cela permet de regrouper les besoins communs d'un ensemble de projets pour obtenir plus facilement des rabais de la part des fournisseurs.",
               "termesTechniques": [
-
+                144
               ]
             }, {
-              "description": "Historique des Synthèsee.<br/>De façon transparente et après chaque sauvegarde de projet, l'application commite sur un dépôt dédié la synthèse hierarchique des montants des besoins. L'utilisateur peut ensuite ouvrir un outil de comparaison, signalant tous les changements qu'il y eu entre deux versions différentes de synthèse.",
+              "titre": "Historique des Synthèses",
+              "description": "De façon transparente et après chaque sauvegarde de projet, l'application commite sur un dépôt dédié la synthèse hiérarchique des montants des besoins. L'utilisateur peut ensuite ouvrir un outil de comparaison, signalant tous les changements qu'il y eu entre deux versions différentes de synthèse.",
               "termesTechniques": [
-
+                32,
+                33,
+                131,
+                134
               ]
             }, {
-              "description": "Réception des Commandes.<br/>Tout comme la validation des commandes, la phase de réception doit aussi se faire au travers d'Oracle Application avec les mêmes problématiques transactionnelles.",
+              "titre": "Réception des Commandes",
+              "description": "Tout comme la validation des commandes, la phase de réception doit aussi se faire au travers d'Oracle Application avec les mêmes problématiques transactionnelles.",
               "termesTechniques": [
-
+                11,
+                12,
+                32,
+                33
               ]
             }, {
-              "description": "Validation des commandes.<br/>L'étape finale d'une commande, sa «validation», est toujours liée au système Oracle Application. L'application gestion des achats est interopérable avec ce systéme et à chaque validation de commande dans GDA une commande est validée du côté d'Oracle Application. Ici la difficulté est que la transaction n'est pas globale et qu'un système a été mis en place pour effectuer tout le nettoyage en cas d'erreur d'Oracle Application.",
+              "titre": "Validation des commandes",
+              "description": "L'étape finale d'une commande, sa «validation», est toujours liée au système Oracle Application. L'application est interopérable avec ce systéme et à chaque validation de commande dans GDA une commande est validée du côté d'Oracle Application. Ici la difficulté est que la transaction n'est pas globale et qu'un système a été mis en place pour effectuer tout le nettoyage en cas d'erreur d'Oracle Application.",
               "termesTechniques": [
-
+                11,
+                12,
+                32,
+                33
               ]
             }, {
-              "description": "Élaboration de Tableaux de synthèse.<br/>Un projet d'achat brasse un grand nombre d'entités. Un onglet spécifique a été développé pour présenter différent rapports comme par exemple la répartition de montants par catégorie de besoin.",
+              "titre": "Élaboration de tableaux de synthèse",
+              "description": "Un projet d'achat brasse un grand nombre d'entités. Un onglet spécifique a été développé pour présenter différent rapports comme par exemple la répartition de montants par catégorie de besoin.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Réalisation d'Actions de masse.<br/>Ces actions sont implémentées en utilisant le patron de conception «Visiteur» qui facilite grandement le parcours d'arbre et au passage la modification de ses nœuds. Par exemple, il est possible de changer la date de besoin de tous les besoins descendants d'un Lot particulié.",
+              "titre": "Réalisation d'Actions de masse",
+              "description": "Ces actions sont implémentées en utilisant le patron de conception «Visiteur» qui facilite grandement le parcours d'arbre et au passage la modification de ses nœuds. Par exemple, il est possible de changer la date de besoin de tous les besoins descendants d'un lot particulié.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception.<br/>L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulle expliquant les contraintes fontionnelles qui empêche de déposer un élément sur le nœud d'un arbre.",
+              "titre": "Développement des modules CRUD pour les parties: Besoin, Intention d'Achat, Commande, Réception",
+              "description": "L'application use beaucoup du Drag & Drop dans les phases de transformation de modèle. Comme par exemple la transformation d'un besoin en intention d'achat s'effectue en glissant un besoin pour le déposer dans l'arbre des Intentions d'Achat. Chacune des parties dispose d'une zone de filtrage. Les filtres s'effectuent en temps réel et l'utilisateur est informé en retour par l'application de styles sur les portions de libellé qui satisfont les critères de recherche. Dans certaines vue, l'utilisateur a aussi la possibilité de choisir parmis différentes options de représentation de données. Il est par exemple possible d'afficher l'arbre des commandes soit en utilisant une vision par «date de besoin» où par «acheteur». L'ergonomie de l'application a été mûrement réfléchie avec par exemple l'apparition d'infobulles expliquant les contraintes fontionnelles qui empêchent de déposer un élément sur le nœud d'un arbre.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Développement de la fonctionnalité d'import de Devis, issu de l'outil de chiffrage.<br/>L'import consiste en une transformation de modèle. Les lignes de devis sont converties en lignes de besoin pour de potentielles commandes.",
+              "titre": "Développement de la fonctionnalité d'import de devis",
+              "description": "Issu de l'outil de chiffrage l'import du devis consiste en une transformation de modèle. Les lignes de devis sont converties en lignes de besoin pour de potentielles commandes.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }, {
-              "description": "Conception d'un module gérant une pile d'actions annulables.<br/>La difficulté d'un tel module est qu'après chaque sauvegarde sur le serveur c'est une toute nouvelle référence du projet d'achat qui remonte sur le client. Il faut que le module soit capable de se synchroniser avec la référence la plus récente. Il se dote donc de primitives utilisées avant chaque annulation. Elles permettent de vérifier si l'action à refaire ou à défaire concerne des entités désynchronisées. Si tel est le cas il faut retrouver au moyen du patron de conception «visiteur» le contexte qui est en phase avec ladite action.",
+              "titre": "Conception d'un module gérant une pile d'actions annulables",
+              "description": "La difficulté d'un tel module est qu'après chaque sauvegarde sur le serveur c'est une toute nouvelle référence du projet d'achat qui remonte sur le client. Il faut que le module soit capable de se synchroniser avec la référence la plus récente. Il se dote donc de primitives utilisées avant chaque annulation. Elles permettent de vérifier si l'action à refaire ou à défaire concerne des entités désynchronisées. Si tel est le cas il faut retrouver au moyen du patron de conception «visiteur» le contexte qui est en phase avec ladite action.",
               "termesTechniques": [
-
+                32,
+                33
               ]
             }
           ]
@@ -467,8 +636,9 @@
               63,
               69,
               73,
-              95,
-              100
+              78,
+              100,
+              107
           ],
           "realisations": [
             {
@@ -991,11 +1161,11 @@
       "libelle": "JNA"
     }, {
       "id": 20,
-      "categories": [3, 21],
+      "categories": [21],
       "libelle": "JAX-RS"
     }, {
       "id": 21,
-      "categories": [3],
+      "categories": [3, 21],
       "libelle": "JAXB"
     }, {
       "id": 22,
@@ -1293,10 +1463,6 @@
       "categories": [3],
       "libelle": "URI.js"
     }, {
-      "id": 95,
-      "categories": [11],
-      "libelle": "Tomcat"
-    }, {
       "id": 96,
       "categories": [12],
       "libelle": "Apache"
@@ -1393,11 +1559,11 @@
       "libelle": "StreamServe"
     }, {
       "id": 119,
-      "categories": [3],
+      "categories": [1, 20],
       "libelle": "XML"
     }, {
       "id": 120,
-      "categories": [3],
+      "categories": [20],
       "libelle": "JSON"
     }, {
       "id": 121,
@@ -1422,7 +1588,8 @@
     }, {
       "id": 126,
       "categories": [3],
-      "libelle": "Config"
+      "libelle": "Config",
+      "url": "https://github.com/typesafehub/config"
     }, {
       "id": 127,
       "categories": [3],
@@ -1500,6 +1667,41 @@
       "id": 145,
       "categories": [13],
       "libelle": "Multithreading"
+    }, {
+      "id": 146,
+      "categories": [13],
+      "libelle": "Sérialisation",
+      "url": "http://docs.oracle.com/javase/tutorial/jndi/objects/serial.html"
+    }, {
+      "id": 147,
+      "categories": [1],
+      "libelle": "Java Annotations",
+      "url": "http://docs.oracle.com/javase/tutorial/java/annotations/"
+    }, {
+      "id": 148,
+      "categories": [22],
+      "libelle": "REST in Practice",
+      "url": "http://shop.oreilly.com/product/9780596805838.do"
+    }, {
+      "id": 149,
+      "categories": [2],
+      "libelle": "Eclipse STS",
+      "url": "http://shop.oreilly.com/product/9780596805838.do"
+    }, {
+      "id": 150,
+      "categories": [18],
+      "libelle": "HTTP",
+      "url": "http://www.ietf.org/rfc/rfc2616.txt"
+    }, {
+      "id": 151,
+      "categories": [22],
+      "libelle": "Flash Builder 4 and Flex 4 Bible",
+      "url": "http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470488956.html"
+    }, {
+      "id": 152,
+      "categories": [1],
+      "libelle": "XML Schema",
+      "url": "http://www.w3.org/XML/Schema.html"
     }
   ]
 

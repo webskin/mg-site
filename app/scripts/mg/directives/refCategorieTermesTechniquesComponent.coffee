@@ -11,12 +11,12 @@ mgApp.directive 'refCategorieTermesTechniquesComponent', [
     link: (scope, element, attrs) ->
 
     template:"""
-<div>
+<p class="ref-categorie">
 
      <span><strong>{{refCategorieTermesTechniques.libelle | trustedTrad}}:</strong> </span><span ng-repeat="t in refCategorieTermesTechniques.termes">{{t.libelle | trustedTrad}}{{$last ? '.' : ', '}} </span>
 
 
 
-</div>
+</p>
 """
 ]

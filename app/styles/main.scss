@@ -109,7 +109,7 @@ p.ref-categories {
   margin-left: 21px;
   padding-left: 10px;
   border-left: 3px #9d9d9d solid;
-  line-height: 1.8em;
+  line-height: 1.3em;
 }
 
 p.ref-categories-realisation {
@@ -120,7 +120,15 @@ p.ref-categories-realisation {
   padding-left: 10px;
   border-left: 3px #9d9d9d solid;
   margin-bottom: 1.8em;
-  line-height: 1.8em;
+  line-height: 1.3em;
+}
+
+p.ref-categorie {
+  margin-bottom: 4px;
+}
+
+span.tronc-commun {
+  font-size: 12px;
 }
 
 button.btn.afficher-details-btn {

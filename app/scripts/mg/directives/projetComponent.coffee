@@ -40,7 +40,7 @@ mgApp.directive 'projetComponent', [
     <div class="row">
       <div ng-show="projet.getTroncCommunRefCategoriesTermesTechniques().length > 0" class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7">
         <p class="ref-categories">
-          <span><strong>Tronc commun</strong></span>
+          <span class="tronc-commun"><strong>Tronc commun</strong></span>
           <ref-categorie-termes-techniques-component
               ng-repeat="refCat in projet.getTroncCommunRefCategoriesTermesTechniques()"
               ref-categorie-termes-techniques="refCat">
