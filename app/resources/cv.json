@@ -193,7 +193,7 @@
           "id": 16,
           "nom": "Gestion des Réceptions Mobile",
           "client": "iMDEO pour le Groupe Hervé  (Tours) ",
-          "descriptionCourte": "Application mobile utile aux salariés n'ayant pas d'accès direct à une station de travail. Depuis leur smartphone, ils peuvent enregistrer les réceptions de commande effectuée au préalable depuis l'application gestion des achats.",
+          "descriptionCourte": "Application mobile utile aux salariés n'ayant pas d'accès direct à une station de travail. Depuis leur smartphone, ils peuvent enregistrer les réceptions de commandes effectuées au préalable depuis l'application gestion des achats.",
             "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA (Eclipse RCP). Ceci étant peu pratique pour les salariés, la nouvelle application mobile doit leur faire gagner le temps de la double saisie.",
           "termesTechniques": [
             1,
