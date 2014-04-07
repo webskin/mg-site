@@ -93,6 +93,8 @@ mgApp.factory 'mg.CVMappings', [
         new m.CV(
           json.informationsGenerales
           formations
+          json.resume
+          json.domainesExpertises
           experiencesProfessionnelles
           stagesEtProjetsFinEtude
         )

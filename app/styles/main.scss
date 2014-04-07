@@ -2,15 +2,12 @@ $font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
 $font-family-serif:       "Merriweather", "Times New Roman", Times, serif !default;
 
 
-$font-size-base: 16px;
+$font-size-base: 16px; // 16px de base  mettre 10px pour l'impression
+$font-size-base-impression: 10px;
 $icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/";
 $grid-gutter-width: 20px;
 
 @import "bootstrap-sass/vendor/assets/stylesheets/bootstrap";
-
-#cv {
-  line-height: 1.5;
-}
 
 .container {
   padding: 20px;
@@ -18,64 +15,121 @@ $grid-gutter-width: 20px;
   box-shadow: 1px 1px 12px #555;
 }
 
+#cv {
+  line-height: 1.5;
+  font-size: $font-size-base;
+}
+
+.impression {
+  font-size: $font-size-base-impression !important;
+}
+
+p.informations-generales {
+  color: #333333;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+span.nom-prenom {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
 h1.title {
   color: #333333;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2.8125em; // 45px pour 16px
   text-align: center;
   text-shadow: 0px 1px 3px #666;
+  margin-bottom: 0.2444em;
+  margin-top: 0.4em;
 }
 
 h2.subtitle {
   color: #444444;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 1.75em; // 28 px pour 16 px
   text-shadow: 0px 1px 2px #666;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 h3.subsubtitle {
   color: #6e6e6e;
   font-weight: 600;
-  font-size: 19px;
-  margin-top: 11px;
+  font-size: 1.1875em; // 19 px pour 16 px
+  margin-top: 0.5789em;
+  margin-bottom: 0.5789em;
+}
+
+h4.realisation-titre {
+  font-family: $font-family-sans-serif;
+  text-align: center;
+  font-size: 1.125em; // 18 px pour 16 px
+  color: #505050;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0.6111em;
 }
 
 p.periode {
-  margin-top: 2em;
+  margin-top: 0.647em;
   color: #999999;
   letter-spacing: 0.3em;
-  font-size: 17px;
+  font-size: 1.0625em; // 17 px pour 16 px
   font-weight: 600;
   border-bottom: 3px solid #999999;
+
+  margin-bottom: 0em;
+
+}
+.expertises, .resume {
+  font-size: 1.2em !important;
+}
+
+.expertises strong {
+  letter-spacing: 0.08em;
 }
 
 p.entreprise, p.statut {
   color: #999999;
   letter-spacing: 0.1em;
-  font-size: 17px;
+  font-size: 1.0625em; // 17 px pour 16 px
   font-style: italic;
   font-weight: 400;
+  margin-bottom: 0em;
 }
 
 p.client {
   font-family: $font-family-serif;
-  font-size: 17px;
+  font-size: 1.0625em; // 17 px pour 16 px
   color: #999999;
+  margin-bottom: 0em;
+  display: inline-block;
 }
 
 p.description {
   font-family: $font-family-serif;
-  font-size: 17px;
+  font-size: 1.0625em; // 17 px pour 16 px
   color: #505050;
   text-justify: auto;
   text-align: justify;
+  margin-top: 0.32em;
+  margin-bottom: 0.6470em;
+  //display: none;
 }
 
 p.mention {
   font-family: $font-family-serif;
-  font-size: 15px;
+  font-size: 0.9375em; // 15 px pour 16 px
   font-weight: 600;
   color: #7e7e7e;
+}
+
+div.all-ref-cat-row {
+  //display: none;
 }
 
 div.realisation {
@@ -84,19 +138,11 @@ div.realisation {
   border-left: 5px #7e7e7e solid;
 }
 
-h4.realisation-titre {
-  font-family: $font-family-sans-serif;
-  text-align: center;
-  font-size: 18px;
-  color: #505050;
-  letter-spacing: 0.05em;
-  font-weight: 600;
-  margin-top: 0px;
-}
+
 
 p.realisation-description {
   font-family: $font-family-serif;
-  font-size: 15px;
+  font-size: 0.9375em; // 15 px pour 16 px
   color: #505050;
   text-justify: auto;
   text-align: justify;
@@ -104,66 +150,79 @@ p.realisation-description {
 
 p.ref-categories {
   font-family: $font-family-serif;
-  font-size: 11px;
+  font-size: 0.9em; // 12 px pour 16 px
   color: #828282;
-  margin-left: 21px;
-  padding-left: 10px;
+  margin-left: 1.9090em;
+  padding-left: 0.9090em;
   border-left: 3px #9d9d9d solid;
-  line-height: 1.3em;
+  line-height: 1.2em;
+}
+
+p.ref-categories-pour-impression {
+  font-family: $font-family-serif;
+  font-size: 0.9em; // 12 px pour 16 px
+  color: #828282;
+  margin-left: 1.9090em;
+  padding-left: 0.9090em;
+  border-left: 3px #9d9d9d solid;
+  line-height: 1.5em;
 }
 
 p.ref-categories-realisation {
   font-family: $font-family-serif;
-  font-size: 11px;
+  font-size: 0.9em; // 12 px pour 16 px
   color: #828282;
-  margin-left: 21px;
-  padding-left: 10px;
+  margin-left: 1.9090em;
+  padding-left: 0.9090em;
   border-left: 3px #9d9d9d solid;
   margin-bottom: 1.8em;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 p.ref-categorie {
-  margin-bottom: 4px;
+  font-size: 0.9em;
+  margin-bottom: 0.25em;
+}
+
+span.titre-categorie {
+  font-weight: 600;
 }
 
 span.tronc-commun {
-  font-size: 12px;
+  // font-size: 0.75em; // 12 px pour 16 px
 }
 
 button.btn.afficher-details-btn {
   font-family: $font-family-serif;
-  font-size: 11px;
+  font-size: 0.6875em; // 11 px pour 16 px
   padding: 0px 4px;
   color: #9a9a9a;
   float: right;
 }
 
 button.btn.afficher-details:hover {
-  font-size: 11px;
   padding: 0px 4px;
   color: #505050;
 }
 
 span.afficher-details {
   font-family: $font-family-serif;
-  font-size: 11px;
   color: #9a9a9a;
 }
 
 span.realisations {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 button.btn.masquer-details {
-  font-size: 11px;
+  font-size: 0.6875em; // 11 px pour 16 px
   padding: 0px 4px;
   color: #828282;
   margin-right: 3px;
 }
 
 button.btn.masquer-details:hover {
-  font-size: 11px;
+  font-size: 0.6875em; // 11 px pour 16 px
   padding: 0px 4px;
   color: #505050;
 }

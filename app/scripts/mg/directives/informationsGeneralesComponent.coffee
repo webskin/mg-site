@@ -3,28 +3,28 @@
 mgApp = angular.module 'mgApp'
 
 mgApp.directive 'informationsGeneralesComponent', [
+  'moment'
   'mg.CVService'
-  (cvService) ->
+  'mg.options'
+  (moment, cvService, options) ->
     restrict: 'E'
     scope:
       informationsGenerales: '='
     link: (scope, element, attrs) ->
-
+      scope.options = options
+      scope.age = () ->
+        return '' if not scope.informationsGenerales
+        moment().diff(scope.informationsGenerales.naissance, 'years')
     template:"""
-<div>
-    <span>{{informationsGenerales.prenom}} {{informationsGenerales.nom}}</span><br />
-    <span>{{informationsGenerales.statut}} </span><br />
-    <span>{{informationsGenerales.naissance | mformat}} </span><br />
-    <span>{{informationsGenerales.adresse}} </span><br />
-    <span>{{informationsGenerales.codePostal}} {{informationsGenerales.ville}} </span><br />
-    <span>{{informationsGenerales.telephones.mobile}} </span><br />
-    <span>{{informationsGenerales.telephones.fixe}} </span><br />
-    <span>{{informationsGenerales.email}} </span><br />
-    <span>{{informationsGenerales.siteWeb}} </span><br />
-    <span>{{informationsGenerales.siret}} </span><br />
-    <span>{{informationsGenerales.tva}} </span><br />
-    <span>{{informationsGenerales.ape}} </span><br />
-    <span ng-repeat="a in informationsGenerales.autres" >{{a}}</span>
-</div>
+<p class="informations-generales">
+    <span class="nom-prenom">{{informationsGenerales.prenom}} {{informationsGenerales.nom}}</span><br />
+    <span>{{age()}} ans</span><br />
+    <span>{{informationsGenerales.adresse | trustedTrad}} </span><br />
+    <span>{{informationsGenerales.codePostal | trustedTrad}} {{informationsGenerales.ville | trustedTrad}} </span><br />
+    <span>{{informationsGenerales.telephones.mobile | trustedTrad}} </span><br />
+    <span>{{informationsGenerales.email | trustedTrad}} </span><br />
+    <span ng-show="options.pourImpression">{{informationsGenerales.siteWeb | trustedTrad}} </span><br ng-show="options.pourImpression"/>
+    <span ng-repeat="a in informationsGenerales.autres" >{{a | trustedTrad}}</span>
+</p>
 """
 ]

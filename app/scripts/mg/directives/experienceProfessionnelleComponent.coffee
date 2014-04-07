@@ -4,12 +4,17 @@ mgApp = angular.module 'mgApp'
 
 mgApp.directive 'experienceProfessionnelleComponent', [
   'mg.CVService'
-  (cvService) ->
+  'mg.options'
+  (cvService, options) ->
     restrict: 'E'
     scope:
       experienceProfessionnelle: '='
     link: (scope, element, attrs) ->
-
+      scope.projetFilter = (projet) ->
+        if options.pourImpression
+          not _.contains options.pourImpressionOptions.projetsToExclude, projet.id
+        else
+          true
     template:"""
 <div>
   <div class="row">
@@ -19,7 +24,7 @@ mgApp.directive 'experienceProfessionnelleComponent', [
         <p class="statut" ng-show="experienceProfessionnelle.statut" ng-bind-html="experienceProfessionnelle.statut | trustedTrad"></p>
     </div>
   </div>
-  <div ng-repeat="p in experienceProfessionnelle.projets">
+  <div ng-repeat="p in experienceProfessionnelle.projets | filter:projetFilter">
     <projet-component projet="p"></projet-component>
 
   </div>

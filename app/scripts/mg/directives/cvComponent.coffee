@@ -4,16 +4,41 @@ mgApp = angular.module 'mgApp'
 
 mgApp.directive 'cvComponent', [
   'mg.CVService'
-  (cvService) ->
+  'mg.options'
+  (cvService, options) ->
     restrict: 'E'
     scope:
       cv: '='
     link: (scope, element, attrs) ->
+      scope.options = options
+      scope.formationFilter = (formation) ->
+        if options.pourImpression
+          not _.contains options.pourImpressionOptions.formationsToExclude, formation.id
+        else
+          true
 
     template:"""
-<div id="cv">
+<div id="cv" ng-class="{impression : options.pourImpression}">
   <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
-  <br/>
+  <div class="row">
+    <div class="col-lg-7 col-md-7">
+      <h1 class="title">Résumé</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-7 col-md-7">
+      <p class="description resume" ng-bind-html="cv.resume | trustedTrad"></p>
+    </div>
+  </div><div class="row">
+    <div class="col-lg-7 col-md-7">
+      <h1 class="title">Domaines d'Expertises</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-7 col-md-7">
+      <p class="description expertises" ng-bind-html="cv.domainesExpertises | trustedTrad"></p>
+    </div>
+  </div>
   <div class="row">
     <div class="col-lg-7 col-md-7">
       <h1 class="title">Expériences Professionnelles</h1>
@@ -22,25 +47,22 @@ mgApp.directive 'cvComponent', [
   <div ng-repeat="e in cv.experiencesProfessionnelles">
     <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
   </div>
-  <br />
-  <div class="row">
+  <div ng-hide="options.pourImpression" class="row">
     <div class="col-lg-7 col-md-7">
       <h1 class="title">Stages et Projets de Fin d'Étude</h1>
     </div>
   </div>
-  <div ng-repeat="e in cv.stagesEtProjetsFinEtude">
+  <div ng-hide="options.pourImpression" ng-repeat="e in cv.stagesEtProjetsFinEtude">
     <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
   </div>
-  <br />
   <div class="row">
     <div class="col-lg-7 col-md-7">
       <h1 class="title">Formations</h1>
     </div>
   </div>
-  <div ng-repeat="f in cv.formations">
+  <div ng-repeat="f in cv.formations | filter:formationFilter">
     <formation-component formation="f"></formation-component>
   </div>
-  <br />
 </div>
 """
 ]

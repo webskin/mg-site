@@ -20,6 +20,7 @@
   },
   "formations": [
     {
+      "id": 5,
       "debut": "2013-11-01",
       "fin": "2013-12-31",
       "cursus": {
@@ -35,6 +36,7 @@
         "en":  "<span class='fa fa-certificate'/> Accomplishment (with distinction)"
       }
     }, {
+      "id": 4,
       "debut": "2012-09-01",
       "fin": "2012-10-31",
       "cursus": {
@@ -50,6 +52,7 @@
         "en":  "<span class='fa fa-certificate'/> Accomplishment (with distinction)"
       }
     }, {
+      "id": 3,
       "debut": "2004-09-01",
       "fin": "2007-09-01",
       "cursus": {
@@ -65,6 +68,7 @@
         "en": "<span class='fa fa-certificate'/> DIIC"
       }
     }, {
+      "id": 2,
       "debut": "2003-09-01",
       "fin": "2004-09-01",
       "cursus": {
@@ -80,6 +84,7 @@
         "en": "<span class='fa fa-certificate'/> DEUG (graduated first in my class)"
       }
     }, {
+      "id": 1,
       "debut": "2002-09-01",
       "fin": "2003-09-01",
       "cursus": {
@@ -96,6 +101,8 @@
       }
     }
   ],
+  "resume": "En tant qu'indépendant, je réalise chez mes clients des projets ambitieux tant sur le plan technique que fonctionnel. Je suis passionné par les nouvelles technologies et suis de près les nouvelles du monde de l'Open Source. Cette veille technologique me permet de faire plus aisément des propositions en adéquation avec les demandes de mes clients.",
+  "domainesExpertises": "Je considère avoir une bonne connaissance de l'écosystème <strong>J2EE</strong> et plus récemment, suite à l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis perfectionné au niveau des technologies <strong>JavaScript</strong>. Je suis en fait un adepte de <strong>CoffeeScript</strong> et m'adonne à la conception de projets basés sur <strong>AngularJS</strong> qui est pour moi ce qui se rapproche le plus de Flex. J'ai suivi également depuis 2011 des formations en ligne sur <strong>Scala</strong>, un langage que j'affectionne beaucoup, notamment pour l'apport du paradigme <strong>fonctionnel</strong> mais aussi pour les outils qui en découlent, tels que le framework <strong>Play</strong> ou la bibliothèque <strong>Akka</strong>.",
   "experiencesProfessionnelles": [
     {
       "debut": "2009-04-01",
@@ -104,20 +111,27 @@
       "statut": "",
       "projets": [
         {
+          "id": 19,
           "nom": "Administration de Référentiels",
           "client": "iMDEO (Tours)",
           "description": "Prototypage d'un outil de génération de code pour la création d'applications de gestion de référentiels.",
           "termesTechniques": [
-              1
+
           ],
           "realisations": [
             {
+              "titre": "Modèle de génération de code.",
               "description": "Réalisation d'une ébauche, permettant de construire facilement un modèle de génération de code en utilisant EMF. L'étape suivante étant de générer le code satisfaisant ce modéle. Le modèle décrit notamment le champs des différents objets admistrables, leurs relations et la cardinalités de celles-ci. Le modèle décrit aussi les contraintes appliquées sur chacun des champs (Non nullité, Expression régulière …).",
               "termesTechniques": [
+                1,
+                35,
+                134,
+                156
               ]
             }
           ]
         }, {
+          "id": 18,
           "nom": "Compagnonnage",
           "client": "iMDEO (Tours)",
           "description": "Transfert de compétences et support au développement.",
@@ -126,21 +140,25 @@
           ],
           "realisations": [
             {
+              "titre": "Tests Unitaires",
               "description": "Familiariser les développeurs avec l'écriture des Tests Unitaires et au développement par les Tests (TDD). Utilisation de JUnit et Mockito.",
               "termesTechniques": [
                 2,
                 4
               ]
             }, {
+              "titre": "Support",
               "description": "Support concernant l'utilisation du nouveau Socle Technique. Écriture d'une documentation complète.",
               "termesTechniques": [
               ]
             }
           ]
         }, {
+          "id": 17,
           "nom": "Rapport d'Activité",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Application destinée à générer un flux XML personnalisé, contenant différents choix de rapports liés à l'activité du Groupe Hervé. StreamServe sera chargé de transformer le flux en document PDF.",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "descriptionCourte": "Application destinée à générer un flux XML personnalisé, contenant différents choix de rapports liés à l'activité du Groupe Hervé.",
+          "description": "Application destinée à générer un flux XML personnalisé, contenant différents choix de rapports liés à l'activité du Groupe Hervé. StreamServe est chargé de transformer le flux en document PDF.",
           "termesTechniques": [
             1,
             7,
@@ -150,8 +168,10 @@
           ],
           "realisations": [
             {
-              "description": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insérera simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
+              "titre": "Meta-modèle SQL",
+              "description": "Conception d'un meta-modèle décrivant la structure des Requêtes SQL servant à générer le rapport. L'idée est d'avoir une solution générique ne nécéssitant pas de nouvelles mises en production à chaque ajout d'un nouveau rapport. L'administrateur insére simplement en base la structure de requête pour chaque nouveau rapport. Utilisation de JavaScript et de Velocity pour gérer le dynamisme de génération des requêtes SQL.",
               "termesTechniques": [
+                4,
                 69,
                 115,
                 116,
@@ -160,6 +180,7 @@
                 122
               ]
             }, {
+              "titre": "Modèle de Rapport JAXB",
               "description": "Conception d'un modèle JAXB générique décrivant la struture du flux XML et par la même occasion la structure de la page HTML de prévisualisation du rapport.",
               "termesTechniques": [
                 21,
@@ -169,32 +190,40 @@
             }
           ]
         }, {
+          "id": 16,
           "nom": "Gestion des Réceptions Mobile",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA (Eclipse RCP). Ceci étant peu pratique pour les salariés, la nouvelle application mobile doit leur faire gagner le temps de la double saisie.",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "descriptionCourte": "Application mobile utile aux salariés n'ayant pas d'accès direct à une station de travail. Depuis leur smartphone, ils peuvent enregistrer les réceptions de commande effectuée au préalable depuis l'application gestion des achats.",
+            "description": "Suite logique de l'application GDA (Gestion Des Achats). Les réceptions de commande s'effectuaient auparavant sur le client lourd GDA (Eclipse RCP). Ceci étant peu pratique pour les salariés, la nouvelle application mobile doit leur faire gagner le temps de la double saisie.",
           "termesTechniques": [
-              78,
-              82
+            1,
+            4,
+            36,
+            37,
+            61,
+            64,
+            76,
+            78,
+            82
           ],
           "realisations": [
             {
+              "titre": "Support",
               "description": "Support Technique de la personne en charge du développement.",
               "termesTechniques": [
-                1
               ]
             }, {
+              "titre": "Authentification",
               "description": "Implémentation de l'authentification dans l'application AngularJS.",
               "termesTechniques": [
-                1
+                123
               ]
             }, {
+              "titre": "Montage du projet",
               "description": "Aide au démarrage du projet avec notamment l'outil de Scafolding Yeoman. Configuration de la construction du projet avec Maven et configuration du filtre CORS côté serveur.",
               "termesTechniques": [
-                1,
-                4,
-                37,
-                76,
                 77,
+                84,
                 86,
                 87,
                 120
@@ -202,71 +231,138 @@
             }
           ]
         }, {
+          "id": 15,
           "nom": "Facturation",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
           "description": "Refonte de l'ancienne application de facturation. La nouvelle application se basera sur le nouveau socle technique.",
           "termesTechniques": [
+            1,
+            51,
+            52,
+            61,
+            64
           ],
           "realisations": [
             {
-              "description": "Conception d'un module de communication structuré par une API REST. Ceci pour permettre le dialogue entre la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module sera constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de façade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
+              "titre": "Module de communication structuré par une API REST",
+              "description": "Le module permet le dialogue entre la nouvelle application Facturation et les Applications Satellites telles que la Gestion d'Ouvrage. Le module est constitué de 2 parties, la partie description de l'API utilisant HTTP et un module Java faisant office de façade abstayant la mécanique REST et permettant par exemple de se passer d'HTTP pour une utilisation locale du module.",
               "termesTechniques": [
-                1
+                20,
+                21,
+                28,
+                36,
+                39,
+                82,
+                119,
+                120,
+                149
               ]
             }, {
-              "description": "Développement d'un module Générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans le workflow menant à l'édition d'une facture.",
+              "titre": "Gestion des références",
+              "description": "Développement d'un module générique permettant aux applications satellites d'ajouter des références sur une facture à n'importe quel moment dans le workflow menant à l'édition d'une facture.",
               "termesTechniques": [
-                1
+                13,
+                43,
+                73,
+                78,
+                107,
+                115
               ]
             }
           ]
         }, {
+          "id": 14,
           "nom": "Plugins Eclipse",
           "client": "iMDEO (Tours)",
           "description": "Création de Plugins Eclipse pour augmenter la productivité de l'équipe de développement.",
           "termesTechniques": [
+            1,
+            13,
+            64,
+            36,
+            37
           ],
           "realisations": [
             {
+              "titre": "Génération de Classes Java",
               "description": "Création d'un Plugin Eclipse de génération de classes Java (Entités JPA, DAO, Services).",
               "termesTechniques": [
-                1
+                42
+
               ]
             }, {
-              "description": "Création d'un Plugin Eclipse de génération de Projet Maven (Entités du Domaine, Controlleurs Web, Application Web).",
+              "titre": "Génération de Projets",
+              "description": "Création d'un plugin Eclipse de génération de projet compatible Maven:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>entités du domaine,</li><li><i class=\"fa-li fa fa-angle-right\"></i>contrôleurs Web,</li><li><i class=\"fa-li fa fa-angle-right\"></i>application Web.</li></ul>Le plugin utilise des modèles préremplis par des valeurs initilales pouvant être modifiées par l'utilisateur afin de personnaliser la génération de code.",
               "termesTechniques": [
-                1
+                42,
+                61,
+                82,
+                137
               ]
             }
           ]
         }, {
-          "nom": "Gestion des Comptes Extranet",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "id": 13,
+          "nom": "Comptes Extranet",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
           "description": "Application destinée à la gestion des Comptes Extranet du Groupe Hervé.",
           "termesTechniques": [
-              1
+            1,
+            36,
+            37,
+            38,
+            51,
+            61,
+            64,
+            70,
+            73,
+            78,
+            123,
+            154,
+            155
           ],
           "realisations": [
             {
+              "titre": "Passerelle vers l'application Extranet",
               "description": "Création d'un module de communication pour l'application Extranet. L'application Extranet pourra alors interroger l'application des Comptes Extranet pour connaître le profil de chacun des individus connectés.",
               "termesTechniques": [
+                117
               ]
             }, {
-              "description": "Découplage de la partie Controlleur et Service grâce à Akka et l'API DefferedResult de Spring",
+              "titre": "Découplage",
+              "description": "Découplage de la partie «contrôleur» et «service» grâce à Akka et l'API DefferedResult de Spring.",
               "termesTechniques": [
-                124
+                55,
+                124,
+                126
               ]
             }, {
-              "description": "Développement de l'application en mode TDD avec un autre développeur.",
+              "titre": "Interopérabilité avec l'annuaire",
+              "description": "L'application «Annuaire» doit pouvoir afficher si pour un contact donné un compte extranet est associé et si oui fournir un lien vers la gestion de son compte. Un jeton d'authentification sera envoyé à l'application «Comptes Extranet» pour que l'administrateur n'ait pas à ressaisir ses identifiants.",
               "termesTechniques": [
-                116
+                24,
+                123,
+                135
+              ]
+            }, {
+              "titre": "Web Application",
+              "description": "Développement de l'application en mode «Test Driven Development» avec un autre développeur. Fonctionnalités principales:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>création / activation de compte extranet,</li><li><i class=\"fa-li fa fa-angle-right\"></i>regénération de mot de passe,</li><li><i class=\"fa-li fa fa-angle-right\"></i>authentification,</li><li><i class=\"fa-li fa fa-angle-right\"></i>association d'un ou plusieurs profiles,</li><li><i class=\"fa-li fa fa-angle-right\"></i>ajout et modification de fonctions à un profil en particulier,</li><li><i class=\"fa-li fa fa-angle-right\"></i>lister les profils associés à un compte.</li></ul>",
+              "termesTechniques": [
+                4,
+                23,
+                52,
+                74,
+                91,
+                116,
+                130
               ]
             }
           ]
         }, {
+          "id": 12,
           "nom": "WSGroupe",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
-          "description": "Il s'agit d'un serveur exposant pour certains client du Groupe Hervé des services REST.",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "description": "Il s'agit d'un serveur exposant pour certains clients du Groupe Hervé des services REST.",
           "termesTechniques": [
             1,
             36,
@@ -274,20 +370,33 @@
           ],
           "realisations": [
             {
-              "description": "Développement du module Satisfaction.",
+              "titre": "Satisfaction",
+              "description": "Développement des services de satisfaction client. De la même manière que pour les demandes d'interventions il s'agit d'ouvrir au monde extérieur les services déjà existant dans l'intranet du Groupe Hervé.",
               "termesTechniques": [
-
+                125
               ]
             }, {
-              "description": "Développement du module Demande d'Intervention.",
+              "titre": "Demande d'Intervention",
+              "description": "Développement des services de demandes d'interventions. Les contrôleurs REST ne font officent que de façade puisque le traitement métier est délégué aux services «legacy» déjà existants dans le SI. L'appel à ces services se fait simplement grâce à la couche d'interopérabilité développée pour la nouvelle infrastructure technique.",
               "termesTechniques": [
-
+                125
+              ]
+            }, {
+              "titre": "Serveur REST",
+              "description": "Mise en place du serveur REST, capable de fournir selon le choix du client, soit une représentation des données au format JSON, soit au format XML. Un module de gestion des erreurs a été implémenté pour une gestion plus aisée côté client.",
+              "termesTechniques": [
+                21,
+                119,
+                120,
+                153
               ]
             }
           ]
         }, {
+          "id": 11,
           "nom": "Conception Architecture Technique",
           "client": "iMDEO (Tours)",
+          "descriptionCourte": "Production d'une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le système d'information (plus de 800 mappings HBM existants).",
           "description": "L'objectif du projet est de produire une nouvelle infratructure technique pour augmenter la productivité et la testabilité des projets à venir. L'infrastructure se doit d'être interopérable avec les entités Hibernate et les services déjà existants dans le Système d'Information (plus de 800 mappings HBM existants).",
           "termesTechniques": [
             1,
@@ -343,8 +452,10 @@
             }
           ]
         }, {
+          "id": 10,
           "nom": "Planning",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "descriptionCourte": "Développement d'outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Le choix du Framework Flex s'est vite imposé. Fonctionnalités clés : planning de Gantt, planning des chantiers et planning des resources en personnels.",
           "description": "L'objectif du projet est de fournir des outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Ces outils devront pouvoir s'exécuter au sein même d'un navigateur WEB. Ils font fortement appel à des primitives graphiques, le choix du Framework Flex s'est donc vite imposé.",
           "termesTechniques": [
             16,
@@ -449,6 +560,7 @@
             }
           ]
         }, {
+          "id": 9,
           "nom": "Conception Framework Hypermedia",
           "client": "iMDEO (Tours)",
           "description": "Dans l'optique de futurs projets à réaliser avec la technologie Flex, ce Framework ayant pour base Spring et Jersey sera capable de gérer de façon générique des ressources et les actions communément associées telles que: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la création,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la lecture, </li><li><i class=\"fa-li fa fa-angle-right\"></i>la mise à jour,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la suppression,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la recherche générique.</li></ul>",
@@ -493,8 +605,9 @@
             }
           ]
         }, {
+          "id": 8,
           "nom": "Objectifs Fonctionnels",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
           "description": "L'application «Objectifs Fonctionnels» permet de définir chaque année les objectifs fonctionnels que veulent atteindre les différentes structures du groupe.",
           "termesTechniques": [
 
@@ -520,8 +633,10 @@
             }
           ]
         }, {
+          "id": 7,
           "nom": "GDA:  Gestion Des Achats",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "descriptionCourte": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. Fonctionnalités clés: importation de devis, gestion des besoins, passage de commandes, réceptions et tableaux de synthèse.",
           "description": "L'application «Gestion Des Achats» a pour but de simplifier le processus de création de commande qui était historiquement effectué par Oracle Application. L'application pourra interopérer plus facilement avec le système d'information, notamment avec les données produites par l'outil de chiffrage ou le reférentiel des articles. Tout ceci dans un environnement Eclipse RCP pour la partie cliente et Tomcat Hibernate coté serveur. Cet environnement permet de travailler le plus longtemps possible en mode déconnecté.",
           "termesTechniques": [
             1,
@@ -624,8 +739,10 @@
             }
           ]
         }, {
+          "id": 6,
           "nom": "OSCAR:  Outil Simplifié de Conception d'Automatisme et de Régulation",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
+          "descriptionCourte": "Outil permettant la description du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment particulier. Fonctionnalités clés : estimation de la fourniture en électricité à commander, édition des bilans de puissance, édition graphique de systèmes et génération de spécification.",
           "description": "Cet outil permet, au sein d'un client Eclipse RCP, de décrire la structure du réseau de régulation (Climatisation, Chauffage …) à établir dans un bâtiment particulier. Utilisée par les bureaux d'étude, l'application est capable d'effectuer des calculs de puissance pour estimer la fourniture en électricité à commander à EDF. Les utilisateurs peuvent aussi: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>configurer des automates,</li><li><i class=\"fa-li fa fa-angle-right\"></i>concevoir l'architecture des systèmes de régulation avec la possibilité d'éditer des graphiques représentant ses systèmes «à la façon AutoCAD»,</li><li><i class=\"fa-li fa fa-angle-right\"></i>d'exporter au format Excel différents bilans de puissance,</li><li><i class=\"fa-li fa fa-angle-right\"></i>de construire automatiquement une spécification à partir des différentes informations disponibles dans le projet d'étude.</li></ul>",
           "termesTechniques": [
               1,
@@ -718,8 +835,9 @@
             }
           ]
         }, {
+          "id": 5,
           "nom": "Maintenance Applicative",
-          "client": "iMDEO (Tours) pour le Groupe Hervé",
+          "client": "iMDEO pour le Groupe Hervé  (Tours) ",
           "description": "Le système d'information du Groupe Hervé dispose d'une large panoplie d'applications. Les évolutions législatives, les remontées de bugs où en encore les demandes d'ajout de nouvelles fonctionnalités m'ont amenées à intervenir sur certaines de ces applications.",
           "termesTechniques": [
             1,
@@ -762,8 +880,10 @@
       "statut": "Ingénieur d’étude",
       "projets": [
         {
+          "id": 4,
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
+          "descriptionCourte": "Développement d'outils visant à rendre interopérable les différentes simulations de la DGA.",
           "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la conception,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'architecture,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la configuration de l’exécution,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'exécution de la fédération,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
           "termesTechniques": [
             1,
@@ -826,6 +946,7 @@
       "statut": "Stagiaire",
       "projets": [
         {
+          "id": 3,
           "nom": "ITCS : Infrastructure Technique Commune de Simulation",
           "client": "DGA: Direction Générale de l'Armement",
           "description": "Le projet vise à mettre en place l’interopérabilité des différentes simulations de la DGA. Le système d’information ITCS permet de réaliser de bout en bout une fédération de simulations en respectant un cycle en V: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la conception,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'architecture,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la configuration de l’exécution,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'exécution de la fédération,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'analyse des données résultantes de l’exécution.</li></ul> L’interopérabilité est possible grâce aux kits d’interfaçage ITCS développés pour chacun des fédérés constituant la fédération.",
@@ -865,6 +986,7 @@
       "statut": "Étudiant (DIIC Rennes)",
       "projets": [
         {
+          "id": 2,
           "nom": "Monitoring du jeu video Soldat",
           "client": "",
           "description": "Le but de ce projet, réalisé au cours de la formation d'ingénieur, est la réalisation d'un outil d'administration en C++ sous Linux pour le jeu en ligne Soldat. Cet outil doit intégrer:<ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>le multithreading,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la notion de scripts Lua exécutés lors de l'arrivée de certains évènements tels que la connexion d’un nouveau joueur ou la fin d’une partie,</li><li><i class=\"fa-li fa fa-angle-right\"></i> il doit enfin fournir une IHM grâce à la bibliothèque Ncurses.</li></ul>",
@@ -891,6 +1013,7 @@
       "statut": "Étudiant (DIIC)",
       "projets": [
         {
+          "id": 1,
           "nom": "Projet OEDIPP",
           "client": "DAM:  Direction des Affaires Maritimes (Saint Malo)",
           "description": "Ce projet accompagne la réforme du permis de conduire et la formation à la conduite des bateaux de plaisance à moteur. Le projet OEDIPP a pour but de pallier les faiblesses des outils existants en termes de fonctionnalités: <ul class=\"fa-ul\"><li><i class=\"fa-li fa fa-angle-right\"></i>la gestion informatisée des dossiers d'inscription,</li><li><i class=\"fa-li fa fa-angle-right\"></i>l'organisation, la gestion et les résultats des sessions d'examen des épreuves théoriques,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la délivrance des titres de conduites,</li><li><i class=\"fa-li fa fa-angle-right\"></i>la gestion informatisée des centres d'examen.</li></ul>",
@@ -952,134 +1075,156 @@
       "libelle": {
         "fr": "Langages de Programmation",
         "en": "Programming Languages"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 2,
       "libelle": {
         "fr": "Outils de Développement",
         "en": "Development Tools"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 3,
       "categoriesParentes": [],
       "libelle": {
         "fr": "Bibliothèques",
         "en": "Libraries"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 4,
       "libelle": {
         "fr": "Système de Gestion de Version",
         "en": "Version Control System"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 5,
       "libelle": {
         "fr": "Système d'Exploitation",
         "en": "Operating System"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 6,
       "libelle": {
         "fr": "Méthodologie",
         "en": "Methodology"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 7,
       "libelle": {
         "fr": "Intégration Continue",
         "en": "Continuous Integration"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 8,
       "libelle": {
         "fr": "Base de Donnée",
         "en": "Database"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 9,
       "libelle": {
         "fr": "Outil de build",
         "en": "Build Tool"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 10,
       "libelle": {
         "fr": "Frameworks",
         "en": "Frameworks"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 11,
       "libelle": {
         "fr": "Serveur d'Application",
         "en": "Application Server"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 12,
       "libelle": {
         "fr": "Serveur HTTP",
         "en": "HTTP Server"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 13,
       "libelle": {
         "fr": "Concepts / Domaines",
         "en": "Concepts / Domains"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 14,
       "libelle": {
         "fr": "Templating",
         "en": "Templating"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 15,
       "libelle": {
         "fr": "Test Unitaire",
         "en": "Unit Test"
-      }
+      },
+      "imprimer": true
     }, {
       "id": 16,
       "libelle": {
         "fr": "Gestionnaire de Dépendance",
         "en": "Dependency Manager"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 17,
       "libelle": {
         "fr": "Scaffolding",
         "en": "Scaffolding"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 18,
       "libelle": {
         "fr": "Protocole",
         "en": "Protocol"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 19,
       "libelle": {
         "fr": "Plateforme",
         "en": "Platform"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 20,
       "libelle": {
         "fr": "Formats de donnée",
         "en": "Data Formats"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 21,
       "libelle": {
         "fr": "Spécifications",
         "en": "Specifications"
-      }
+      },
+      "imprimer": false
     }, {
       "id": 22,
       "libelle": {
         "fr": "Ressources Documentaires",
         "en": "Resources"
-      }
+      },
+      "imprimer": true
     }
   ],
   "termesTechniques": [
@@ -1304,7 +1449,7 @@
       "libelle": "ScalaTest"
     }, {
       "id": 55,
-      "categories": [3, 10],
+      "categories": [3],
       "libelle": "Akka"
     }, {
       "id": 56,
@@ -1312,7 +1457,7 @@
       "libelle": "Dozer"
     }, {
       "id": 57,
-      "categories": [3, 10],
+      "categories": [10],
       "libelle": "Bootstrap"
     }, {
       "id": 58,
@@ -1560,19 +1705,23 @@
     }, {
       "id": 119,
       "categories": [1, 20],
-      "libelle": "XML"
+      "libelle": "XML",
+      "url": "http://www.w3.org/XML/"
     }, {
       "id": 120,
       "categories": [20],
-      "libelle": "JSON"
+      "libelle": "JSON",
+      "url": "http://www.json.org"
     }, {
       "id": 121,
       "categories": [3],
-      "libelle": "Guava"
+      "libelle": "Guava",
+      "url": "http://code.google.com/p/guava-libraries/"
     }, {
       "id": 122,
       "categories": [21],
-      "libelle": "JSR 223"
+      "libelle": "JSR 223",
+      "url": "http://docs.oracle.com/javase/6/docs/technotes/guides/scripting/"
     }, {
       "id": 123,
       "categories": [3],
@@ -1702,6 +1851,24 @@
       "categories": [1],
       "libelle": "XML Schema",
       "url": "http://www.w3.org/XML/Schema.html"
+    }, {
+      "id": 153,
+      "categories": [3],
+      "libelle": "Jackson",
+      "url": "https://github.com/FasterXML/jackson"
+    }, {
+      "id": 154,
+      "categories": [13],
+      "libelle": "Agilité"
+    }, {
+      "id": 155,
+      "categories": [6],
+      "libelle": "Scrum"
+    }, {
+      "id": 156,
+      "categories": [2],
+      "libelle": "Eclipse MDT",
+      "url": "http://shop.oreilly.com/product/9780596805838.do"
     }
   ]
 

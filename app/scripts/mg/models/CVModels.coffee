@@ -4,7 +4,8 @@ mgApp = angular.module 'mgApp'
 
 mgApp.factory 'mg.CVModels', [
   '_'
-  (_) ->
+  'mg.options'
+  (_, options) ->
 
     getRefCategoriesTermesTechniques = (getTermesFct) ->
       refTerme = (t) ->
@@ -18,16 +19,25 @@ mgApp.factory 'mg.CVModels', [
           if not refCategoriesSet[c.id]
             refCategoriesSet[c.id] =
               id: c.id
+              imprimer: c.imprimer
               libelle: _.clone c.libelle
               termes: [refTerme t]
           else
             refCategoriesSet[c.id].termes.push refTerme(t)
-      _.values refCategoriesSet
+      categories = _.values refCategoriesSet
+      if options.pourImpression
+        _.filter categories, (c) -> c.imprimer
+      else
+        categories
+
+
 
     class CV
       constructor: (
         @informationsGenerales
         @formations
+        @resume
+        @domainesExpertises
         @experiencesProfessionnelles
         @stagesEtProjetsFinEtude
       ) ->
@@ -43,8 +53,10 @@ mgApp.factory 'mg.CVModels', [
 
     class Projet
       constructor: ({
+        @id
         @nom
         @client
+        @descriptionCourte
         @description
       }) ->
         @termesTechniques = []
@@ -88,7 +100,7 @@ mgApp.factory 'mg.CVModels', [
         
 
     class CategorieTermeTechnique
-      constructor: ({@id, @libelle}) ->
+      constructor: ({@id, @libelle, @imprimer}) ->
         @termes = []
 
     class TermeTechnique
