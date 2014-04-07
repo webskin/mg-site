@@ -12,7 +12,7 @@ mgApp.constant('URITemplate', window.URITemplate)
 mgApp.constant('moment', window.moment)
 
 mgApp.constant('mg.options', {
-  pourImpression: true
+  pourImpression: false
   pourImpressionOptions:
     projetsToExclude: [18, 15, 14, 12, 8, 9, 5]
     formationsToExclude: [1, 2]

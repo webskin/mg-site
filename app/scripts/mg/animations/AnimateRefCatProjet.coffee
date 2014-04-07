@@ -19,16 +19,12 @@ mgApp.animation '.animate-slide', [
   'mg.CVService'
   (cvService) ->
     enter: (element, done) ->
-      console.log ".animate-ref-cat-projet enter"
 
     leave: (element, done) ->
-      console.log ".animate-ref-cat-projet leave"
     move: (element, done) ->
-      console.log ".animate-ref-cat-projet move"
 
     # animation that can be triggered before the class is added
     beforeAddClass: (element, className, done) ->
-      console.log ".animate-ref-cat-projet beforeAddClass #{className}"
       if 'ng-hide' is className
         element.fadeOut({queue: false, duration: 400});
         element.slideUp 400, () -> done()
@@ -37,14 +33,12 @@ mgApp.animation '.animate-slide', [
 
     # animation that can be triggered after the class is added
     addClass: (element, className, done) ->
-      console.log ".animate-ref-cat-projet addClass #{className}"
       if 'ng-hide' is className
         done()
       return
 
     # animation that can be triggered before the class is removed
     beforeRemoveClass: (element, className, done) ->
-      console.log ".animate-ref-cat-projet beforeRemoveClass #{className}"
       if 'ng-hide' is className
         # sécifique Jquery
         element.hide()
@@ -53,8 +47,6 @@ mgApp.animation '.animate-slide', [
 
     # animation that can be triggered after the class is removed
     removeClass: (element, className, done) ->
-      console.log ".animate-ref-cat-projet removeClass #{className}"
-
       if 'ng-hide' is className
         element.fadeIn({queue: false, duration: 400});
         element.slideDown  400, () -> done()
