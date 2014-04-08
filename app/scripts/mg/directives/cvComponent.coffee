@@ -19,7 +19,19 @@ mgApp.directive 'cvComponent', [
 
     template:"""
 <div id="cv" ng-class="{impression : options.pourImpression}">
-  <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
+  <div class="row">
+    <div class="col-lg-7 col-md-7">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
+        </div>
+        <div class="col-lg-8 col-md-8">
+          <h2 class="titre" ng-bind-html="cv.titre | trustedTrad"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-lg-7 col-md-7">
       <h1 class="title">Résumé</h1>

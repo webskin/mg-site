@@ -34,6 +34,7 @@ mgApp.factory 'mg.CVModels', [
 
     class CV
       constructor: (
+        @titre
         @informationsGenerales
         @formations
         @resume

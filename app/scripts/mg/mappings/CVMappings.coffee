@@ -91,6 +91,7 @@ mgApp.factory 'mg.CVMappings', [
         stagesEtProjetsFinEtude = buildExperiencesProfessionnelles termes, json.stagesEtProjetsFinEtude
 
         new m.CV(
+          json.titre
           json.informationsGenerales
           formations
           json.resume
