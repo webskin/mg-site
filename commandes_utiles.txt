@@ -1,0 +1,19 @@
+Pour builder le projet
+cd ~/envs/mickaelgauvin.github.io/mg-site
+
+grunt
+
+Pour builder le projet même si les tests ne passent pas
+
+grunt --force
+
+Pour lancer le serveur de test
+
+grunt serve
+
+Pour commiter les sources
+
+
+Pour lancer le serveur HTTP
+cd  ~/envs/mickaelgauvin.github.io/mickaelgauvin.github.io
+python -m SimpleHTTPServer

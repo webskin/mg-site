@@ -14,11 +14,12 @@ mgApp.directive 'informationsGeneralesComponent', [
       scope.options = options
       scope.age = () ->
         return '' if not scope.informationsGenerales
-        moment().diff(scope.informationsGenerales.naissance, 'years')
+        moment().diff(scope.informationsGenerales.naissance, 'years') + 'ans'
     template:"""
 <p class="informations-generales">
     <span class="nom-prenom">{{informationsGenerales.prenom}} {{informationsGenerales.nom}}</span><br />
-    <span>{{age()}} ans</span><br />
+    <span class="nom-prenom" ng-show="options.pourImpression">Ingénieur Conseil en Systèmes et Logiciels Informatiques</span><br ng-show="options.pourImpression"/>
+    <span>{{age()}} </span><br />
     <span>{{informationsGenerales.adresse | trustedTrad}} </span><br />
     <span>{{informationsGenerales.codePostal | trustedTrad}} {{informationsGenerales.ville | trustedTrad}} </span><br />
     <span>{{informationsGenerales.telephones.mobile | trustedTrad}} </span><br />

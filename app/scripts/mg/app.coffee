@@ -67,19 +67,14 @@ mgApp.run [
     $rootScope.$stateParams = $stateParams
 
     $rootScope.$on '$stateChangeStart', () ->
-      $log.debug '$stateChangeStart'
 
     $rootScope.$on '$stateChangeSuccess', () ->
-      $log.debug '$stateChangeSuccess'
 
     $rootScope.$on '$stateNotFound', () ->
-      $log.debug '$stateNotFound'
 
     $rootScope.$on '$stateChangeError', () ->
-      $log.debug '$stateChangeError'
 
     # bugggé pour le moment attendre la 0.0.3
     $rootScope.$on '$viewContentLoading', () ->
-      $log.debug '$viewContentLoading'
 
 ]

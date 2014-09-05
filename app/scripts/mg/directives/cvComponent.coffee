@@ -18,15 +18,18 @@ mgApp.directive 'cvComponent', [
           true
 
     template:"""
-<div id="cv" ng-class="{impression : options.pourImpression}">
+<div ng-hide="cv" id="chargement">
+Chargement du cv.
+</div>
+<div id="cv" ng-show="cv" ng-class="{impression : options.pourImpression}">
   <div class="row">
     <div class="col-lg-7 col-md-7">
       <div class="row">
         <div class="col-lg-4 col-md-4">
           <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
         </div>
-        <div class="col-lg-8 col-md-8">
-          <h2 class="titre" ng-bind-html="cv.titre | trustedTrad"></p>
+        <div ng-hide="options.pourImpression" class="col-lg-8 col-md-8">
+          <h2 class="titre" ng-bind-html="cv.titre | trustedTrad"></h2>
         </div>
       </div>
     </div>
