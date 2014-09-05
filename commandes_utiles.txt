@@ -14,6 +14,14 @@ grunt serve
 Pour commiter les sources
 
 
+
+
+Pour ajouter les sources
+git add --all
+
+Pour commiter
+git commit -a -m 'titre'
+
 Pour lancer le serveur HTTP
 cd  ~/envs/mickaelgauvin.github.io/mickaelgauvin.github.io
 python -m SimpleHTTPServer
