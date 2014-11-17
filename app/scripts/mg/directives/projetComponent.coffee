@@ -14,6 +14,8 @@ mgApp.directive 'projetComponent', [
       scope.options = options
       scope.showDescriptionCourte = () ->
         options.pourImpression and scope.projet.descriptionCourte
+      scope.mustHideRealisations = () ->
+        options.pourImpression or scope.projet.realisations?.length == 0
 
     template:"""
 <div>
@@ -43,7 +45,7 @@ mgApp.directive 'projetComponent', [
             </ref-categorie-termes-techniques-component>
           </p>
         </div>
-        <div ng-hide="options.pourImpression" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div ng-hide="mustHideRealisations()" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <button type="button" class="btn btn-default afficher-details-btn" ng-click="showRealisations = true" title="Afficher le détail des réalisations"><span class="fa fa-chevron-down" ></span><span class="afficher-details"> Détail des réalisations</span></button>
         </div>
       </div>

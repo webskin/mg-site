@@ -11,9 +11,21 @@ mgApp.directive 'cvComponent', [
       cv: '='
     link: (scope, element, attrs) ->
       scope.options = options
+      scope.hasProjectToDisplay = (experience) ->
+        console.log 'toto'
+        false
       scope.formationFilter = (formation) ->
         if options.pourImpression
           not _.contains options.pourImpressionOptions.formationsToExclude, formation.id
+        else
+          true
+
+      scope.xpFilter = (experience) ->
+        if options.pourImpression
+          # si aucun projet à afficher cela ne sert à rien d'afficher l'expérience professionnelle
+          xpProjetIds = _.map experience.projets, (p) -> p.id
+          diff = _.difference xpProjetIds, options.pourImpressionOptions.projetsToExclude
+          diff.length > 0
         else
           true
 
@@ -59,7 +71,7 @@ Chargement du cv.
       <h1 class="title">Expériences Professionnelles</h1>
     </div>
   </div>
-  <div ng-repeat="e in cv.experiencesProfessionnelles">
+  <div ng-repeat="e in cv.experiencesProfessionnelles | filter:xpFilter">
     <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
   </div>
   <div ng-hide="options.pourImpression" class="row">
