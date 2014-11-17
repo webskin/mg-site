@@ -12,10 +12,10 @@ mgApp.constant('URITemplate', window.URITemplate)
 mgApp.constant('moment', window.moment)
 
 missionAngularOption =
-  anonyme: true
+  anonyme: false
   pourImpression: true
   pourImpressionOptions:
-    projetsToExclude: [22, 19, 18, 17, 15, 14, 13, 12, 8, 9, 5]
+    projetsToExclude: [22, 19, 18, 17, 15, 14, 13, 12, 8, 9, 6, 5]
     formationsToExclude: [1, 2]
 
 freelanceInfoOption =
