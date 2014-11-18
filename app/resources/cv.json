@@ -102,8 +102,8 @@
       }
     }
   ],
-  "resume": "En tant qu'indépendant, je réalise chez mes clients des projets ambitieux tant sur le plan technique que fonctionnel. Je suis passionné par les nouvelles technologies et suis de près les nouvelles du monde de l'Open Source. Cette veille technologique me permet de faire plus aisément des propositions en adéquation avec les demandes de mes clients.",
-  "domainesExpertises": "Je considère avoir une bonne connaissance de l'écosystème <strong>J2EE</strong> et plus récemment, suite à l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis perfectionné au niveau des technologies <strong>JavaScript</strong>. Je suis en fait un adepte du langage <strong>CoffeeScript</strong> que j'ai eu l'occasion d'utiliser à maintes reprises sur des projets, pour certains, construits avec <strong>AngularJS</strong>. Depuis 2011 j'ai suivi plusieurs formations en ligne sur <strong>Scala</strong> et j'aime à utiliser de plus en plus le paradigme <strong>fonctionnel</strong> avec notamment l'utilisation de bibliothèques telles que <strong>Underscore</strong> ou <strong>Lodash</strong>.",
+  "resume": "En tant qu'indépendant, je réalise chez mes clients des projets ambitieux tant sur le plan technique que fonctionnel. Je suis passionné par les nouvelles technologies et suis de près les nouvelles du monde de l'Open Source. Cette veille technologique me permet de faire plus aisément des propositions en adéquation avec les demandes de mes clients.<br/><br/>",
+  "domainesExpertises": "Je considère avoir une bonne connaissance de l'écosystème <strong>J2EE</strong> et plus récemment, suite à l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis perfectionné au niveau des technologies <strong>JavaScript</strong>. Je suis en fait un adepte du langage <strong>CoffeeScript</strong> que j'ai eu l'occasion d'utiliser à maintes reprises sur des projets, pour certains, construits avec <strong>AngularJS</strong>. Depuis 2011 j'ai suivi plusieurs formations en ligne sur <strong>Scala</strong> et j'aime à utiliser de plus en plus le paradigme <strong>fonctionnel</strong> avec notamment l'utilisation de bibliothèques telles que <strong>Underscore</strong> ou <strong>Lodash</strong>.<br/><br/><br/>",
   "experiencesProfessionnelles": [
     {
       "debut": "2014-11-01",
@@ -544,7 +544,7 @@
           "id": 10,
           "nom": "Planning",
           "client": "iMDEO pour le Groupe Hervé  (Tours) ",
-          "descriptionCourte": "Développement d'outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Le choix du Framework Flex s'est vite imposé. Fonctionnalités clés : planning de Gantt, planning des chantiers et planning des resources en personnels.",
+          "descriptionCourte": "Développement d'outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Le choix du Framework Flex s'est vite imposé. Fonctionnalités clés : planning de Gantt, planning des chantiers et planning des ressources en personnels.",
           "description": "L'objectif du projet est de fournir des outils de visualisation temporaux sur l'organisation du personnel et des projets du Groupe Hervé. Ces outils devront pouvoir s'exécuter au sein même d'un navigateur WEB. Ils font fortement appel à des primitives graphiques, le choix du Framework Flex s'est donc vite imposé.",
           "termesTechniques": [
             16,
