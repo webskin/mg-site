@@ -106,6 +106,37 @@
   "domainesExpertises": "Je considère avoir une bonne connaissance de l'écosystème <strong>J2EE</strong> et plus récemment, suite à l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis perfectionné au niveau des technologies <strong>JavaScript</strong>. Je suis en fait un adepte du langage <strong>CoffeeScript</strong> que j'ai eu l'occasion d'utiliser à maintes reprises sur des projets, pour certains, construits avec <strong>AngularJS</strong>. Depuis 2011 j'ai suivi plusieurs formations en ligne sur <strong>Scala</strong> et j'aime à utiliser de plus en plus le paradigme <strong>fonctionnel</strong> avec notamment l'utilisation de bibliothèques telles que <strong>Underscore</strong> ou <strong>Lodash</strong>.<br/><br/><br/>",
   "experiencesProfessionnelles": [
     {
+      "debut": "2014-12-01",
+      "fin": "2015-01-01",
+      "entreprise": "Freelance Ingénieur Conseil en Systèmes et Logiciels Informatiques",
+      "projets": [
+        {
+          "id": 22,
+          "nom": "Application de prise de service",
+          "client": "Keolis Rennes",
+          "description": "Creation d'une Single Page Webapp permettant à des conducteurs de bus de consulter leur planning. Un accent particulier a été porté sur la sécurisation de l'accès à la plateforme et à l'accessibilité de l'application. Le développement s'est effectué en accompagnant l'équipe de développement tout au long de sa réalisation, le but étant de lui faire apprécier le création de ce type d'application avec les frameworks tels que Hibernate, Spring 4 et AngularJS.",
+          "termesTechniques": [
+            13,
+            4,
+            5,
+            43,
+            62,
+            65,
+            77,
+            85,
+            86,
+            87,
+            92,
+            160,
+            162,
+            163,
+            164,
+            165,
+            166
+          ]
+        }
+      ]
+    }, {
       "debut": "2014-11-01",
       "fin": "2014-12-01",
       "entreprise": "Freelance Ingénieur Conseil en Systèmes et Logiciels Informatiques",
@@ -1460,11 +1491,11 @@
     }, {
       "id": 36,
       "categories": [3, 10],
-      "libelle": "Spring Core"
+      "libelle": "Spring 3 Core"
     }, {
       "id": 37,
       "categories": [3, 10],
-      "libelle": "Spring MVC"
+      "libelle": "Spring 3 MVC"
     }, {
       "id": 38,
       "categories": [10],
@@ -1623,7 +1654,7 @@
     }, {
       "id": 76,
       "categories": [10],
-      "libelle": "AngularJS"
+      "libelle": "AngularJS 1.2"
     }, {
       "id": 77,
       "categories": [9],
@@ -1986,6 +2017,18 @@
       "id": 163,
       "categories": [15],
       "libelle": "Jasmine"
+    }, {
+      "id": 164,
+      "categories": [10],
+      "libelle": "AngularJS 1.2"
+    }, {
+      "id": 165,
+      "categories": [3, 10],
+      "libelle": "Spring 4 Core"
+    }, {
+      "id": 166,
+      "categories": [3, 10],
+      "libelle": "Spring 4 MVC"
     }
   ]
 

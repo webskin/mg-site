@@ -11,21 +11,28 @@ mgApp.constant('URI', window.URI)
 mgApp.constant('URITemplate', window.URITemplate)
 mgApp.constant('moment', window.moment)
 
-missionAngularOption =
-  anonyme: true
+missionAngularOptions =
+  anonyme: false
   pourImpression: true
   pourImpressionOptions:
     projetsToExclude: [22, 19, 18, 17, 15, 14, 13, 12, 8, 9, 6, 5]
     formationsToExclude: [1, 2]
 
-freelanceInfoOption =
+freelanceInfoOptions =
   anonyme: false
   pourImpression: true
   pourImpressionOptions:
     projetsToExclude: [18, 15, 14, 12, 8, 9, 5]
     formationsToExclude: [1, 2]
 
-mgApp.constant 'mg.options', missionAngularOption
+webOptions =
+  anonyme: false
+  pourImpression: false
+  pourImpressionOptions:
+    projetsToExclude: []
+    formationsToExclude: []
+
+mgApp.constant 'mg.options', webOptions
 
 
 mgApp.config [
