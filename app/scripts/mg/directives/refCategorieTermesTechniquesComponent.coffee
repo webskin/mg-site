@@ -13,7 +13,7 @@ mgApp.directive 'refCategorieTermesTechniquesComponent', [
     template:"""
 <p class="ref-categorie">
 
-     <span class="titre-categorie">{{refCategorieTermesTechniques.libelle | trustedTrad}}: </span><span ng-repeat="t in refCategorieTermesTechniques.termes">{{t.libelle | trustedTrad}}{{$last ? '.' : ', '}} </span>
+     <span class="titre-categorie">{{::refCategorieTermesTechniques.libelle | trustedTrad}}: </span><span ng-repeat="t in ::refCategorieTermesTechniques.termes">{{::t.libelle | trustedTrad}}{{$last ? '.' : ', '}} </span>
 
 
 

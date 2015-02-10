@@ -41,7 +41,7 @@ Chargement du cv.
           <informations-generales-component informations-generales="cv.informationsGenerales"></informations-generales-component>
         </div>
         <div ng-hide="options.pourImpression" class="col-lg-8 col-md-8">
-          <h2 class="titre" ng-bind-html="cv.titre | trustedTrad"></h2>
+          <h2 class="titre" ng-bind-html="::cv.titre | trustedTrad"></h2>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@ Chargement du cv.
       <h1 class="title">Expériences Professionnelles</h1>
     </div>
   </div>
-  <div ng-repeat="e in cv.experiencesProfessionnelles | filter:xpFilter">
+  <div ng-repeat="e in ::cv.experiencesProfessionnelles | filter:xpFilter">
     <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
   </div>
   <div ng-hide="options.pourImpression" class="row">
@@ -79,7 +79,7 @@ Chargement du cv.
       <h1 class="title">Stages et Projets de Fin d'Étude</h1>
     </div>
   </div>
-  <div ng-hide="options.pourImpression" ng-repeat="e in cv.stagesEtProjetsFinEtude">
+  <div ng-hide="options.pourImpression" ng-repeat="e in ::cv.stagesEtProjetsFinEtude">
     <experience-professionnelle-component experience-Professionnelle="e"></experience-professionnelle-component>
   </div>
   <div class="row">
@@ -87,7 +87,7 @@ Chargement du cv.
       <h1 class="title">Formations</h1>
     </div>
   </div>
-  <div ng-repeat="f in cv.formations | filter:formationFilter">
+  <div ng-repeat="f in ::cv.formations | filter:formationFilter">
     <formation-component formation="f"></formation-component>
   </div>
 </div>
