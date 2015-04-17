@@ -103,38 +103,85 @@
     }
   ],
   "resume": "En tant qu'indépendant, je réalise chez mes clients des projets ambitieux tant sur le plan technique que fonctionnel. Je suis passionné par les nouvelles technologies et suis de près les nouvelles du monde de l'Open Source. Cette veille technologique me permet de faire plus aisément des propositions en adéquation avec les demandes de mes clients.<br/><br/>",
-  "domainesExpertises": "Je me suis perfectionné durant mes expériences professionnelles sur les technologies de l'écosystème <strong>J2EE&nbsp;/&nbsp;Spring&nbsp;/&nbsp;Hibernate</strong> et depuis l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis formé davantage au niveau des technologies <strong>JavaScript</strong>. Je suis adepte du langage <strong>CoffeeScript</strong> que j'ai eu l'occasion d'utiliser à maintes reprises sur des projets, pour certains, construits avec <strong>AngularJS</strong>. J'ai eu l'occasion de travailler sur des domaines purement techniques et d'autres plus fonctionnels comme le domaine de la <strong>défense</strong>, de la gestion de <strong>planning</strong> ou encore celui du <strong>transport</strong>.<br/><br/><br/>",
+  "domainesExpertises": "Au fil des missions que j'ai réalisées, je me suis perfectionné sur les technologies de l'écosystème <strong>J2EE&nbsp;/&nbsp;Spring&nbsp;/&nbsp;Hibernate</strong> et depuis l'abandon par Adobe de la technologie <strong>Flex</strong>, je me suis formé davantage au niveau des technologies <strong>JavaScript</strong>. Je suis adepte du langage <strong>CoffeeScript</strong> que j'ai eu l'occasion d'utiliser à maintes reprises sur des projets, pour certains, construits avec <strong>AngularJS</strong>. J'ai eu l'occasion de travailler sur des domaines purement techniques mais aussi sur d'autres plus fonctionnels dans le domaine de la <strong>défense</strong>, de la gestion de <strong>planning</strong> ou encore celui du <strong>transport</strong>.<br/><br/><br/>",
   "experiencesProfessionnelles": [
     {
       "debut": "2014-12-01",
-      "fin": "2015-01-01",
+      "fin": "2015-02-01",
       "entreprise": "Freelance Ingénieur Conseil en Systèmes et Logiciels Informatiques",
       "projets": [
         {
           "id": 22,
           "nom": "Application de prise de service",
           "client": "Keolis Rennes",
-          "description": "Creation d'une Single Page Webapp permettant à des conducteurs de bus de consulter leur planning. Un accent particulier a été porté sur la sécurisation de l'accès à la plateforme et à l'accessibilité de l'application. Le développement s'est effectué en accompagnant l'équipe de développement tout au long de sa réalisation, le but étant de lui faire apprécier le création de ce type d'application avec les frameworks tels que Hibernate, Spring 4 et AngularJS.",
+          "description": "Création d'une Single Page Application permettant à des conducteurs de bus de consulter leur planning. Un accent particulier a été porté sur la sécurisation de l'accès à la plateforme et à l'accessibilité de l'application. Le développement s'est effectué en accompagnant l'équipe de production tout au long de sa réalisation, le but étant de lui faire apprécier la création de ce type d'application avec les frameworks tels que Hibernate, Spring 4 et AngularJS.",
           "termesTechniques": [
             13,
-            4,
-            5,
-            43,
-            62,
-            65,
-            77,
-            85,
-            86,
-            87,
-            92,
-            160,
-            162,
-            163,
-            164,
-            165,
-            166,
-            167,
-            168
+            62
+          ],
+          "realisations": [
+            {
+              "titre": "Développement d'un socle technique",
+              "description": "Maven, Nexus, Tomcat, Infra, Socle JS",
+              "termesTechniques": [
+                4,
+                82,
+                169,
+                172,
+                174
+              ]
+            }, {
+              "titre": "Développement de méthodes d'authentification",
+              "description": "Stateless, With Session, Token, SHA, Salt",
+              "termesTechniques": [
+                123,
+                165,
+                166,
+                171,
+                172
+              ]
+            }, {
+              "titre": "Développement de l'application",
+              "description": "Perturbation, Profil, Planning, Non grévistes, Compagnonnage",
+              "termesTechniques": [
+                4,
+                28,
+                43,
+                77,
+                85,
+                86,
+                87,
+                89,
+                92,
+                162,
+                163,
+                165,
+                166,
+                169,
+                171,
+                172,
+                175,
+                176,
+                177
+              ]
+            }, {
+              "titre": "Configuration de la plateforme de production",
+              "description": "Images de bases, Maven Docker par env",
+              "termesTechniques": [
+                78,
+                97,
+                167,
+                168,
+                170,
+                173
+              ]
+            }, {
+              "titre": "Production de documents",
+              "description": "Doc installation environnement de dev, Doc installation docker, Doc installation images de base, Doc installation image Javapp, Doc Exploitation Javapp, Doc infrastructure logicielle",
+              "termesTechniques": [
+              ]
+            }
+
           ]
         }
       ]
@@ -1245,7 +1292,7 @@
     }, {
       "id": 8,
       "libelle": {
-        "fr": "Base de Donnée",
+        "fr": "Base de Données",
         "en": "Database"
       },
       "imprimer": true
@@ -2039,6 +2086,42 @@
       "id": 168,
       "categories": [5],
       "libelle": "CentOS 7"
+    }, {
+      "id": 169,
+      "categories": [10],
+      "libelle": "AngularJS 1.3"
+    }, {
+      "id": 170,
+      "categories": [1],
+      "libelle": "Scripting Shell"
+    }, {
+      "id": 171,
+      "categories": [8],
+      "libelle": "Postgresql"
+    }, {
+      "id": 172,
+      "categories": [1],
+      "libelle": "Java 8"
+    }, {
+      "id": 173,
+      "categories": [18],
+      "libelle": "SFTP"
+    }, {
+      "id": 174,
+      "categories": [16],
+      "libelle": "Nexus"
+    }, {
+      "id": 175,
+      "categories": [20],
+      "libelle": "iCal"
+    }, {
+      "id": 176,
+      "categories": [10],
+      "libelle": "Bootstrap 3"
+    }, {
+      "id": 177,
+      "categories": [21],
+      "libelle": "TRANSMODEL"
     }
   ]
 
