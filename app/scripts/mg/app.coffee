@@ -15,7 +15,7 @@ missionAngularOptions =
   anonyme: false
   pourImpression: true
   pourImpressionOptions:
-    projetsToExclude: [22, 19, 18, 17, 15, 14, 13, 12, 8, 9, 6, 5]
+    projetsToExclude: [15000, 22, 19, 18, 17, 15, 14, 13, 12, 8, 9, 6, 5]
     formationsToExclude: [1, 2]
 
 freelanceInfoOptions =
